@@ -1,0 +1,21 @@
+<header id="header">
+    <div class="container">
+        <div id="logo" class="pull-left">
+            <a href="/" class="scrollto"><img src="{{ SITEURL }}/theme/img/logo.png" alt="logo-{{SITENAME}}" title="logo-{{SITENAME}}"></a>
+        </div>
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                {% for tag, text, active in MENU %}
+                    {% if active %}
+                    <li class="menu-active"><a href="{{tag}}">{{text}}</a></li>
+                    {% else %}
+                    <li><a href="{{tag}}">{{text}}</a></li>
+                    {% endif %}
+                {% endfor %}
+                {% if EVENTO.incricao_link %}
+                    <li class="buy-tickets"><a href="{{EVENTO.incricao_link}}" target="_blank">Inscrever-se</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+{% include 'head.html' %}
+
+<body>
+
+    <!--==========================
+    Header
+    ============================-->
+    {% include 'header.html'%}
+
+    <!--==========================
+    Intro Section
+    ============================-->
+    <section id="intro">
+        <div class="intro-container wow fadeIn">
+            <img src="{{ SITEURL }}/theme/img/logo.png" alt="logo-Python Sul" class="img-fluid" style="width: 50%"><br>
+            <h1 class="mb-4 pb-0">
+                <span style="display: none;">Python Sul</span>
+            </h1>
+            <p class="mb-1 pb-0">{{EVENTO.data}}</p>
+            <p class="mb-4 pb-0"><small>{{EVENTO.local}}</small></p>
+        </div>
+    </section>
+
+    <main id="main">
+
+        <!--==========================
+      About Section
+    ============================-->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Sobre o evento</h2>
+                        <p>
+                            Evento da comunidade Python do sul do pais, com intuito de popularizar e disseminar o
+                            conhecimento da linguagem python.
+                        </p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3>Quando </h3>
+                        <p>{{EVENTO.data_completa}}</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3>Onde </h3>
+                        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.041357465406!2d-51.15019854999999!3d-29.163453499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ebdfe6be2163d%3A0x63adee0321bf5366!2sUCS%20-%20Bloco%2058!5e0!3m2!1spt-BR!2sbr!4v1677013756575!5m2!1spt-BR!2sbr"
+                            target="_blank" class="">
+                            <p>{{EVENTO.local}}</p>
+                    </div>
+                    </a>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--==========================
+        Inscricao Section
+        ============================-->
+        <section id="inscricao" class="pt-4 mt-4 wow fadeInUp">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Inscrição</h2>
+                    <p>
+                        Esse ano contamos duas formas de inscrição: a já <b>tradicional gratuita</b>,
+                        que garante acesso a todo o evento, incluindo palestras, sem custos.
+                        A outra forma é por meio da compra de um <b>ingresso com camiseta até dia 19/02/2023</b>,
+                        com o intuito de ajudar o evento a crescer e proporcionar uma melhor infraestrutura.
+                        Apoie e ganhe uma camiseta pra sair por aí mostrando que ama Python!
+                    </p>
+                    {% if EVENTO.inscricao_link %}
+                    <p>
+                        <a href="{{EVENTO.inscricao_link}}" target="_blank">
+                            [Inscreva-se Agora]
+                        </a>
+                    </p>
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+        <!-- ==========================
+      Speakers Section
+    ============================ -->
+        <section id="speakers" class="wow fadeInUp">
+            <div class="container">
+                {% if EVENTO.call_for_papers_link %}
+                <div class="section-header">
+                    <h2>Palestrantes</h2>
+                    <p>Venha nos ajudar a fazer um evento incrível!</p>
+                    <p>
+                        <a href="{{EVENTO.call_for_papers_link}}" target="_blank">[call for papers]</a>
+                    </p>
+                </div>
+                {% endif %}
+                <div class="row">
+                    {% for a in articles %}
+                        {% if a.category == "Palestrantes" and a.date.year == SITEYEAR %}
+                        <div class="col-lg-4 col-md-6">
+                            <div class="speaker">
+                                <img src="{{ SITEURL }}/theme/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
+                                <div class="details">
+                                    <h3><a href="speaker-details.html">{{a.palestrante}}</a></h3>
+                                    <p>{{a.palestra}}</p>
+                                    <div class="social">
+                                        <a href=""><i class="fa fa-twitter"></i></a>
+                                        <a href=""><i class="fa fa-facebook"></i></a>
+                                        <a href=""><i class="fa fa-google-plus"></i></a>
+                                        <a href=""><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!--==========================
+      Schedule Section
+    ============================-->
+        <section id="schedule" class="section-with-bg">
+            <div class="container wow fadeInUp">
+                <div class="section-header">
+                    <h2>Agenda</h2>
+                    <p>Incentivamos a todos a doarem 2kg de alimentos não perecíveis</p>
+                </div>
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Dia 11/03/2023</a>
+                    </li>
+                </ul>
+
+                <h3 class="sub-heading">Grade sujeita a alterações!</h3>
+
+                <div class="tab-content row justify-content-center">
+                    <!-- Schdule Day 1 -->
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+                        {% for a in articles %}
+                            {% if a.category == "horarios" and a.date.year == SITEYEAR %}
+                            <a href="{{a.url}}">
+                                <div class="row schedule-item">
+                                    <div class="col-md-2">
+                                        <time><strong>{{a.date.strftime('%H:%M') }}</strong></time>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h4>{{a.title}}</h4>
+                                        <p>{{a.author}}</p>
+                                    </div>
+                                </div>
+                            </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div> 
+                </div>
+
+        </section>
+
+        <!--==========================
+      Sponsors Section
+    ============================-->
+        <section id="supporters" class="section-with-bg wow fadeInUp">
+
+            <div class="container">
+                <div class="section-header">
+                    <h2>Patrocinadores Diamante</h2>
+                </div>
+                <div class="row no-gutters clearfix" style="justify-content: center;">
+                    {% for a in articles %}
+                        {% if a.category == "diamante" and a.date.year == SITEYEAR %}
+                        <div class="col-lg-3 supporters-wrap col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a  href="{{a.link}}" 
+                                    data-toggle="tooltip"
+                                    data-placement="top"
+                                    title="{{a.subtitle}}"
+                                    target="_blank">
+                                    <img src="{{ SITEURL }}{{a.imagem}}" class="img-fluid" alt="{{a.imagem_alt}}">
+                                </a>
+                            </div>
+                        </div>
+                        {%endif%}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="container">
+                <div class="section-header">
+                    <h2>Patrocinadores Ouro</h2>
+                </div>
+                <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
+                    {% for a in articles %}
+                        {% if a.category == "ouro" and a.date.year == SITEYEAR %}
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a  href="{{a.link}}" 
+                                    data-toggle="tooltip"
+                                    data-placement="top"
+                                    title="{{a.subtitle}}"
+                                    target="_blank">
+                                    <img src="{{ SITEURL }}{{a.imagem}}" class="img-fluid" alt="{{a.imagem_alt}}">
+                                </a>
+                            </div>
+                        </div>
+                        {%endif%}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="container">
+                <div class="section-header">
+                    <h2>Patrocinadores Prata</h2>
+                </div>
+                <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
+                    {% for a in articles %}
+                        {% if a.category == "prata" and a.date.year == SITEYEAR  %}
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a  href="{{a.link}}" 
+                                    data-toggle="tooltip"
+                                    data-placement="top"
+                                    title="{{a.subtitle}}"
+                                    target="_blank">
+                                    <img src="{{ SITEURL }}{{a.imagem}}" class="img-fluid" alt="{{a.imagem_alt}}">
+                                </a>
+                            </div>
+                        </div>
+                        {%endif%}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="container">
+                <div class="section-header">
+                    <h2>Apoiadores</h2>
+                </div>
+                <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
+                    {% for a in articles %}
+                        {% if a.category == "apoiadores" and a.date.year == SITEYEAR  %}
+                        <div class="col-lg-3 col-md-4 col-xs-6">
+                            <div class="supporter-logo">
+                                <a  href="{{a.link}}" 
+                                    data-toggle="tooltip"
+                                    data-placement="top"
+                                    title="{{a.subtitle}}"
+                                    target="_blank">
+                                    <img src="{{ SITEURL }}{{a.imagem}}" class="img-fluid" alt="{{a.imagem_alt}}">
+                                </a>
+                            </div>
+                        </div>
+                        {%endif%}
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!--==========================
+        Subscribe Section
+        ============================-->
+        <section id="subscribe">
+            <div class="container wow fadeInUp">
+                <div class="section-header">
+                    <h2>Código de Conduta</h2>
+                    <p>
+                        Queremos que todas as pessoas sejam aceitas e bem-vindas. Portanto, solicitamos que leiam nosso
+                        <a href="https://python.org.br/cdc/" target="_blank"><strong>Código de Conduta</strong></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--==========================
+        Contact Section
+        ============================-->
+        <section id="contact" class="section-bg wow fadeInUp">
+
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Contato</h2>
+                    <p>Para Patrocinios ou duvidas sobre o evento entre em contato conosco</p>
+                </div>
+
+                <div class="row contact-info">
+
+                    <div class="col-md-4">
+                        <div class="contact-address">
+                            <i class="ion-ios-location-outline"></i>
+                            <h3>Telegram</h3>
+                            <p><a href="https://t.me/SergioCasas">Sergio Casas</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-email">
+                            <i class="ion-ios-email-outline"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:pythonsul@gmail.com">pythonsul@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- #contact -->
+
+    </main>
+
+
+    <!--==========================
+        Footer
+    ============================-->
+    {% include 'footer.html'%}
+
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="{{ SITEURL }}/theme/lib/jquery/jquery.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/easing/easing.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/superfish/hoverIntent.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/superfish/superfish.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/wow/wow.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/venobox/venobox.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="{{ SITEURL }}/theme/js/main.js"></script>
+</body>
+
+</html>
