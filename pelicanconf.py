@@ -56,5 +56,5 @@ EVENTO = {
     "data_completa": "22 e 23 de Setembro, das 08:30 as 18:00",
     "local": "UNIVALI campus Balneário Camboriú, Santa Catarina",
     "call_for_papers_link": 'https://docs.google.com/forms/d/e/1FAIpQLScME6nnUgllIcuq0FDVpdoqtp5-Aft8xbBW1q5GOl_HyDn44w/viewform',
-    "inscricao_link": '',
+    "inscricao_link": 'https://www.eventbrite.com.br/e/python-sul-2023-balneario-camboriu-sc-tickets-655990835247',
 }
