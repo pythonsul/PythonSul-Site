@@ -122,7 +122,10 @@
 
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Dia 11/03/2023</a>
+                        <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Dia 22/09/2023</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Dia 23/09/2023</a>
                     </li>
                 </ul>
 
@@ -132,7 +135,7 @@
                     <!-- Schdule Day 1 -->
                     <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
                         {% for a in articles %}
-                            {% if a.category == "horarios" and a.date.year == SITEYEAR %}
+                            {% if a.category == "horarios" and a.date.year == SITEYEAR and a.date.day == 22 %}
                             <a href="{{a.url}}">
                                 <div class="row schedule-item">
                                     <div class="col-md-2">
@@ -145,6 +148,23 @@
                                 </div>
                             </a>
                             {% endif %}
+                        {% endfor %}
+                    </div> 
+                    <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
+                        {% for a in articles %}
+                        {% if a.category == "horarios" and a.date.year == SITEYEAR and a.date.day == 23 %}
+                        <a href="{{a.url}}">
+                            <div class="row schedule-item">
+                                <div class="col-md-2">
+                                    <time><strong>{{a.date.strftime('%H:%M') }}</strong></time>
+                                </div>
+                                <div class="col-md-10">
+                                    <h4>{{a.title}}</h4>
+                                    <p>{{a.author}}</p>
+                                </div>
+                            </div>
+                        </a>
+                        {% endif %}
                         {% endfor %}
                     </div> 
                 </div>
