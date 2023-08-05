@@ -117,4 +117,4 @@ def gh_pages(c):
     preview(c)
     c.run('ghp-import -b {github_pages_branch} '
           '-m {commit_message} '
-          '{deploy_path} -p -c pycaxias.com.br'.format(**CONFIG))
+          '{deploy_path} -p -c pythonsul.dev'.format(**CONFIG))
