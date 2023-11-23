@@ -27,7 +27,9 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 # OLD_EVENTS
-OLD_EVENTS = ()
+OLD_EVENTS = (
+    ('2023','/2023'),
+)
 
 MENU = (
     ('#intro','Início', True),
