@@ -54,9 +54,9 @@ SITE_META_DESCRIPTION = "Evento da comunidade Python do sul do pais, com intuito
 #RELATIVE_URLS = True
 
 EVENTO = {
-    "data": "22/09/2023 até 23/09/2023",
-    "data_completa": "22 e 23 de Setembro, das 08:30 as 18:00",
-    "local": "UNIVALI campus Balneário Camboriú, Santa Catarina",
-    "call_for_papers_link": 'https://docs.google.com/forms/d/e/1FAIpQLScME6nnUgllIcuq0FDVpdoqtp5-Aft8xbBW1q5GOl_HyDn44w/viewform',
-    "inscricao_link": 'https://www.eventbrite.com.br/e/python-sul-2023-balneario-camboriu-sc-tickets-655990835247',
+    "data": "2024",
+    "data_completa": "2024",
+    "local": "Florianopolis",
+    "call_for_papers_link": '',
+    "inscricao_link": '',
 }
