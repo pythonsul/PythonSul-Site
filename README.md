@@ -1,7 +1,7 @@
 Python Sul
 ============
 
-[PythonSul.dev](https://pythonsul.dev/)
+[sul.python.org.br](https://sul.python.org.br)
 
 Repositorio do site Python sul 
 
