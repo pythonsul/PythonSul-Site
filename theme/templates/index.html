@@ -14,11 +14,7 @@
     ============================-->
     <section id="intro">
         <div class="intro-container wow fadeIn">
-            <h1 class="mb-4 pb-0">
-                <span>Python Sul {{SITEYEAR}}</span> <!-- style="display: none;" -->
-            </h1>
-            <p class="mb-1 pb-0">{{EVENTO.data}}</p>
-            <p class="mb-4 pb-0"><small>{{EVENTO.local}}</small></p>
+            <img src="{{ SITEURL }}/theme/img/logo-main.png" alt="logo-{{SITENAME}}" title="logo-{{SITENAME}}" class="img-fluid">
         </div>
     </section>
 
@@ -55,217 +51,6 @@
         </section>
 
         <!--==========================
-        Inscricao Section
-        ============================-->
-        <section id="inscricao" class="pt-4 mt-4 wow fadeInUp">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Inscrição</h2>
-                    {% if EVENTO.inscricao_link %}
-                    <p>
-                        <a href="{{EVENTO.inscricao_link}}" target="_blank">
-                            [Inscreva-se Agora]
-                        </a>
-                    </p>
-                    {% endif %}
-                </div>
-            </div>
-        </section>
-        <!-- ==========================
-      Speakers Section
-    ============================ -->
-        <section id="speakers" class="wow fadeInUp">
-            <div class="container">
-                {% if EVENTO.call_for_papers_link %}
-                <!-- <div class="section-header">
-                    <h2>Palestrantes</h2>
-                    <p>Venha nos ajudar a fazer um evento incrível!</p>
-                    <p>
-                        <a href="{{EVENTO.call_for_papers_link}}" target="_blank">[call for papers]</a>
-                    </p>
-                </div> -->
-                {% endif %}
-                <div class="row">
-                    {% for a in articles %}
-                        {% if a.category == "Palestrantes" and a.date.year == SITEYEAR %}
-                        <div class="col-lg-4 col-md-6">
-                            <div class="speaker">
-                                <img src="{{ SITEURL }}/theme/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
-                                <div class="details">
-                                    <h3><a href="speaker-details.html">{{a.palestrante}}</a></h3>
-                                    <p>{{a.palestra}}</p>
-                                    <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {% endif %}
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
-
-        <!--==========================
-      Schedule Section
-    ============================-->
-        <section id="schedule" class="section-with-bg">
-            <div class="container wow fadeInUp">
-                <div class="section-header">
-                    <h2>Agenda</h2>
-                    <p>Incentivamos a todos a doarem 2kg de alimentos não perecíveis</p>
-                </div>
-
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Dia 22/09/2023</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Dia 23/09/2023</a>
-                    </li>
-                </ul>
-
-                <h3 class="sub-heading">Grade sujeita a alterações!</h3>
-
-                <div class="tab-content row justify-content-center">
-                    <!-- Schdule Day 1 -->
-                    <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-                        {% for a in articles %}
-                            {% if a.category == "horarios" and a.date.year == SITEYEAR and a.date.day == 22 %}
-                            <a href="{{a.url}}">
-                                <div class="row schedule-item">
-                                    <div class="col-md-2">
-                                        <time><strong>{{a.date.strftime('%H:%M') }}</strong></time>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <h4>{{a.title}}</h4>
-                                        <p>{{a.author}}</p>
-                                    </div>
-                                </div>
-                            </a>
-                            {% endif %}
-                        {% endfor %}
-                    </div> 
-                    <div role="tabpanel" class="col-lg-9 tab-pane fade" id="day-2">
-                        {% for a in articles %}
-                        {% if a.category == "horarios" and a.date.year == SITEYEAR and a.date.day == 23 %}
-                        <a href="{{a.url}}">
-                            <div class="row schedule-item">
-                                <div class="col-md-2">
-                                    <time><strong>{{a.date.strftime('%H:%M') }}</strong></time>
-                                </div>
-                                <div class="col-md-10">
-                                    <h4>{{a.title}}</h4>
-                                    <p>{{a.author}}</p>
-                                </div>
-                            </div>
-                        </a>
-                        {% endif %}
-                        {% endfor %}
-                    </div> 
-                </div>
-
-        </section>
-
-        <!--==========================
-      Sponsors Section
-    ============================-->
-        <section id="supporters" class="section-with-bg wow fadeInUp">
-
-            <div class="container">
-                <div class="section-header">
-                    <h2>Patrocinadores Diamante</h2>
-                </div>
-                <div class="row no-gutters clearfix" style="justify-content: center;">
-                    {% for a in articles %}
-                        {% if a.category == "diamante" and a.date.year == SITEYEAR %}
-                        <div class="col-lg-3 supporters-wrap col-md-4 col-xs-6">
-                            <div class="supporter-logo">
-                                <a  href="{{a.link}}" 
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title="{{a.subtitle}}"
-                                    target="_blank">
-                                    <img src="{{ SITEURL }}{{a.imagem}}" class="img-fluid" alt="{{a.imagem_alt}}">
-                                </a>
-                            </div>
-                        </div>
-                        {%endif%}
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="container">
-                <div class="section-header">
-                    <h2>Patrocinadores Ouro</h2>
-                </div>
-                <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
-                    {% for a in articles %}
-                        {% if a.category == "ouro" and a.date.year == SITEYEAR %}
-                        <div class="col-lg-3 col-md-4 col-xs-6">
-                            <div class="supporter-logo">
-                                <a  href="{{a.link}}" 
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title="{{a.subtitle}}"
-                                    target="_blank">
-                                    <img src="{{ SITEURL }}{{a.imagem}}" class="img-fluid" alt="{{a.imagem_alt}}">
-                                </a>
-                            </div>
-                        </div>
-                        {%endif%}
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="container">
-                <div class="section-header">
-                    <h2>Patrocinadores Prata</h2>
-                </div>
-                <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
-                    {% for a in articles %}
-                        {% if a.category == "prata" and a.date.year == SITEYEAR  %}
-                        <div class="col-lg-3 col-md-4 col-xs-6">
-                            <div class="supporter-logo">
-                                <a  href="{{a.link}}" 
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title="{{a.subtitle}}"
-                                    target="_blank">
-                                    <img src="{{ SITEURL }}{{a.imagem}}" class="img-fluid" alt="{{a.imagem_alt}}">
-                                </a>
-                            </div>
-                        </div>
-                        {%endif%}
-                    {% endfor %}
-                </div>
-            </div>
-            <div class="container">
-                <div class="section-header">
-                    <h2>Apoiadores</h2>
-                </div>
-                <div class="row no-gutters supporters-wrap clearfix" style="justify-content: center;">
-                    {% for a in articles %}
-                        {% if a.category == "apoiadores" and a.date.year == SITEYEAR  %}
-                        <div class="col-lg-3 col-md-4 col-xs-6">
-                            <div class="supporter-logo">
-                                <a  href="{{a.link}}" 
-                                    data-toggle="tooltip"
-                                    data-placement="top"
-                                    title="{{a.subtitle}}"
-                                    target="_blank">
-                                    <img src="{{ SITEURL }}{{a.imagem}}" class="img-fluid" alt="{{a.imagem_alt}}">
-                                </a>
-                            </div>
-                        </div>
-                        {%endif%}
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
-
-        <!--==========================
         Subscribe Section
         ============================-->
         <section id="subscribe">
@@ -298,14 +83,14 @@
                         <div class="contact-address">
                             <i class="ion-ios-location-outline"></i>
                             <h3>Telegram</h3>
-                            <p><a href="https://t.me/SergioCasas">Sergio Casas</a></p>
+                            <p><a href="https://t.me/PythonSulBR">Canal Python Sul</a></p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="contact-email">
                             <i class="ion-ios-email-outline"></i>
                             <h3>Email</h3>
-                            <p><a href="mailto:pythonsul@gmail.com">pythonsul@gmail.com</a></p>
+                            <p><a href="mailto:sul@python.org.br">sul@python.org.br</a></p>
                         </div>
                     </div>
 

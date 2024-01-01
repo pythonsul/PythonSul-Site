@@ -34,9 +34,6 @@ OLD_EVENTS = (
 MENU = (
     ('#intro','Início', True),
     ('#about','Sobre', False),
-    ('#schedule','Agenda', False),
-    ('#inscricao','Inscrição', False),
-    ('#supporters','Patrocinadores', False),
     ('#contact','Contato', False),
 )
 
