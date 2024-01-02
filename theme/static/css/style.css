@@ -1305,7 +1305,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-info i {
-  font-size: 48px;
+  font-size: 20px;
   display: inline-block;
   margin-bottom: 10px;
   color: var(--base-color);
