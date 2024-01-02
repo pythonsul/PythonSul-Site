@@ -41,6 +41,7 @@ MENU = (
 SOCIAL = {
     'instagram':'https://www.instagram.com/pythonsul',
     'facebook':'https://www.facebook.com/pythonsul',
+    'twitter': 'https://twitter.com/PythonSul',
 }
 
 DEFAULT_PAGINATION = False
