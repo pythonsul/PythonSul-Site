@@ -9,12 +9,12 @@
 # General
 --------------------------------------------------------------*/
 :root {
-  --base-color: #ffc100;
+  --base-color: #BD651D;
 }
 
 
 body {
-  background: #fff;
+  background: #fef7e454;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
 }
@@ -479,7 +479,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 
-#intro:before {
+/* #intro:before {
   background: url("../img/bg-main.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -491,7 +491,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 0;
   left: 0;
   right: 0;
-}
+} */
 
 #intro .intro-container {
   position: absolute;
@@ -663,15 +663,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/about-bg.jpg");
-  background-size: cover;
+  background-color: #232643;
   overflow: hidden;
   position: relative;
   color: #fff;
-  padding: 60px 0 40px 0;
+  padding: 0px 0 40px 0;
 }
 
-#about:before {
+/* #about:before {
   content: "";
   background: rgba(13, 20, 41, 0.8);
   position: absolute;
@@ -679,13 +678,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 0;
   left: 0;
   right: 0;
-}
+} */
 
 #about h2 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 #about h3 {
@@ -697,9 +698,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about p {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 20px;
   color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -1167,21 +1171,154 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #subscribe {
   padding: 60px;
-  background: url(../img/subscribe-bg.jpg) center center no-repeat;
+  background: #486283 !important;
   background-size: cover;
   overflow: hidden;
   position: relative;
 }
 
-#subscribe:before {
-  content: "";
-  background: rgba(6, 12, 34, 0.6);
+#pre-subscribe {
+  height: 100% !important;
+        width: 100% !important;
+}
+
+
+#pre-subscribe > .container {
+  background-color: #232643 !important;
+  height: 100px !important;
+  padding: 0px !important;
+  visibility: visible;
+  animation-name: fadeInUp;
+  margin: 0px 0px 0px 0px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#pre-subscribe > .container > .section-header{
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#pre-subscribe > .container > .section-header > .ocean{
+  height: 75px !important;
+}
+
+#pre-subscribe > .container > .section-header > .ocean > .wave {
+  -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  background-color: #486283;
+  animation: wave 40s -1s linear infinite;
+  opacity: 1;
+  height: 100% !important;
+}
+
+
+#pre-contract {
+  height: 100% !important;
+        width: 100% !important;
+}
+
+
+#pre-contract > .container {
+  background-color: #486283 !important;
+  height: 100px !important;
+  padding: 0px !important;
+  visibility: visible;
+  animation-name: fadeInUp;
+  margin: 0px 0px 0px 0px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#pre-contract > .container > .section-header{
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#pre-contract > .container > .section-header > .ocean{
+  height: 75px !important;
+}
+
+#pre-contract > .container > .section-header > .ocean > .wave {
+  -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  background-color: #fefaf1;
+  animation: wave 35s -1s linear infinite;
+  opacity: 1;
+  height: 100% !important;
+}
+
+/* for the pen */
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background-color: #fef7e454;
+}
+
+/* waves */
+.ocean {
+  height: 300px; /* change the height of the waves here */
+  width: 100%;
   position: absolute;
   bottom: 0;
-  top: 0;
   left: 0;
   right: 0;
+  overflow: hidden;
 }
+
+.wave {
+  -webkit-mask:  url("../img/ondinha-redonda.svg") repeat-x;
+  mask:  url("../img/ondinha-redonda.svg") repeat-x;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: #1F284E;
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave 10s -2s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.wave:nth-of-type(1) {
+  -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  background-color: #486283;
+  margin-top:0px;
+  animation: wave 40s linear reverse infinite;
+  opacity: 1;
+}
+
+.wave:nth-of-type(2) {
+  background-color: #b3c0d4;
+  margin-top:50px;
+  animation: wave 35s linear reverse infinite;
+  opacity: 1;
+}
+
+.wave:nth-of-type(3) {
+  -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  background-color: #c1d1e8;
+  margin-top:100px;
+  animation: wave 30s  linear infinite;
+  opacity: 1;
+}
+
+.wave:nth-of-type(4) {
+  background-color: #232643;
+  margin-top:150px;
+  animation: wave 25s  linear reverse infinite;
+  opacity: 1;
+}
+
+
+@keyframes wave {
+    50% {transform: translateX(-25%);}
+}
+
+
+
 
 #subscribe .section-header h2,
 #subscribe p {
@@ -1407,11 +1544,52 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top {
-  background: #040919;
-  padding: 60px 0 30px 0;
+  padding: 10px 0 30px 0;
+  background: url(../img/footer.png) center center repeat;
+  background-color: #FEF7E4;
+  background-size: contain;
+  overflow: hidden;
+  position: relative;
+}
+.footer-top .container {
+  opacity: 0.95;
+  background-color: #FEF7E4;
+  padding: 25px 15px 0px 15px;
+}
+
+
+.pre-image {
+  position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+}
+.pre-image > img {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0px;
 }
 
 #footer .footer-top .footer-info {
+  min-height: 250px;
   margin-bottom: 30px;
 }
 
@@ -1426,8 +1604,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-info img {
-  height: 40px;
-  margin-bottom: 10px;
+  max-width: 40%;
+  margin: 0px;
 }
 
 #footer .footer-top .footer-info p {
@@ -1461,11 +1639,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .footer-top h4 {
   font-size: 14px;
   font-weight: bold;
-  color: #fff;
+  color: #346D9A;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
   border-bottom: 2px solid var(--base-color);
+}
+
+.footer-top p {
+  color: #346D9A;
+
 }
 
 #footer .footer-top .footer-links {
@@ -1485,7 +1668,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-links ul li {
-  border-bottom: 1px solid #262c44;
+  border-bottom: 1px solid var(--base-color);
   padding: 10px 0;
 }
 
@@ -1494,7 +1677,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #eee;
+  color: #346D9A;
 }
 
 #footer .footer-top .footer-links ul a:hover {
