@@ -1213,13 +1213,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-#pre-contract {
+#pre-contact {
   height: 100% !important;
         width: 100% !important;
 }
 
 
-#pre-contract > .container {
+#pre-contact > .container {
   background-color: #486283 !important;
   height: 100px !important;
   padding: 0px !important;
@@ -1230,16 +1230,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   max-width: 100% !important;
 }
 
-#pre-contract > .container > .section-header{
+#pre-contact > .container > .section-header{
   height: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
 }
-#pre-contract > .container > .section-header > .ocean{
+#pre-contact > .container > .section-header > .ocean{
   height: 75px !important;
 }
 
-#pre-contract > .container > .section-header > .ocean > .wave {
+#pre-contact > .container > .section-header > .ocean > .wave {
   -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
   mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
   background-color: #fefaf1;
