@@ -1545,7 +1545,7 @@ html, body {
 
 #footer .footer-top {
   padding: 10px 0 30px 0;
-  background: url(../img/footer.png) center center repeat;
+  background: url(../img/footer.svg) center center repeat;
   background-color: #FEF7E4;
   background-size: contain;
   overflow: hidden;
@@ -1636,10 +1636,10 @@ html, body {
   color: #fff;
 }
 
-#footer .footer-top h4 {
+#footer .footer-top h1 {
   font-size: 14px;
   font-weight: bold;
-  color: #346D9A;
+  color: #232643;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
@@ -1647,7 +1647,7 @@ html, body {
 }
 
 .footer-top p {
-  color: #346D9A;
+  color: #232643;
 
 }
 
@@ -1677,7 +1677,7 @@ html, body {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #346D9A;
+  color: #222636;
 }
 
 #footer .footer-top .footer-links ul a:hover {
