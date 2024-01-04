@@ -5,7 +5,7 @@ from decouple import config
 
 AUTHOR = 'Python Sul'
 
-SITENAME = 'Python Sul'
+SITENAME = 'Python Sul - 2024'
 SITEYEAR = 2024
 
 SITEURL = config('SITE_URL', default='/')
