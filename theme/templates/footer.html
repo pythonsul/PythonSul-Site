@@ -9,7 +9,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Site Map</h4>
+                    <h1>Site Map</h1>
                     <ul>
                         {% for tag, text, active in MENU %}
                             <li><i class="fa fa-angle-right"></i><a href="{{ SITEURL }}{{tag}}">{{text}}</a></li>
@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Anos Anteriores</h4>
+                    <h1>Anos Anteriores</h1>
                     <ul>
                         {% for ano, link in OLD_EVENTS %}
                         <li><i class="fa fa-angle-right"></i> <a href="{{link}}" target="_blank" >{{ano}}</a></li>
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-contact">
-                    <h4>Contato</h4>
+                    <h1>Contato</h1>
                     <p>
                         <strong>Email:</strong>
                         <a href="mailto:sul@python.org.br">sul@python.org.br</a>
@@ -38,18 +38,12 @@
                     </p>
 
                     <div class="social-links">
-                        {% if SOCIAL.twitter %}
-                        <a href="{{SOCIAL.twitter}}" target="_blank" class="twitter"><i
-                                class="fa fa-twitter"></i></a>
-                        {% endif %}
-                        {% if SOCIAL.facebook %}
-                        <a href="{{SOCIAL.facebook}}" target="_blank" class="facebook"><i
-                                class="fa fa-facebook"></i></a>
-                        {% endif %}
-                        {% if SOCIAL.instagram %}
-                        <a href="{{SOCIAL.instagram}}" class="instagram" target="_blank" class="instagram"><i
-                                class="fa fa-instagram"></i></a>
-                        {% endif %}
+                        
+                        {% for site, link in SOCIAL %}
+                            <a alt="Link para o {{site}} da Python Sul" href="{{link}}" target="_blank" class="{{site}}">
+                                <i class="fa fa-{{site}}"></i>
+                            </a>
+                        {% endfor %}
                     </div>
 
                 </div>

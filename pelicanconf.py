@@ -38,11 +38,11 @@ MENU = (
 )
 
 # Social widget
-SOCIAL = {
-    'instagram':'https://www.instagram.com/pythonsul',
-    'facebook':'https://www.facebook.com/pythonsul',
-    'twitter': 'https://twitter.com/PythonSul',
-}
+SOCIAL = (
+    ('instagram','https://www.instagram.com/pythonsul'),
+    ('twitter', 'https://twitter.com/PythonSul'),
+    ('telegram', 'https://t.me/PythonSulBR'),
+)
 
 DEFAULT_PAGINATION = False
 SITE_META_KEYWORDS = f"Python Sul {SITEYEAR}, evento python, python, pythonsul, comunidade python, python rio grande do sul, comunidade"
