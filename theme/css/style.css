@@ -1545,7 +1545,7 @@ html, body {
 
 #footer .footer-top {
   padding: 10px 0 30px 0;
-  background: url(../img/footer.svg) center center repeat;
+  background: url(../img/footer.webp) center center repeat;
   background-color: #FEF7E4;
   background-size: contain;
   overflow: hidden;
@@ -1725,6 +1725,10 @@ html, body {
 #footer .credits {
   text-align: center;
   font-size: 13px;
+  color: #ddd;
+}
+
+#footer .credits a {
   color: #ddd;
 }
 
