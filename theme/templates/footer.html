@@ -40,7 +40,7 @@
                     <div class="social-links">
                         
                         {% for site, link in SOCIAL %}
-                            <a alt="Link para o {{site}} da Python Sul" href="{{link}}" target="_blank" class="{{site}}">
+                            <a aria-label="Link para o {{site}} da Python Sul" href="{{link}}" target="_blank" class="{{site}}">
                                 <i class="fa fa-{{site}}"></i>
                             </a>
                         {% endfor %}
