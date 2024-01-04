@@ -1173,9 +1173,94 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 
+<<<<<<< Updated upstream
 #subscribe:before {
   content: "";
   background: rgba(6, 12, 34, 0.6);
+=======
+#pre-subscribe {
+  height: 100% !important;
+        width: 100% !important;
+}
+
+
+#pre-subscribe > .container {
+  background-color: #232643 !important;
+  height: 100px !important;
+  padding: 0px !important;
+  visibility: visible;
+  animation-name: fadeInUp;
+  margin: 0px 0px 0px 0px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#pre-subscribe > .container > .section-header{
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#pre-subscribe > .container > .section-header > .ocean{
+  height: 75px !important;
+}
+
+#pre-subscribe > .container > .section-header > .ocean > .wave {
+  -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  background-color: #486283;
+  animation: wave 40s -1s linear infinite;
+  opacity: 1;
+  height: 100% !important;
+}
+
+
+#pre-contact {
+  height: 100% !important;
+        width: 100% !important;
+}
+
+
+#pre-contact > .container {
+  background-color: #486283 !important;
+  height: 100px !important;
+  padding: 0px !important;
+  visibility: visible;
+  animation-name: fadeInUp;
+  margin: 0px 0px 0px 0px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#pre-contact > .container > .section-header{
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#pre-contact > .container > .section-header > .ocean{
+  height: 75px !important;
+}
+
+#pre-contact > .container > .section-header > .ocean > .wave {
+  -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  background-color: #fefaf1;
+  animation: wave 35s -1s linear infinite;
+  opacity: 1;
+  height: 100% !important;
+}
+
+/* for the pen */
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background-color: #fef7e454;
+}
+
+/* waves */
+.ocean {
+  height: 300px; /* change the height of the waves here */
+  width: 100%;
+>>>>>>> Stashed changes
   position: absolute;
   bottom: 0;
   top: 0;

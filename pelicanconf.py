@@ -33,8 +33,8 @@ OLD_EVENTS = (
 
 MENU = (
     ('#intro','Início', True),
-    ('#about','Sobre', False),
-    ('#contact','Contato', False),
+    ('#pre-about','Sobre', False),
+    ('#pre-contact','Contato', False),
 )
 
 # Social widget

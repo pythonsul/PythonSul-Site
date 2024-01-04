@@ -93,7 +93,7 @@ jQuery(document).ready(function( $ ) {
   $('[data-toggle="tooltip"]').tooltip()
   
   // Smooth scroll for the menu and links with .scrollto classes
-  $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
+  $('.nav-menu a, #mobile-nav a, .scrollto, .footer-links a').on('click', function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
@@ -115,7 +115,6 @@ jQuery(document).ready(function( $ ) {
           $('.nav-menu .menu-active').removeClass('menu-active');
           $(this).closest('li').addClass('menu-active');
         }
-
         if ($('body').hasClass('mobile-nav-active')) {
           $('body').removeClass('mobile-nav-active');
           $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');

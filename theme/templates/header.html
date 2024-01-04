@@ -7,9 +7,9 @@
             <ul class="nav-menu">
                 {% for tag, text, active in MENU %}
                     {% if active %}
-                    <li class="menu-active"><a href="{{tag}}">{{text}}</a></li>
+                    <li class="menu-active"><a href="{{ SITEURL }}{{tag}}">{{text}}</a></li>
                     {% else %}
-                    <li><a href="{{tag}}">{{text}}</a></li>
+                    <li><a href="{{ SITEURL }}{{tag}}">{{text}}</a></li>
                     {% endif %}
                 {% endfor %}
                 {% if EVENTO.inscricao_link %}

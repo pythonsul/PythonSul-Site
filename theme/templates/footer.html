@@ -10,7 +10,7 @@
                     <h4>Site Map</h4>
                     <ul>
                         {% for tag, text, active in MENU %}
-                            <li><i class="fa fa-angle-right"></i> <a href="{{tag}}">{{text}}</a></li>
+                            <li><i class="fa fa-angle-right"></i><a href="{{ SITEURL }}{{tag}}">{{text}}</a></li>
                         {% endfor %}
                         {% if INSCRICAO_LINK %}
                             <li class="buy-tickets"><i class="fa fa-angle-right"></i><a href="{{INSCRICAO_LINK}}" target="_blank">Inscrever-se</a></li>
