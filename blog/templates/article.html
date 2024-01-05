@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-{% include 'head.html' with context %}
+    {% include 'head.html' %}
 
-<body>
-    {% include 'header_fixed.html' %}
-    <main id="main" class="main-page">
-        <!--==========================
-          Speaker Details Section
-        ============================-->
-        <section id="speakers-details" class="wow fadeIn">
-          <div class="container">
-            <div class="section-header">
-              <h2>{{article.title}}</h2>
-            </div>
-            <div class="row">
-              <img src="{{ SITEURL }}/theme/img/palestrantes/{{article.image}}" class="img-fluid">
-            </div>
-            <div class="row">
-                {{article.content}}
-            </div>
-          </div>
+
+    <body>
+
+    <style>
+        :root {
+            background-color: red !important;
+            background: url("{{ SITEURL }}/theme/img/footer.webp") !important;
+        }
+    </style>
+        {% include 'header.html'%}
     
+        
+        <section id="intro-blog">
+            <div class="intro-container-blog" style="margin-top: 100px;">
+                <div class="container">
+                    <div class="row">
+                        <h1>{{ article.title }}</h1>
+                    </div>
+                    <div class="row">
+                        <img src="{{ SITEURL }}{{ article.image }}"/>
+                    </div>
+
+                    <div class="row">
+                        <p>{{ article.content }}</p>
+                    </div>
+            
+                </div>
+            </div>
         </section>
-    
-      </main>
-
     <!--==========================
         Footer
     ============================-->
@@ -45,6 +51,6 @@
 
     <!-- Template Main Javascript File -->
     <script src="{{ SITEURL }}/theme/js/main.js"></script>
-</body>
+    </body>
 
 </html>

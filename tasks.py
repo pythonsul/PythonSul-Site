@@ -12,6 +12,7 @@ from pelican.server import ComplexHTTPRequestHandler, RootedHTTPServer
 from pelican.settings import DEFAULT_CONFIG, get_settings_from_file
 
 SETTINGS_FILE_BASE = 'pelicanconf.py'
+SETTINGS_PUBLISH =  'publishconf.py'
 SETTINGS = {}
 SETTINGS.update(DEFAULT_CONFIG)
 LOCAL_SETTINGS = get_settings_from_file(SETTINGS_FILE_BASE)
@@ -19,7 +20,7 @@ SETTINGS.update(LOCAL_SETTINGS)
 
 CONFIG = {
     'settings_base': SETTINGS_FILE_BASE,
-    'settings_publish': 'publishconf.py',
+    'settings_publish': SETTINGS_PUBLISH,
     # Output path. Can be absolute or relative to tasks.py. Default: 'output'
     'deploy_path': SETTINGS['OUTPUT_PATH'],
     # Github Pages configuration
@@ -39,19 +40,20 @@ def clean(c):
 @task
 def build(c):
     """Build local version of site"""
-    c.run('pelican -t theme -s {settings_base}'.format(**CONFIG))
+    c.run('pelican -t site -s {settings_base}'.format(**CONFIG))
+    move_blog_to_output(c)
     move_old_to_output()
     move_cname()
 
 @task
 def rebuild(c):
     """`build` with the delete switch"""
-    c.run('pelican -d -t theme -s {settings_base}'.format(**CONFIG))
+    c.run('pelican -d -t site -s {settings_base}'.format(**CONFIG))
 
 @task
 def regenerate(c):
     """Automatically regenerate site upon file modification"""
-    c.run('pelican -r -t theme -s {settings_base}'.format(**CONFIG))
+    c.run('pelican -r -t site -s {settings_base}'.format(**CONFIG))
 
 @task
 def serve(c):
@@ -69,6 +71,15 @@ def serve(c):
     server.serve_forever()
 
 @task
+def move_blog_to_output(c):
+    """generate old year of a master branch"""
+    folder = 'output/blog/'
+    os.environ["IS_BLOG"] = "True"
+    command = """pelican -t blog -s {settings_base} -o {folder}""".format(**CONFIG, folder=folder)
+    c.run(command)
+    del os.environ["IS_BLOG"]
+
+@task
 def reserve(c):
     """`build`, then `serve`"""
     build(c)
@@ -77,7 +88,7 @@ def reserve(c):
 @task
 def preview(c):
     """Build production version of site"""
-    c.run('pelican -t theme -s {settings_publish}'.format(**CONFIG))
+    c.run('pelican -t site -s {settings_publish}'.format(**CONFIG))
     move_old_to_output()
     move_cname()
 
@@ -109,7 +120,7 @@ def livereload(c):
 def to_old(c):
     """generate old year of a master branch"""
     folder = 'old/{}/'.format(SETTINGS.get('SITEYEAR'))
-    c.run('pelican -t theme -s {settings_base} -o {folder}'.format(**CONFIG, folder=folder))
+    c.run('pelican -t site -s {settings_base} -o {folder}'.format(**CONFIG, folder=folder))
 
 @task
 def gh_pages(c):

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    {% include 'head.html' %}
+
+
+    <body>
+        {% include 'header.html'%}
+        
+        <section id="intro-blog">
+            <div class="intro-container-blog" style="margin-top: 100px;">
+                <div class="container">
+                    <h1 style="
+                    font-weight: bold;
+                    color: #bd651d;
+                    margin-top: 120px;
+                    margin-bottom: 35px;
+                ">Veja aqui as atualizações da Python Sul</h1>
+                    <div class="row">
+                        <style>
+                            body {
+                                background-color: #356d9a24;
+                            }
+                        #intro-blog{
+                            width: 100%;
+                            background-size: cover;
+                            overflow: hidden;
+                            position: relative;
+                            margin-bottom: 20px;
+                        }
+                            .intro-container-blog .row{
+                                margin-top: 20px;
+                            }
+                            .test {
+                                display: flex;
+                                -ms-flex-wrap: wrap;
+                                flex-wrap: wrap;
+                                margin-right: -15px;
+                                margin-left: -15px;
+                            }
+                            .intro-container-blog .col-md-12 {
+                                margin-bottom: 15px;
+                            }
+                            .moldura-blog {
+                                padding: 15px;
+                                background-color: #fbf5e4;
+                                border-radius: 4px;
+                                border: 2px #bd651d;
+                                border-style: solid;
+                            }
+                            .moldura-blog:hover{
+                                padding: 15px;
+                                background-color: #e8ab78;
+                                border-radius: 4px;
+                                border: 2px #fbf5e4;
+                                border-style: solid;
+                                cursor: pointer;
+                            }
+                            .moldura-blog .info {
+                                margin-top: 20px;
+                            }
+                            .moldura-blog .info h1 {
+                                font-size: 20px !important;
+                                margin-bottom: 10px;
+                                max-height: 50px;
+                                height: 110px;
+                                overflow: hidden;
+                            }
+                            .moldura-blog .info h2 {
+                                font-size: 15px!important;
+                                margin: 5px 0;
+                                height: 110px;
+                                overflow: hidden;
+                            }
+                            
+                            .moldura-blog .info h3 {
+                                font-size: 10px!important;
+                                margin-bottom: 0px;
+                            }
+                        </style>
+                        {% for a in articles %}
+                            <a href="/blog/{{a.url}}">
+                                <div class="col-lg-4 col-md-12 moldura-blog-2">
+                                    <div class="moldura-blog">
+                                        <img style="max-width: 100%;" src="{{ SITEURL }}/theme/img/molduras-post.png" alt="Imagem do post X" title="Imagem do post X">
+                                        <div class="info">
+                                            <h1>{{a.title}}</h1>
+                                            <h2>{{a.subtitle}}</h2>
+                                            <h3>{{a.author}} - {{a.date.strftime('%H:%M') }}</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        {% endfor %}
+                        <div class="col-lg-4 col-md-12 moldura-blog-2">
+                            <div class="moldura-blog">
+                                <img style="max-width: 100%;" src="{{ SITEURL }}/theme/img/molduras-post.png" alt="Imagem do post X" title="Imagem do post X">
+                                <div class="info">
+                                    <h1>Titulo moh grandão porque a galera as vezes alopra</h1>
+                                    <h2>Titulo moh grandão também porque a galera as vezes alopra demais escrevendo o sub titulo</h2>
+                                    <h3>quem foi que escreveu - 04/01/2024</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="moldura-blog">
+                                <img style="max-width: 100%;" src="{{ SITEURL }}/theme/img/molduras-post.png" alt="Imagem do post X" title="Imagem do post X">
+                                <div class="info">
+                                    <h1>Titulo moh grandão porque a galera as vezes alopra</h1>
+                                    <h2>Titulo moh grandão também porque a galera as vezes alopra demais escrevendo o sub titulo</h2>
+                                    <h3>quem foi que escreveu - 04/01/2024</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="moldura-blog">
+                                <img style="max-width: 100%;" src="{{ SITEURL }}/theme/img/molduras-post.png" alt="Imagem do post X" title="Imagem do post X">
+                                <div class="info">
+                                    <h1>Titulo moh grandão porque a galera as vezes alopra</h1>
+                                    <h2>Titulo moh grandão também porque a galera as vezes alopra demais escrevendo o sub tituloTitulo moh grandão tambémTitulo moh grandão tambémTitulo moh grandão tambémTitulo moh grandão tambémTitulo moh grandão também porque a galera as vezes alopra demais escrevendo o sub tituloTitulo moh grandão tambémTitulo moh grandão tambémTitulo moh grandão tambémTitulo moh grandão também</h2>
+                                    <h3>quem foi que escreveu - 04/01/2024</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="moldura-blog">
+                                <img style="max-width: 100%;" src="{{ SITEURL }}/theme/img/molduras-post.png" alt="Imagem do post X" title="Imagem do post X">
+                                <div class="info">
+                                    <h1>Titulo moh grandão porque a galera as vezes alopra</h1>
+                                    <h2>Titulo moh grandão também porque a galera as vezes alopra demais escrevendo o sub titulo</h2>
+                                    <h3>quem foi que escreveu - 04/01/2024</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="moldura-blog">
+                                <img style="max-width: 100%;" src="{{ SITEURL }}/theme/img/molduras-post.png" alt="Imagem do post X" title="Imagem do post X">
+                                <div class="info">
+                                    <h1>Titulo moh grandão porque a galera as vezes alopra</h1>
+                                    <h2>Titulo moh grandão também porque a galera as vezes alopra demais escrevendo o sub titulo</h2>
+                                    <h3>quem foi que escreveu - 04/01/2024</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+
+    <!--==========================
+        Footer
+    ============================-->
+    {% include 'footer.html'%}
+
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="{{ SITEURL }}/theme/lib/jquery/jquery.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/easing/easing.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/superfish/hoverIntent.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/superfish/superfish.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/wow/wow.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/venobox/venobox.min.js"></script>
+    <script src="{{ SITEURL }}/theme/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="{{ SITEURL }}/theme/js/main.js"></script>
+    </body>
+
+</html>
