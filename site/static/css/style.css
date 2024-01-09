@@ -1859,10 +1859,9 @@ html, body {
   padding: 10px 0px 0px 0px;
 }
 
-#footer  {
+#footer {
   padding: 0px !important;
   opacity: 0.9;
-  margin: 0px -15px -15px -15px !important;
 }
 
 .bt-sponsorship {
