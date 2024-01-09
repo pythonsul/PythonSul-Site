@@ -1,0 +1,141 @@
+
+body {
+    background-color: #356d9a24;
+}
+#intro-blog{
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.intro-container-blog .row{
+    margin-top: 20px;
+}
+.intro-container-blog .col-md-12 {
+    margin-bottom: 15px;
+}
+.moldura-blog {
+    padding: 15px;
+    background-color: #fbf5e4;
+    border-radius: 4px;
+    border: 2px #bd651d;
+    border-style: solid;
+}
+.moldura-blog:hover{
+    padding: 15px;
+    background-color: #e8ab78;
+    border-radius: 4px;
+    border: 2px #fbf5e4;
+    border-style: solid;
+    cursor: pointer;
+}
+.moldura-blog .info {
+    margin-top: 20px;
+}
+.moldura-blog .info h1 {
+    font-size: 20px !important;
+    margin-bottom: 10px;
+    max-height: 50px;
+    height: 110px;
+    overflow: hidden;
+}
+.moldura-blog .info h2 {
+    font-size: 15px!important;
+    margin: 5px 0;
+    height: 110px;
+    overflow: hidden;
+}
+
+.moldura-blog .info h3 {
+    font-size: 10px!important;
+    margin-bottom: 0px;
+}
+a {
+    text-decoration: none;
+}
+.nav-menu a {
+    color: white !important;
+}
+.nav-menu > li > a:before {
+    background-color: #202851 !important;
+}
+#header.header-scrolled, #header.header-fixed {
+    background: #bd651d;
+}
+
+#header {
+    background-color: #bd651d;
+}
+
+#container-all {
+    margin-top: 100px;
+    background-color: #fefaf1;
+    padding: 15px;
+    min-height: 100vh;
+    box-shadow: 0px 23px 150px 10px #202851;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+#footer, .footer-top {
+    background: transparent !important;
+}
+
+#intro-blog{
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    min-height: 110vh;
+}
+:root {
+    background: url("/theme/img/footer.webp") center center repeat;
+    background-size: 25% !important;
+    background-color: #fbf5e4 !important;
+}
+#footer  {
+    padding: 0px !important;
+    opacity: 0.9;
+    margin: 0px -15px -15px -15px !important;
+}
+#footer .footer-top {
+    padding: 10px 0px 0px 0px;
+}
+.nav-menu a {
+    color: white !important;
+}
+.nav-menu > li > a:before {
+    background-color: #202851 !important;
+}
+#header.header-scrolled, #header.header-fixed {
+    background: #bd651d;
+}
+#header {
+    background-color: #bd651d;
+}
+.blog-title {
+    font-weight: bold;
+    color: #202851;
+    margin: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.blog-title-container {
+    text-align: center;
+}
+.header-container-blog {
+    margin: -15px -15px 0px -15px;
+    border-radius: 10px 10px 0px 0px;
+    background-color:#E6BF89;
+}
+.footer-top .container {
+    border-radius: 0px 0px 10px 10px;
+    background-color: #e6bf89;
+}
+
+.img-blog {
+    max-width: 100%;
+    width: 100%;
+}
+p.blog-title {
+    font-weight: normal;
+}

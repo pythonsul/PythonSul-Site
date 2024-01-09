@@ -1,0 +1,54 @@
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-info">
+                    <div class="pre-image">
+                        <img class="center-block" src="{{ SITEURL }}/theme/img/logo-header.png" alt="Logo mini {{ SITENAME }}" title="Logo mini {{ SITENAME }}">
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h1>Site Map</h1>
+                    <ul>
+                        {% for tag, text, active in MENU %}
+                            <li><i class="fa fa-angle-right"></i><a href="{{ SITEURL }}{{tag}}">{{text}}</a></li>
+                        {% endfor %}
+                        {% if INSCRICAO_LINK %}
+                            <li class="buy-tickets"><i class="fa fa-angle-right"></i><a href="{{INSCRICAO_LINK}}" target="_blank">Inscrever-se</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h1>Anos Anteriores</h1>
+                    <ul>
+                        {% for ano, link in OLD_EVENTS %}
+                        <li><i class="fa fa-angle-right"></i> <a href="{{link}}" target="_blank" >{{ano}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h1>Contato</h1>
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:sul@python.org.br">sul@python.org.br</a>
+                        <br>
+                    </p>
+
+                    <div class="social-links">
+                        
+                        {% for site, link in SOCIAL %}
+                            <a aria-label="Link para o {{site}} da Python Sul" href="{{link}}" target="_blank" class="{{site}}">
+                                <i class="fa fa-{{site}}"></i>
+                            </a>
+                        {% endfor %}
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
