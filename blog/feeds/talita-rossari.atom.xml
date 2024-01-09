@@ -79,6 +79,7 @@
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Gabriel Ecker&lt;/h3&gt;
+                            &lt;br /&gt;
                             &lt;p class="blog-title"&gt;É responsável pela parte técnica da org: sites, contas, senhas e tudo o que há de bom!&lt;/p&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
@@ -91,6 +92,7 @@
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Gislaine Luciane&lt;/h3&gt;
+                            &lt;br /&gt;
                             &lt;p class="blog-title"&gt;É responsável pelo núcleo de cultura, irá apresentar Floripa na melhor forma para vocês!&lt;/p&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
@@ -103,6 +105,7 @@
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Lanusse Morais&lt;/h3&gt;
+                            &lt;br /&gt;
                             &lt;p class="blog-title"&gt;esta junto com o Calixto no financeiro e logo estará nas redes sociais.&lt;/p&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
@@ -111,10 +114,11 @@
                 &lt;div class="header-container-blog"&gt;
                     &lt;div class="row align-items-center"&gt;
                         &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                            &lt;img class="img-blog" src="/blog/static/artigos/calixto-apresentacao.webp" /&gt;
+                            &lt;img class="img-blog" src="/blog/static/artigos/calixto-noah-apresentacao.webp" /&gt;
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Rafael Calixto&lt;/h3&gt;
+                            &lt;br /&gt;
                             &lt;p class="blog-title"&gt;É responsável pelo núcleo financeiro, logo ele envia o plano de patrocínio para vocês!&lt;/p&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
@@ -127,6 +131,7 @@
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Talita Rossari (euzinha)&lt;/h3&gt;
+                            &lt;br /&gt;
                             &lt;p class="blog-title"&gt;É responsável pela parte coordenação, puxar a orelha e fazer esse evento acontecer, custe o que custar (exceto nossa saúde mental)!&lt;/p&gt;
                         &lt;/div&gt;
                     &lt;/div&gt;
