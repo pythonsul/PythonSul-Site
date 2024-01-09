@@ -139,3 +139,6 @@ a {
 p.blog-title {
     font-weight: normal;
 }
+body {
+    overflow-x: hidden;
+}
