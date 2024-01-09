@@ -109,12 +109,14 @@ jQuery(document).ready(function( $ ) {
 
         $('html, body').animate({
           scrollTop: target.offset().top - top_space
-        }, 1500, 'easeInOutExpo');
+        }, 0, 'easeInOutExpo');
 
-        if ($(this).parents('.nav-menu').length) {
-          $('.nav-menu .menu-active').removeClass('menu-active');
-          $(this).closest('li').addClass('menu-active');
-        }
+        id = $(this).attr('href');
+        parent.location.hash = id
+        $('.nav-menu .menu-active').removeClass('menu-active');
+        $('.nav-menu a[href="'+ id +'"]').first().parent().addClass('menu-active');
+
+
         if ($('body').hasClass('mobile-nav-active')) {
           $('body').removeClass('mobile-nav-active');
           $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
