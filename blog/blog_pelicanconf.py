@@ -18,5 +18,5 @@ PAGE_SAVE_AS = 'pages/{slug}.html'
 ARTICLE_URL = 'pages/{slug}.html'
 ARTICLE_SAVE_AS = 'pages/{slug}.html'
 
-STATIC_SAVE_AS = 'blog/'
-THEME_STATIC_DIR = 'blog/'
+STATIC_SAVE_AS =  '/static'
+THEME_STATIC_DIR = 'static'

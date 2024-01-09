@@ -32,7 +32,7 @@ MENU = (
     ('#intro','Início', True),
     ('#pre-about','Sobre', False),
     ('#pre-contact','Contato', False),
-    ('/blog','Blog', False),
+    # ('/blog','Blog', False),
 )
 
 # Social widget

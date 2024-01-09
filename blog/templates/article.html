@@ -4,37 +4,22 @@
 
 
     <body>
-
-    <style>
-        :root {
-            background-color: red !important;
-            background: url("{{ SITEURL }}/theme/img/footer.webp") !important;
-        }
-    </style>
         {% include 'header.html'%}
-    
-        
-        <section id="intro-blog">
-            <div class="intro-container-blog" style="margin-top: 100px;">
-                <div class="container">
-                    <div class="row">
-                        <h1>{{ article.title }}</h1>
-                    </div>
-                    <div class="row">
-                        <img src="{{ SITEURL }}{{ article.image }}"/>
-                    </div>
 
-                    <div class="row">
-                        <p>{{ article.content }}</p>
+        <div id="container-all" class="container">
+            <section id="intro-blog">
+                <div class="intro-container-blog">
+                    <div class="container container-artigo">
+                        {{article.content}}
+                        
                     </div>
-            
                 </div>
-            </div>
-        </section>
-    <!--==========================
-        Footer
-    ============================-->
-    {% include 'footer.html'%}
+            </section>
+        <!--==========================
+            Footer
+        ============================-->
+        {% include 'footer.html'%}
+    </div>
 
     <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
@@ -51,6 +36,7 @@
 
     <!-- Template Main Javascript File -->
     <script src="{{ SITEURL }}/theme/js/main.js"></script>
+    <script src="/blog/static/resizing-img.js"></script>
     </body>
 
 </html>
