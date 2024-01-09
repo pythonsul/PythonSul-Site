@@ -89,6 +89,7 @@ def reserve(c):
 def preview(c):
     """Build production version of site"""
     c.run('pelican -t site -s {settings_publish}'.format(**CONFIG))
+    move_blog_to_output(c)
     move_old_to_output()
     move_cname()
 
