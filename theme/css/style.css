@@ -1220,7 +1220,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #pre-contact > .container {
-  background-color: #486283 !important;
+  background-color: #c1d1e8 !important;
   height: 100px !important;
   padding: 0px !important;
   visibility: visible;
@@ -1862,4 +1862,59 @@ html, body {
   padding: 0px !important;
   opacity: 0.9;
   margin: 0px -15px -15px -15px !important;
+}
+
+.bt-sponsorship {
+  background-color: #bd651d;
+  border-color: #bd651d;
+  color: #fffffd;
+}
+
+.bt-sponsorship:nth-of-type(1) {
+  margin-top:10px;
+}
+
+
+
+#sponsorship {
+  padding: 60px;
+  background: #c1d1e8 !important;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#pre-sponsorship {
+  height: 100% !important;
+        width: 100% !important;
+}
+
+
+#pre-sponsorship > .container {
+  background-color: #486283 !important;
+  height: 100px !important;
+  padding: 0px !important;
+  visibility: visible;
+  animation-name: fadeInUp;
+  margin: 0px 0px 0px 0px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#pre-sponsorship > .container > .section-header{
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#pre-sponsorship > .container > .section-header > .ocean{
+  height: 75px !important;
+}
+
+#pre-sponsorship > .container > .section-header > .ocean > .wave {
+  -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  background-color: #c1d1e8;
+  animation: wave 30s -1s linear infinite;
+  opacity: 1;
+  height: 100% !important;
 }
