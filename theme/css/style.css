@@ -17,6 +17,7 @@ body {
   background: #fef7e454;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
