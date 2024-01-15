@@ -33,7 +33,7 @@ MENU = (
     ('#pre-about','Sobre', False),
     ('#pre-sponsorship','Patrocínio', False),
     ('#pre-contact','Contato', False),
-    # ('/blog','Blog', False),
+    ('/blog','Blog', False),
 )
 
 # Social widget
