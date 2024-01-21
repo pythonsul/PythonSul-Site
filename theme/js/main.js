@@ -3,9 +3,9 @@ jQuery(document).ready(function( $ ) {
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
+      $('.back-to-top');
     } else {
-      $('.back-to-top').fadeOut('slow');
+      $('.back-to-top');
     }
   });
   $('.back-to-top').click(function(){
@@ -31,8 +31,6 @@ jQuery(document).ready(function( $ ) {
     $('#intro').css({ height: $(window).height() });
   }
 
-  // Initiate the wowjs animation library
-  new WOW().init();
 
   // Initialize Venobox
   $('.venobox').venobox({
