@@ -16,7 +16,7 @@
 body {
   background: #fef7e454;
   color: #2f3138;
-  font-family: "Open Sans", sans-serif;
+  font-family: "nunito", "Open Sans", sans-serif;
   overflow-x: hidden;
 }
 
@@ -44,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "ribeye", "Raleway", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -55,9 +55,6 @@ h6 {
   margin-top: 70px;
 }
 
-.wow {
-  visibility: hidden;
-}
 
 /* Prelaoder */
 
@@ -158,12 +155,12 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  background-color: #202851;
+  background-color: #336d9a;
 }
 
 #header.header-scrolled,
 #header.header-fixed {
-  background: rgba(6, 12, 34, 0.98);
+  background: #336d9a;
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
@@ -174,7 +171,7 @@ h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: "Raleway", sans-serif;
+  font-family: "ribeye","Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -271,8 +268,8 @@ h6 {
   padding: 8px;
   text-decoration: none;
   display: inline-block;
-  color: rgba(202, 206, 221, 0.8);
-  font-family: "Raleway", sans-serif;
+  color: white;
+  font-family: "nunito","Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
   outline: none;
@@ -280,7 +277,7 @@ h6 {
 
 .nav-menu .menu-active a,
 .nav-menu a:hover {
-  color: #fff;
+  color: white;
 }
 
 .nav-menu > li {
@@ -389,7 +386,7 @@ h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(6, 12, 34, 0.9);
+  background: #336d9a;
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -519,7 +516,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro h1 {
   color: #fff;
-  font-family: "Raleway", sans-serif;
+  font-family: "ribeye","Raleway", sans-serif;
   font-size: 56px;
   font-weight: 600;
   text-transform: uppercase;
@@ -610,7 +607,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #intro .about-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "ribeye","Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -664,7 +661,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background-color: #232643;
+  background-color: #20284f;
   overflow: hidden;
   position: relative;
   color: #fff;
@@ -702,7 +699,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   margin-bottom: 20px;
   color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "nunito", "Open Sans", sans-serif;
   font-weight: 500;
   text-align: justify;
 }
@@ -1136,7 +1133,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 18px 0;
   display: block;
   position: relative;
-  font-family: "Raleway", sans-serif;
+  font-family: "ribeye","Raleway", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
@@ -1167,47 +1164,46 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
-# Subscribe Section
+# code-conduct Section
 --------------------------------------------------------------*/
 
-#subscribe {
+#code-conduct {
   padding: 60px;
-  background: #486283 !important;
+  background: #336d9a !important;
   background-size: cover;
   overflow: hidden;
   position: relative;
 }
 
-#pre-subscribe {
+#pre-code-conduct {
   height: 100% !important;
-        width: 100% !important;
+  width: 100% !important;
 }
 
 
-#pre-subscribe > .container {
-  background-color: #232643 !important;
+#pre-code-conduct > .container {
+  background-color: #20284f !important;
   height: 100px !important;
   padding: 0px !important;
   visibility: visible;
-  animation-name: fadeInUp;
   margin: 0px 0px 0px 0px !important;
   width: 100% !important;
   max-width: 100% !important;
 }
 
-#pre-subscribe > .container > .section-header{
+#pre-code-conduct > .container > .section-header{
   height: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
 }
-#pre-subscribe > .container > .section-header > .ocean{
+#pre-code-conduct > .container > .section-header > .ocean{
   height: 75px !important;
 }
 
-#pre-subscribe > .container > .section-header > .ocean > .wave {
+#pre-code-conduct > .container > .section-header > .ocean > .wave {
   -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
   mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
-  background-color: #486283;
+  background-color: #336d9a;
   animation: wave 40s -1s linear infinite;
   opacity: 1;
   height: 100% !important;
@@ -1221,11 +1217,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #pre-contact > .container {
-  background-color: #c1d1e8 !important;
+  background-color: #c1d2e8 !important;
   height: 100px !important;
   padding: 0px !important;
   visibility: visible;
-  animation-name: fadeInUp;
   margin: 0px 0px 0px 0px !important;
   width: 100% !important;
   max-width: 100% !important;
@@ -1243,7 +1238,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #pre-contact > .container > .section-header > .ocean > .wave {
   -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
   mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
-  background-color: #fefaf1;
+  background-color: #fef7e4;
   animation: wave 35s -1s linear infinite;
   opacity: 1;
   height: 100% !important;
@@ -1284,14 +1279,14 @@ html, body {
 .wave:nth-of-type(1) {
   -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
   mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
-  background-color: #486283;
+  background-color: #336d9a;
   margin-top:0px;
   animation: wave 40s linear reverse infinite;
   opacity: 1;
 }
 
 .wave:nth-of-type(2) {
-  background-color: #b3c0d4;
+  background-color: #a9b5c4;
   margin-top:50px;
   animation: wave 35s linear reverse infinite;
   opacity: 1;
@@ -1300,14 +1295,14 @@ html, body {
 .wave:nth-of-type(3) {
   -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
   mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
-  background-color: #c1d1e8;
+  background-color: #c1d2e8;
   margin-top:100px;
   animation: wave 30s  linear infinite;
   opacity: 1;
 }
 
 .wave:nth-of-type(4) {
-  background-color: #232643;
+  background-color: #20284f;
   margin-top:150px;
   animation: wave 25s  linear reverse infinite;
   opacity: 1;
@@ -1321,12 +1316,12 @@ html, body {
 
 
 
-#subscribe .section-header h2,
-#subscribe p {
+#code-conduct .section-header h2,
+#code-conduct p {
   color: #fff;
 }
 
-#subscribe input {
+#code-conduct input {
   background: #fff;
   color: #060c22;
   border: 0;
@@ -1337,7 +1332,7 @@ html, body {
   font-size: 14px;
 }
 
-#subscribe button {
+#code-conduct button {
   border: 0;
   padding: 9px 25px;
   cursor: pointer;
@@ -1349,7 +1344,7 @@ html, body {
   border-radius: 50px;
 }
 
-#subscribe button:hover {
+#code-conduct button:hover {
   background: var(--base-color);
 }
 
@@ -1435,6 +1430,7 @@ html, body {
 
 #contact {
   padding: 60px 0;
+  background-color: #fef7e4;
 }
 
 #contact .contact-info {
@@ -1461,6 +1457,7 @@ html, body {
   font-weight: bold;
   text-transform: uppercase;
   color: #112363;
+  font-family: "nunito", "Open Sans", sans-serif;
 }
 
 #contact .contact-info a {
@@ -1541,14 +1538,14 @@ html, body {
 #footer .footer-top {
   padding: 10px 0 30px 0;
   background: url(../img/footer.webp) center center repeat;
-  background-color: #FEF7E4;
+  background-color: #fef7e4;
   background-size: contain;
   overflow: hidden;
   position: relative;
 }
 .footer-top .container {
   opacity: 0.95;
-  background-color: #FEF7E4;
+  background-color: #fef7e4;
   padding: 25px 15px 0px 15px;
 }
 
@@ -1597,7 +1594,7 @@ html, body {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-family: "Raleway", sans-serif;
+  font-family: "ribeye","Raleway", sans-serif;
   font-weight: 700;
   color: #fff;
 }
@@ -1611,7 +1608,7 @@ html, body {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "ribeye","Raleway", sans-serif;
   color: #fff;
 }
 
@@ -1638,15 +1635,16 @@ html, body {
 #footer .footer-top h1 {
   font-size: 14px;
   font-weight: bold;
-  color: #232643;
+  color: #20284f;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
   border-bottom: 2px solid var(--base-color);
+  font-family: "nunito", "Open Sans", sans-serif;
 }
 
 .footer-top p {
-  color: #232643;
+  color: #20284f;
 
 }
 
@@ -1736,7 +1734,7 @@ html, body {
 --------------------------------------------------------------*/
 
 @media (min-width: 767px) {
-  #subscribe input {
+  #code-conduct input {
     min-width: 400px;
   }
 }
@@ -1769,7 +1767,7 @@ html, body {
     background-attachment: fixed;
   }
 
-  #subscribe {
+  #code-conduct {
     background-attachment: fixed;
   }
 }
@@ -1786,7 +1784,7 @@ html, body {
 
 @media (max-width: 991px) {
   #header {
-    background: rgba(6, 12, 34, 0.98);
+    background: #336d9a;
     height: 70px;
     padding: 15px 0;
     transition: all 0.5s;
@@ -1850,7 +1848,7 @@ html, body {
 }
 
 @media (max-width: 460px) {
-  #subscribe button {
+  #code-conduct button {
     margin-top: 10px;
   }
 }
@@ -1878,7 +1876,7 @@ html, body {
 
 #sponsorship {
   padding: 60px;
-  background: #c1d1e8 !important;
+  background: #c1d2e8 !important;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -1891,11 +1889,10 @@ html, body {
 
 
 #pre-sponsorship > .container {
-  background-color: #486283 !important;
+  background-color: #336d9a !important;
   height: 100px !important;
   padding: 0px !important;
   visibility: visible;
-  animation-name: fadeInUp;
   margin: 0px 0px 0px 0px !important;
   width: 100% !important;
   max-width: 100% !important;
@@ -1913,7 +1910,7 @@ html, body {
 #pre-sponsorship > .container > .section-header > .ocean > .wave {
   -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
   mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
-  background-color: #c1d1e8;
+  background-color: #c1d2e8;
   animation: wave 30s -1s linear infinite;
   opacity: 1;
   height: 100% !important;

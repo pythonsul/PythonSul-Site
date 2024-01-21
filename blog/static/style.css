@@ -44,11 +44,13 @@ body {
     margin: 5px 0;
     height: 110px;
     overflow: hidden;
+    font-family: 'Nunito';
 }
 
 .moldura-blog .info h3 {
     font-size: 10px!important;
     margin-bottom: 0px;
+    font-family: 'Nunito';
 }
 a {
     text-decoration: none;
@@ -57,7 +59,7 @@ a {
     color: white !important;
 }
 .nav-menu > li > a:before {
-    background-color: #202851 !important;
+    background-color: #20284f !important;
 }
 #header.header-scrolled, #header.header-fixed {
     background: #bd651d;
@@ -69,10 +71,10 @@ a {
 
 #container-all {
     margin-top: 100px;
-    background-color: #fefaf1;
+    background-color: #fef7e4;
     padding: 15px;
     min-height: 100vh;
-    box-shadow: 0px 23px 150px 10px #202851;
+    box-shadow: 0px 23px 150px 10px #20284f;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -104,7 +106,7 @@ a {
     color: white !important;
 }
 .nav-menu > li > a:before {
-    background-color: #202851 !important;
+    background-color: #20284f !important;
 }
 #header.header-scrolled, #header.header-fixed {
     background: #bd651d;
@@ -114,10 +116,11 @@ a {
 }
 .blog-title {
     font-weight: bold;
-    color: #202851;
+    color: #20284f;
     margin: 0px;
     display: inline-block;
     vertical-align: middle;
+    font-family: 'Nunito';
 }
 .blog-title-container {
     text-align: center;
@@ -138,4 +141,8 @@ a {
 }
 p.blog-title {
     font-weight: normal;
+}
+
+#mobile-nav {
+    background-color: #bd651d;
 }
