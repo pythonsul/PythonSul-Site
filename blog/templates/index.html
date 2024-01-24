@@ -21,21 +21,19 @@
                 <div class="intro-container-blog">
                     <div class="container">
                         <div class="row">
-                            {% for a in articles %}
-                                {% if a.slug != "identidade-visual" %}
-                                    <div class="col-lg-4 col-md-12 moldura-blog-2">
-                                        <a href="/blog/{{a.url}}">
-                                            <div class="moldura-blog">
-                                                <img style="max-width: 100%;" src="{{a.image_title}}" alt="Imagem do post {{a.title}}" title="Imagem do post {{a.title}}">
-                                                <div class="info">
-                                                    <h1>{{a.title}}</h1>
-                                                    <h2>{{a.subtitle}}</h2>
-                                                    <h3>{{a.author}} - {{a.date.strftime('%d/%m/%y %H:%M') }}</h3>
-                                                </div>
+                            {% for a in articles|sort(attribute='date',reverse=True) %}
+                                <div class="col-lg-4 col-md-12 moldura-blog-2">
+                                    <a href="/blog/{{a.url}}">
+                                        <div class="moldura-blog">
+                                            <img style="max-width: 100%;" src="{{a.image_title}}" alt="Imagem do post {{a.title}}" title="Imagem do post {{a.title}}">
+                                            <div class="info">
+                                                <h1>{{a.title}}</h1>
+                                                <h2>{{a.subtitle}}</h2>
+                                                <h3>{{a.author}} - {{a.date.strftime('%d/%m/%y %H:%M') }}</h3>
                                             </div>
-                                        </a>
-                                    </div>
-                                {% endif %}
+                                        </div>
+                                    </a>
+                                </div>
                             {% endfor %}
                         </div>
                     </div>
