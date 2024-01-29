@@ -4,14 +4,12 @@ from __future__ import unicode_literals
 from decouple import config
 import os, sys
 
-AUTHOR = 'dadsa Sul'
-
 SITENAME = 'Python Sul - 2024'
 SITEYEAR = 2024
 
 SITEURL = config('SITE_URL', default='')
 
-PATH = os.path.join(os.getcwd(), 'site/content')
+PATH = os.path.join(os.getcwd(), 'blog/content')
 
 SITEMAP = {
     'format': 'xml',
