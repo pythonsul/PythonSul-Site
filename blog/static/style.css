@@ -146,3 +146,14 @@ p.blog-title {
 #mobile-nav {
     background-color: #bd651d;
 }
+.estrelas::before {
+    content: '';
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 1px 14px;
+    background-image: url('/blog/static/flor-azul.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 3px;
+}
