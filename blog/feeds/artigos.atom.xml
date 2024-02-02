@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog Python Sul - 2024 - artigos</title><link href="/" rel="alternate"></link><link href="/feeds/artigos.atom.xml" rel="self"></link><id>/</id><updated>2024-01-24T15:00:00-03:00</updated><entry><title>Boas vindas</title><link href="/pages/boas-vindas.html" rel="alternate"></link><published>2024-01-12T12:00:00-03:00</published><updated>2024-01-12T12:00:00-03:00</updated><author><name>Talita Rossari</name></author><id>tag:None,2024-01-12:/pages/boas-vindas.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog Python Sul - 2024 - artigos</title><link href="/" rel="alternate"></link><link href="/feeds/artigos.atom.xml" rel="self"></link><id>/</id><updated>2024-02-03T15:00:00-03:00</updated><entry><title>Boas vindas</title><link href="/pages/boas-vindas.html" rel="alternate"></link><published>2024-01-12T12:00:00-03:00</published><updated>2024-01-12T12:00:00-03:00</updated><author><name>Talita Rossari</name></author><id>tag:None,2024-01-12:/pages/boas-vindas.html</id><summary type="html">
         
         &lt;div class="header-container-blog"&gt;
             &lt;div class="row  align-items-center"&gt;
                 &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                    &lt;img class="img-blog" src="/blog/static/artigos/pysul-pybr-quadrado.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/ola/pysul-pybr-quadrado.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
                 &lt;/div&gt;
                 &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                     &lt;h1 class="blog-title"&gt;Boas vindas!&lt;/h1&gt;
@@ -19,13 +19,13 @@
                 &lt;p&gt;
                     Aqui quem fala é a Talita Rossari, uma das co-organizadoras da Python Sul 2024, e vim dar os boas vindas a todas as pessoas interessadas no evento!
                 &lt;/p&gt;
-                &lt;p&gt;
+                &lt;p id="como-comecou"&gt;
                     Sei que estamos pecando um pouco no online, e deixando todas as pessoas curiosas hehehehe! Mas juro …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
         
         &lt;div class="header-container-blog"&gt;
             &lt;div class="row  align-items-center"&gt;
                 &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                    &lt;img class="img-blog" src="/blog/static/artigos/pysul-pybr-quadrado.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/ola/pysul-pybr-quadrado.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
                 &lt;/div&gt;
                 &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                     &lt;h1 class="blog-title"&gt;Boas vindas!&lt;/h1&gt;
@@ -40,13 +40,13 @@
                 &lt;p&gt;
                     Aqui quem fala é a Talita Rossari, uma das co-organizadoras da Python Sul 2024, e vim dar os boas vindas a todas as pessoas interessadas no evento!
                 &lt;/p&gt;
-                &lt;p&gt;
+                &lt;p id="como-comecou"&gt;
                     Sei que estamos pecando um pouco no online, e deixando todas as pessoas curiosas hehehehe! Mas juro que não é por mal!
                     &lt;br /&gt;
                     Vou atualizar vocês do que aconteceu até agora:
                 &lt;/p&gt;
                 &lt;h4&gt;Como tudo começou:&lt;/h4&gt;
-                &lt;p&gt;
+                &lt;p id="apresentacao-galere"&gt;
                     Bom, o nosso trabalho começou logo após a Python Brasil de 2023, onde eu lancei um "desafio fácil" as pessoas do Sul: teriam 3 dias para me convencer nos PyBar que Floripa não era a melhor cidade para retornarmos com a PySul.&lt;br /&gt;
                     Só pra deixar claro, sou extremamente fácil de convencer hahahaha, só precisa usar os argumentos certos.&lt;br /&gt;
                     Algumas pessoas guerreiras tentaram, mas &lt;s&gt;in&lt;/s&gt;felizmente ninguém me convenceu e estamos aqui!
@@ -63,7 +63,7 @@
                 &lt;div class="header-container-blog"&gt;
                     &lt;div class="row align-items-center"&gt;
                         &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                            &lt;img class="img-blog" src="/blog/static/artigos/belisa-apresentacao.webp" /&gt;
+                            &lt;img class="img-blog" src="/blog/static/artigos/ola/belisa-apresentacao.webp" /&gt;
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Belisa Renata&lt;/h3&gt;
@@ -75,7 +75,7 @@
                 &lt;div class="header-container-blog"&gt;
                     &lt;div class="row align-items-center"&gt;
                         &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                            &lt;img class="img-blog" src="/blog/static/artigos/gabs-apresentacao.webp" /&gt;
+                            &lt;img class="img-blog" src="/blog/static/artigos/ola/gabs-apresentacao.webp" /&gt;
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Gabriel Ecker&lt;/h3&gt;
@@ -88,7 +88,7 @@
                 &lt;div class="header-container-blog"&gt;
                     &lt;div class="row align-items-center"&gt;
                         &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                            &lt;img class="img-blog" src="/blog/static/artigos/gislaine-apresentacao.webp" /&gt;
+                            &lt;img class="img-blog" src="/blog/static/artigos/ola/gislaine-apresentacao.webp" /&gt;
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Gislaine Luciane&lt;/h3&gt;
@@ -101,7 +101,7 @@
                 &lt;div class="header-container-blog"&gt;
                     &lt;div class="row align-items-center"&gt;
                         &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                            &lt;img class="img-blog" src="/blog/static/artigos/lanusse-apresentacao.webp" /&gt;
+                            &lt;img class="img-blog" src="/blog/static/artigos/ola/lanusse-apresentacao.webp" /&gt;
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Lanusse Morais&lt;/h3&gt;
@@ -114,7 +114,7 @@
                 &lt;div class="header-container-blog"&gt;
                     &lt;div class="row align-items-center"&gt;
                         &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                            &lt;img class="img-blog" src="/blog/static/artigos/calixto-noah-apresentacao.webp" /&gt;
+                            &lt;img class="img-blog" src="/blog/static/artigos/ola/calixto-noah-apresentacao.webp" /&gt;
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Rafael Calixto&lt;/h3&gt;
@@ -127,7 +127,7 @@
                 &lt;div class="header-container-blog"&gt;
                     &lt;div class="row  align-items-center"&gt;
                         &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                            &lt;img class="img-blog" src="/blog/static/artigos/talita-apresentacao.webp" /&gt;
+                            &lt;img class="img-blog" src="/blog/static/artigos/ola/talita-apresentacao.webp" /&gt;
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Talita Rossari (euzinha)&lt;/h3&gt;
@@ -160,7 +160,7 @@
         &lt;div class="header-container-blog"&gt;
             &lt;div class="row  align-items-center"&gt;
                 &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                    &lt;img class="img-blog" src="/blog/static/artigos/quem-eh-pokemon.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/identidade-visual/quem-eh-pokemon.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
                 &lt;/div&gt;
                 &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                     &lt;h1 class="blog-title"&gt;Quem é esse pokémon?&lt;/h1&gt;
@@ -175,7 +175,7 @@
         &lt;div class="header-container-blog"&gt;
             &lt;div class="row  align-items-center"&gt;
                 &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                    &lt;img class="img-blog" src="/blog/static/artigos/quem-eh-pokemon.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/identidade-visual/quem-eh-pokemon.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
                 &lt;/div&gt;
                 &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                     &lt;h1 class="blog-title"&gt;Quem é esse pokémon?&lt;/h1&gt;
@@ -204,7 +204,7 @@
                 &lt;p&gt;Definir o &lt;i&gt;briefing&lt;/i&gt; nos serviu como um ponto de partida e inspeção para avaliar o trabalho durante o processo. Funciona basicamente como uma base para cada etapa do processo de design, desde a geração de conceitos e pesquisas até o desenvolvimento da identidade da marca.&lt;/p&gt;
                 &lt;p&gt;Encerramos essa etapa quando entendemos as metas do projeto, o contexto de uso e os direcionamentos prévios da organização do evento para o foco da pesquisa e desenvolvimento.&lt;/p&gt;
                 &lt;h4&gt;Direcionamentos do &lt;i&gt;briefing&lt;/i&gt;&lt;/h4&gt;
-                &lt;img style="width: 80%;" src="/blog/static/artigos/ponto-partida.png" /&gt;
+                &lt;img style="width: 80%;" src="/blog/static/artigos/identidade-visual/ponto-partida.png" /&gt;
                 &lt;br /&gt;
                 &lt;br /&gt;
                 &lt;ul&gt;
@@ -223,42 +223,42 @@
                 &lt;p&gt;Passamos a revisitar os elementos e manifestações culturais da região com um olhar de curiosidade para descobrir quais eram as possibilidades que podemos explorar em uma representação gráfica mais assertiva.&lt;/p&gt;
                 &lt;p&gt;As tradições e culturas presentes em nosso entorno nos permite preservar a história e transmitir de geração em geração a riqueza dos costumes da região. A diversidade é percebida e manifestada através de festas, pratos típicos, danças entre outros elementos.&lt;/p&gt;
                 &lt;p&gt;Destacamos a seguir alguns desses elementos que mais nos inspiraram nesta pesquisa.&lt;/p&gt;
-                &lt;img style="width: 80%;" src="/blog/static/artigos/arquitetura.png" /&gt;
+                &lt;img style="width: 80%;" src="/blog/static/artigos/identidade-visual/arquitetura.png" /&gt;
                 &lt;br&gt;
                 &lt;br&gt;
                 &lt;p&gt;As ruas, casas, igrejas e a arquitetura açoriana encontrada nos bairros Santo Antônio de Lisboa e Ribeirão da Ilha, representam o contraste de cores muito intensas, como os tons azuis e terrosos.&lt;/p&gt;
-                &lt;img style="width: 80%;" src="/blog/static/artigos/azulejos.png" /&gt;
+                &lt;img style="width: 80%;" src="/blog/static/artigos/identidade-visual/azulejos.png" /&gt;
                 &lt;br&gt;
                 &lt;br&gt;
                 &lt;p&gt;Detalhe de um painel de azulejos pintado pelo artista Jesus Fernandes, nas paredes do tradicional restaurante Ostradamus no Ribeirão da Ilha.&lt;/p&gt;
-                &lt;img style="width: 80%;" src="/blog/static/artigos/ceramica.png" /&gt;
+                &lt;img style="width: 80%;" src="/blog/static/artigos/identidade-visual/ceramica.png" /&gt;
                 &lt;br&gt;
                 &lt;br&gt;
                 &lt;p&gt;Peças de cerâmica açoriana feitas em barro, que são encontradas à venda em diversos lugares da ilha e até hoje são utilizadas nas cozinhas das casas e em restaurantes.&lt;/p&gt;
-                &lt;img style="width: 80%;" src="/blog/static/artigos/parede-cascaes.png" /&gt;
+                &lt;img style="width: 80%;" src="/blog/static/artigos/identidade-visual/parede-cascaes.png" /&gt;
                 &lt;br&gt;
                 &lt;br&gt;
                 &lt;p&gt;Parede pintada no centro de Florianópolis, homenageando Franklin Cascaes, que viveu anos escutando as histórias dos pescadores pelo litoral catarinense, e transformando toda essa narrativa em poesia e arte.&lt;/p&gt;
-                &lt;img style="width: 100%;" src="/blog/static/artigos/danca-boi.png" /&gt;
+                &lt;img style="width: 100%;" src="/blog/static/artigos/identidade-visual/danca-boi.png" /&gt;
                 &lt;br&gt;
                 &lt;br&gt;
                 &lt;p&gt;Apresentação do enredo do Boi de Mamão&lt;/p&gt;
                 &lt;h3&gt;Exploração de alternativas&lt;/h3&gt;
                 &lt;p&gt;Antes de chegar na ideia final, exploramos outras alternativas, chegamos a avaliar uma abordagem mais simples, optando por um chapéu de bruxa com traços característicos dos desenhos de Franklin de Cascais e também um outro ícone no formato das pedras da lenda &lt;a href="https://globoplay.globo.com/v/5786888/" target="_blank"&gt; O Salão de Festa das Bruxas de Itaguaçu&lt;/a&gt;. &lt;/p&gt;
-                &lt;img style="width: 100%;" src="/blog/static/artigos/experimentos-logo.png" /&gt;
+                &lt;img style="width: 100%;" src="/blog/static/artigos/identidade-visual/experimentos-logo.png" /&gt;
                 &lt;br&gt;
                 &lt;br&gt;
                 &lt;p&gt;Para os curiosos de plantão, esse &lt;a href="https://medium.com/zeroufsc/bruxas-boitat%C3%A1s-e-benzedeiras-invadem-centro-de-florian%C3%B3polis-0752be47e4d0" target="_blank"&gt;outro artigo&lt;/a&gt; é muito bom e aborda a procissão folclórica performada pelo grupo Grande Baile.&lt;/p&gt;
                 &lt;h3&gt;A ideia&lt;/h3&gt;
                 &lt;p&gt;Quando falamos sobre logos simbólicos é natural a pergunta: mas o que isso significa? qual a relação com o queremos transmitir? Afinal, nada vem do nada.&lt;/p&gt;
                 &lt;p&gt;Utilizando o conceito inspirado no folclore popular tradicional da região, idealizamos a representação da comunidade Python Sul e o crescimento dos participantes dos eventos regionais ao enredo da &lt;a target="_blank" href="https://www.youtube.com/watch?v=Ybk9NMi1gZc"&gt;dança do boi de mamão&lt;/a&gt;. &lt;/p&gt;
-                &lt;img style="width: 80%;" src="/blog/static/artigos/bernunca.png" /&gt;
+                &lt;img style="width: 80%;" src="/blog/static/artigos/identidade-visual/bernunca.png" /&gt;
                 &lt;br&gt;
                 &lt;br&gt;
                 &lt;p&gt;Escolhemos o personagem "&lt;b&gt;bernunça&lt;/b&gt;" por conter o conceito de crescimento e multiplicação e também por ser um personagem adorado pelas crianças, tendo uma participação muito aguardada nas apresentações. &lt;/p&gt;
                 &lt;p&gt;Além disso, a bernunça está  sendo adotada pela prefeitura de Florianópolis em algumas ações como as estações &lt;a target="_blank" href="https://floripamanha.org/2019/11/pmf-apresenta-estacoes-bernunca-floripa-lixo-zero-2030/"&gt;Bernunça Floripa Lixo Zero 2030&lt;/a&gt;.&lt;/p&gt;
                 &lt;p&gt;A partir desse direcionamento criamos uma ilustração divertida e inusitada como ponto de partida para a criação de um logo inspirado na tradicional manifestação folclórica do boi de mamão e conectar a ideia da comunidade Python que está em constante movimento e expansão.&lt;/p&gt;
-                &lt;img style="width: 70%;" src="/blog/static/artigos/evolucao-logo.png" /&gt;
+                &lt;img style="width: 70%;" src="/blog/static/artigos/identidade-visual/evolucao-logo.png" /&gt;
                 &lt;br&gt;
                 &lt;br&gt;
                 &lt;p&gt;Descrição imagem: Estudos do desenho e evolução do símbolo “Bernunça” com base na memória do logo do python.&lt;/p&gt;
@@ -268,32 +268,32 @@
                     &lt;li&gt;Celebrando a cultura regional&lt;/li&gt;
                 &lt;/ul&gt;
                 &lt;h3&gt;Símbolo final (Logo)&lt;/h3&gt;
-                &lt;img style="width: 70%;" src="/blog/static/artigos/logo-final.png" /&gt;
+                &lt;img style="width: 70%;" src="/blog/static/artigos/identidade-visual/logo-final.png" /&gt;
                 &lt;br&gt;
                 &lt;br&gt;
                 &lt;h3&gt;Cores&lt;/h3&gt;
                 &lt;p&gt;Com a nossa ideia e a logo escolhida, fomos para o próximo passo que é definir a paleta de cores.&lt;/p&gt;
-                &lt;img style="width: 50%;" src="/blog/static/artigos/paleta-cores.png" /&gt;
+                &lt;img style="width: 50%;" src="/blog/static/artigos/identidade-visual/paleta-cores.png" /&gt;
                 &lt;br&gt;&lt;br&gt;
                 &lt;p&gt;A paleta de cores foi inspirada nos azulejos portugueses e nas casas tradicionais da região, junto com a referência da cerâmica vermelha, trouxeram uma harmonia visual que conecta a identidade visual ao contexto local.&lt;/p&gt;
                 &lt;h3&gt;Tipografia (Tipo/fonte)&lt;/h3&gt;
                 &lt;p&gt;Sabíamos que precisaríamos tomar um caminho que expressasse a ideia de diversão e lúdico, por conta do direcionamento do Logo e todos os elementos que estávamos desenvolvendo para atuar no nosso sistema de identidade visual, como os azulejos e outros ícones para a comunicação das mídias. Portanto, a tipografia escolhida precisaria manter a personalidade para conseguir expressar de maneira simples e ao mesmo tempo em que traria autenticidade.&lt;/p&gt;
                 &lt;p&gt;Procurávamos uma fonte que chamasse atenção em títulos e que fosse flexível para parágrafos pequenos, e ainda que comportasse a tipografia do logo. Porém, para facilitar a leitura de conteúdos mais densos, nosso desejo de usar uma única fonte como padrão foi descartada, justamente para não sacrificar a legibilidade e consumo de textos longos, como neste blog, por exemplo.&lt;/p&gt;
-                &lt;img style="width: 50%;" src="/blog/static/artigos/tipografias.png" /&gt;
+                &lt;img style="width: 50%;" src="/blog/static/artigos/identidade-visual/tipografias.png" /&gt;
                 &lt;br&gt;&lt;br&gt;
                 &lt;p&gt;Desta forma, optamos por definir duas tipografias para o projeto. A primeira fonte seria mais divertida e equilibrada para compor o logo e a segunda, com suporte e complementar para outros tipos de usos. Assim, podemos cobrir várias situações de uso e conseguimos atingir o resultado de simplicidade e versatilidade.&lt;/p&gt;
                 &lt;h3&gt;Resultado final &lt;/h3&gt;
                 &lt;h4&gt;O logotipo do evento&lt;/h4&gt;
-                &lt;img style="width: 30%;" src="/blog/static/artigos/logo-vertical.svg" /&gt;
+                &lt;img style="width: 30%;" src="/blog/static/artigos/identidade-visual/logo-vertical.svg" /&gt;
                 &lt;br&gt;&lt;br&gt;
                 &lt;p&gt;O resultado é o nosso logotipo com a ilustração da Bernunça feliz e super satisfeita ao ser integrada para representar a cultura local da região. A tipografia ganhou um equilíbrio ao dar espaço entre o lado lúdico e divertido do Python com a referência a comunidade Sul em uma outra tipografia.&lt;/p&gt;
                 &lt;p&gt;Além disso, o logo do python ganhou um lugar na composição e, em sua versão completa, adicionamos o local e ano da conferência python sul.&lt;/p&gt;
                 &lt;h4&gt;Os personagens do Boi de Mamão&lt;/h4&gt;
                 &lt;p&gt;Outro elemento que adicionamos a identidade visual foi outros dois personagens do Boi de Mamão, a Maricota e o próprio Boi de Mamão.&lt;/p&gt;
-                &lt;img style="width: 70%;" src="/blog/static/artigos/personagens-extras.png" /&gt;
+                &lt;img style="width: 70%;" src="/blog/static/artigos/identidade-visual/personagens-extras.png" /&gt;
                 &lt;br&gt;&lt;br&gt;
                 &lt;h4&gt;E os azulejos...&lt;/h4&gt;
-                &lt;img style="width: 100%;" src="/blog/static/artigos/azulejos-identidade.png" /&gt;
+                &lt;img style="width: 100%;" src="/blog/static/artigos/identidade-visual/azulejos-identidade.png" /&gt;
                 &lt;br&gt;&lt;br&gt;
                 &lt;p&gt;Incorporamos os azulejos como forma de moldura e caracterizamos os padrões e ilustrações de diferentes estilos para aplicar no site e no instagram.&lt;/p&gt;
                 &lt;p&gt;E isso é tudo pessoal!&lt;/p&gt;
@@ -301,4 +301,176 @@
                 &lt;p&gt;Esperamos que esta identidade visual seja um símbolo duradouro para o Python Sul 2024, conectando pessoas, ideias e iniciativas na grande celebração da programação regional.&lt;/p&gt;
             &lt;/div&gt;
         &lt;/div&gt;
-    </content><category term="artigos"></category><category term="identidade"></category><category term="bernunça"></category></entry></feed>
+    </content><category term="artigos"></category><category term="identidade"></category><category term="bernunça"></category></entry><entry><title>Retro Nov 2023 - Jan 2024</title><link href="/pages/retro-nov-2023-jan-2024.html" rel="alternate"></link><published>2024-02-02T10:00:00-03:00</published><updated>2024-02-03T15:00:00-03:00</updated><author><name>Talita &amp; Org</name></author><id>tag:None,2024-02-02:/pages/retro-nov-2023-jan-2024.html</id><summary type="html">
+        
+        &lt;div class="header-container-blog"&gt;
+            &lt;div class="row  align-items-center"&gt;
+                &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/retro-nov-2023-jan-2024/retro-nov-2023-jan-2024.png" alt="Imagem do post da retrospectiva de Novembro de 2023 até Janeiro 2024" title="Imagem do post Retrospectiva Nov 2023 - Jan 2024"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
+                    &lt;h1 class="blog-title"&gt;Retrospectiva Python Sul &lt;br&gt; Nov 2023 - Jan 2024&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-12 col-md-12 col-sm-12"&gt;
+                &lt;h2&gt; Bora recaptular?&lt;/h2&gt;
+                    &lt;p&gt;Primeiramente, essa é a versão blog da &lt;a target="_blank" href="https://drive.google.com/file/d/13_qpnhcBGH8rTjf2rearqvaVWlZ_0SIS/view?usp=drive_link"&gt;apresentação&lt;/a&gt; que fizemos na &lt;a href="https://www.youtube.com/watch?v=YFOq6JFePSE" target="_blank"&gt;Python Floripa do dia 27/01&lt;/a&gt;. Logo, se você já viu, lê mesmo assim &amp;#129294;&lt;/p&gt;
+                    &lt;p&gt;Ah, o comecinho já foi comentado aqui no blog, mas o resto é novo!&lt;/p&gt;
+                &lt;h2&gt;Os boas …&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+        
+        &lt;div class="header-container-blog"&gt;
+            &lt;div class="row  align-items-center"&gt;
+                &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/retro-nov-2023-jan-2024/retro-nov-2023-jan-2024.png" alt="Imagem do post da retrospectiva de Novembro de 2023 até Janeiro 2024" title="Imagem do post Retrospectiva Nov 2023 - Jan 2024"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
+                    &lt;h1 class="blog-title"&gt;Retrospectiva Python Sul &lt;br&gt; Nov 2023 - Jan 2024&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-12 col-md-12 col-sm-12"&gt;
+                &lt;h2&gt; Bora recaptular?&lt;/h2&gt;
+                    &lt;p&gt;Primeiramente, essa é a versão blog da &lt;a target="_blank" href="https://drive.google.com/file/d/13_qpnhcBGH8rTjf2rearqvaVWlZ_0SIS/view?usp=drive_link"&gt;apresentação&lt;/a&gt; que fizemos na &lt;a href="https://www.youtube.com/watch?v=YFOq6JFePSE" target="_blank"&gt;Python Floripa do dia 27/01&lt;/a&gt;. Logo, se você já viu, lê mesmo assim &amp;#129294;&lt;/p&gt;
+                    &lt;p&gt;Ah, o comecinho já foi comentado aqui no blog, mas o resto é novo!&lt;/p&gt;
+                &lt;h2&gt;Os boas vindas&lt;/h2&gt;
+                    &lt;p&gt;Assim como no &lt;a href="boas-vindas#como-comecou" target="_blank"&gt;post de boas vindas&lt;/a&gt;, comentei que desafiei a galera do Sul na PyBR que aconteceu Caxias do Sul a encontrar uma sede melhor pra PySul que Floripa.&lt;/p&gt;
+                &lt;h2 id="topicos"&gt;Os Tópicos&lt;/h2&gt;
+                    &lt;p&gt;Divulgamos a quantidade de tópicos que criamos no telegram da org da PySul.&lt;/p&gt;
+                    &lt;img style="width: 50%;" src="/blog/static/artigos/retro-nov-2023-jan-2024/topicos-org-pysul.png" /&gt;
+                    &lt;br&gt;&lt;br&gt;
+                    &lt;small&gt;PS: Após a Python Floripa criamos novos tópicos &amp;#128514;&lt;/small&gt;
+                    &lt;br&gt;&lt;br&gt;
+                &lt;h2&gt;A galere atual&lt;/h2&gt;
+                    &lt;p&gt;Apresentamos a galere, como no &lt;a href="boas-vindas#apresentacao-galere" target="_blank"&gt;post de boas vindas&lt;/a&gt;.&lt;/p&gt;
+                &lt;h2&gt;Os Pilares da organização&lt;/h2&gt;
+                    &lt;p&gt;Nós apresentamos aquilo que determinamos como pilares da organização da PySul 2024:&lt;/p&gt;
+                    &lt;h5 class="estrelas"&gt;Confiança acima de tudo!&lt;/h5&gt;
+                    &lt;p&gt;Ninguém está deixando de fazer algo porque é babaca, e sim todas as pessoas estão dando o seu melhor.&lt;/p&gt;
+                    &lt;h5 class="estrelas"&gt;A saúde mental de todas as pessoas estão acima do evento.&lt;/h5&gt;
+                    &lt;p&gt;Todas as pessoas dessa org já participaram de organizações de evento antes, e sabem a importância de estar saudavel mentalmente para tocar o evento.
+                        &lt;br&gt;&lt;small&gt;E colocamos isso como meta interna, pois muitos já tem CID e não querem mais &amp;#128514;&lt;/small&gt;
+                    &lt;/p&gt;
+                    &lt;h5 class="estrelas"&gt;Sempre se comunicar caso precisar de ajuda!&lt;/h5&gt;
+                    &lt;p&gt;Assim como confiamos em todas as pessoas, esperamos que todas peçam ajuda caso precise, pois somos um evento de comunidade, e toda comunidade é uma rede de apoio.&lt;/p&gt;
+                    &lt;h5 class="estrelas"&gt;Todas as cobranças dentro da org não são pessoais, e sim para fazer o evento acontecer&lt;/h5&gt; 
+                    &lt;p&gt;
+                        &lt;h6&gt;Esse é um dos pilares mais importantes!&lt;/h6&gt;
+                        Conflitos e cobranças acontecem e fazem parte quando todas as pessoas querem o melhor para o evento.&lt;br&gt;
+                        O importante é não levar para o pessoal, afinal, nosso trabalho na comunidade não somos nós.
+                        &lt;small&gt;É claro que não vale chamar o amiguinho de corno.&lt;/small&gt;
+                    &lt;/p&gt;
+                    &lt;h5 class="estrelas"&gt;O grupo de terapia coletiva serve pra xingar geral, inclusive uns aos outros, e não dar solução para os problemas&lt;/h5&gt;
+                    &lt;p&gt;Como é possivel &lt;a href="#topicos"&gt;ver na foto acima&lt;/a&gt;, temos um grupo denominado "terapia coletiva". &lt;br&gt;
+                        Ele foi feito para xingar e chamar para 5min de soco na amizade.&lt;br&gt;
+                        O desabafo e xingamento é uma forma de tirar o peso da pressão que é fazer esse evento acontecer, nós só criamos um espaço para isso.&lt;br&gt;
+                        &lt;b&gt;E é um espaço criado unicamente para xingar, não solucionar problemas.&lt;/b&gt;&lt;/p&gt;
+                    &lt;h5 class="estrelas"&gt;Teremos um core pequeno de org, porém expansível verticalmente.&lt;/h5&gt;
+                    &lt;p&gt;Com nossas experiencias, percebemos que quanto mais pessoas envolvidas, mais dificil é tomar uma decisão importante.&lt;br&gt;
+                        O que queremos é que tenha um grupo pequeno de lideres dentro organização que serão responsável por alguns pontos principais do evento.&lt;br&gt;
+                        E essa pessoa lider é responsável por zelar pelo seu núcleo, caso você precise de ajuda, chame!&lt;br&gt;
+                        &lt;strong&gt;Mas isso não quer dizer que não iremos ampliar o nucleo de org em algum momento, mas sim que cada "adição" de pessoa no grupo vai ser muito bem pensada.&lt;/strong&gt;
+                        &lt;h6&gt;Afinal, &lt;b&gt;confiança é algo que se conquista&lt;/b&gt;, e confiança é nosso primeiro pilar.&lt;/h6&gt;
+                    &lt;/p&gt;
+                &lt;h2&gt;A identidade visual&lt;/h2&gt;
+                &lt;p&gt;
+                    Repassamos tudo o que foi explicado pelos designers no &lt;a target="_blank" href="identidade-visual"&gt;post de identidade visual&lt;/a&gt;.&lt;br&gt;
+                    Mas também apresentamos a bernunça de uma forma única:&lt;/br&gt;
+                    &lt;img style="width: 50%;" src="/blog/static/artigos/retro-nov-2023-jan-2024/bernunca-explicacao.gif"&gt;
+                    &lt;br&gt;&lt;br&gt;
+                    Como vocês conseguem ver, a Bernunça na dança do boi de mamão é um ser que se multiplica, assim como a comunidade Python!
+                &lt;/p&gt;
+                &lt;h2&gt;Os proximos passos:&lt;/h2&gt;
+                    &lt;h3&gt;Patrocinio&lt;/h3&gt;
+                        &lt;p&gt;A PySul ser um evento barato de fazer, mas isso não quer dizer que não precisamos de dinheiro!&lt;br&gt;
+                            Precisamos de dinheiro o evento acontecer!&lt;br&gt;&lt;br&gt;
+                            Estamos em contato com várias empresas, mas estamos sentindo falta de algumas empresas do Sul do Brasil para somar com nós, você sabe alguma? Você quer doar?&lt;/br&gt;&lt;br&gt;
+                            &lt;strong&gt;Entre em contato!&lt;/strong&gt;
+                        &lt;/p&gt;
+                    &lt;h3&gt;Comunidade&lt;/h3&gt;
+                        &lt;h4&gt;A importancia da comunidade&lt;/h4&gt;
+                            &lt;p&gt;
+                                Sem a comunidade, a Python Sul é só um evento de tecnologia, 
+                                não é nada de errado caso fosse, mas gostamos do "tchan" que 
+                                é o diferencial da comunidade!
+                                &lt;br&gt;
+                                &lt;h5&gt;Sem vocês nós não existimos!&lt;/h5&gt;
+                                &lt;br&gt;
+                                Sem comunidade, não há palestras interessantes.&lt;br&gt;
+                                Sem comunidade, não há pessoas interagindo com as outras.&lt;br&gt;
+                                Sem comunidade, não há espaços seguros.&lt;br&gt;
+                            &lt;/p&gt;
+                        &lt;h4&gt;O que pensamos em fazer&lt;/h4&gt;
+                            &lt;p&gt;
+                                Com o destravamento de algumas demandas como a data e local, iremos nos jogar de cabeça nas comunidades aqui do sul do Brasil!
+                                &lt;h5&gt;Nosso plano louco&lt;/h5&gt;
+                                    &lt;h6&gt;A criação de um núcleo dedicado!&lt;/h6&gt;
+                                        &lt;p&gt;
+                                            Cada vez mais percebemos que tracionar demanda muito esforço, tempo e dinheiro.
+                                            &lt;br&gt;
+                                            Por conta disso, iremos criar um núcleo dedicado para fortalecimento das comunidades regionais!
+                                        &lt;/p&gt;
+                                    &lt;h6&gt;Org da Python Floripa&lt;/h6&gt;
+                                        &lt;p&gt;
+                                            Precisamos aumentar a rotatividade da organização da Python Floripa!
+                                            &lt;br&gt;
+                                            Não podemos organizar a Python Floripa e a Python Sul ao mesmo tempo.
+                                            &lt;br&gt;
+                                            Para isso, vamos lançar a iniciativa:
+                                            &lt;ul&gt;
+                                                &lt;li&gt;Palestre na Python Floripa e ganhe um ingresso para a Python Sul!&lt;/li&gt;
+                                                &lt;li&gt;Organize uma Python Floripa e também ganhe um ingresso!&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/p&gt;
+                                    &lt;h6&gt;Viagens&lt;/h6&gt;
+                                        &lt;p&gt;
+                                            Atualmente temos o alcance de Floripa, mas logo estaremos viajando em pequenas distancias pelo Sul, espalhando a palavra da Python Sul!
+                                            &lt;br&gt;
+                                            Muito provavelmente iremos para:
+                                            &lt;ul&gt;
+                                                &lt;li&gt;Curitiba (alô comunidade de Curitiba);&lt;/li&gt;
+                                                &lt;li&gt;Blumenau (alô comunidade de Blumenau);&lt;/li&gt;
+                                                &lt;li&gt;Caxias do Sul (alô comunidade de Caxias);&lt;/li&gt;
+                                                &lt;li&gt;Araranguá (alô comunidade de Araranguá);&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/p&gt;
+                                    &lt;h6&gt;Evangelização por todo o Sul!&lt;/h6&gt;
+                                        &lt;p&gt;
+                                            Não conseguimos ir a todas as regiões do Sul do Brasil, precisamos de braços em &lt;b&gt;todos&lt;/b&gt; os estados e regiões!
+                                            &lt;br&gt;&lt;br&gt;
+                                            &lt;strong style="font-size: 17px;"&gt;Conhece alguém? Chama a gente :)&lt;/strong&gt;
+                                        &lt;/p&gt;
+                                    &lt;h6&gt;Redes sociais&lt;/h6&gt;
+                                        &lt;p&gt;
+                                            &lt;strong style="font-size: 17px;"&gt;Nós realmente precisamos de ajuda!&lt;/strong&gt;
+                                            &lt;br&gt;&lt;br&gt;
+                                            Somos um bando de low profile tentando entender como funciona o algoritmo do Instagram.
+                                        &lt;/p&gt;
+                            &lt;/p&gt;
+                        &lt;h4&gt;Ta, mas e a data??&lt;/h4&gt;
+                        &lt;p&gt;
+                            &lt;img style="width: 100%;" src="/theme/img/logo-main.svg"&gt;
+                            &lt;br&gt;&lt;br&gt;
+                            &lt;h5&gt;
+                                É isso mesmo pessoal, a PySul irá ocorrer dia 13, 14 e 15 de Setembro!
+                            &lt;/h5&gt;
+                        &lt;/p&gt;
+                        &lt;style&gt;
+                            .text-amarelo {
+                                color: #bd651d;
+                            }
+                        &lt;/style&gt;
+                        &lt;h1 style="text-align: center"&gt;
+                            &lt;b class="text-amarelo"&gt;Nos vemos todo mês na&lt;/b&gt;&lt;br&gt;
+                            Python Floripa,&lt;br&gt;
+                            &lt;b class="text-amarelo"&gt;aleatoriamente em algum&lt;/b&gt;&lt;br&gt;
+                            evento na região&lt;br&gt;
+                            &lt;b class="text-amarelo"&gt;e em Setembro na&lt;/b&gt;&lt;br&gt;
+                            Py&lt;b class="text-amarelo"&gt;Sul&lt;/b&gt;!
+                        &lt;/h1&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </content><category term="artigos"></category><category term="retro"></category><category term="andamento"></category><category term="org"></category></entry></feed>

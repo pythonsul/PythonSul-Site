@@ -4,7 +4,7 @@
         &lt;div class="header-container-blog"&gt;
             &lt;div class="row  align-items-center"&gt;
                 &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                    &lt;img class="img-blog" src="/blog/static/artigos/pysul-pybr-quadrado.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/ola/pysul-pybr-quadrado.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
                 &lt;/div&gt;
                 &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                     &lt;h1 class="blog-title"&gt;Boas vindas!&lt;/h1&gt;
@@ -19,13 +19,13 @@
                 &lt;p&gt;
                     Aqui quem fala é a Talita Rossari, uma das co-organizadoras da Python Sul 2024, e vim dar os boas vindas a todas as pessoas interessadas no evento!
                 &lt;/p&gt;
-                &lt;p&gt;
+                &lt;p id="como-comecou"&gt;
                     Sei que estamos pecando um pouco no online, e deixando todas as pessoas curiosas hehehehe! Mas juro …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
         
         &lt;div class="header-container-blog"&gt;
             &lt;div class="row  align-items-center"&gt;
                 &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                    &lt;img class="img-blog" src="/blog/static/artigos/pysul-pybr-quadrado.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/ola/pysul-pybr-quadrado.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
                 &lt;/div&gt;
                 &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                     &lt;h1 class="blog-title"&gt;Boas vindas!&lt;/h1&gt;
@@ -40,13 +40,13 @@
                 &lt;p&gt;
                     Aqui quem fala é a Talita Rossari, uma das co-organizadoras da Python Sul 2024, e vim dar os boas vindas a todas as pessoas interessadas no evento!
                 &lt;/p&gt;
-                &lt;p&gt;
+                &lt;p id="como-comecou"&gt;
                     Sei que estamos pecando um pouco no online, e deixando todas as pessoas curiosas hehehehe! Mas juro que não é por mal!
                     &lt;br /&gt;
                     Vou atualizar vocês do que aconteceu até agora:
                 &lt;/p&gt;
                 &lt;h4&gt;Como tudo começou:&lt;/h4&gt;
-                &lt;p&gt;
+                &lt;p id="apresentacao-galere"&gt;
                     Bom, o nosso trabalho começou logo após a Python Brasil de 2023, onde eu lancei um "desafio fácil" as pessoas do Sul: teriam 3 dias para me convencer nos PyBar que Floripa não era a melhor cidade para retornarmos com a PySul.&lt;br /&gt;
                     Só pra deixar claro, sou extremamente fácil de convencer hahahaha, só precisa usar os argumentos certos.&lt;br /&gt;
                     Algumas pessoas guerreiras tentaram, mas &lt;s&gt;in&lt;/s&gt;felizmente ninguém me convenceu e estamos aqui!
@@ -63,7 +63,7 @@
                 &lt;div class="header-container-blog"&gt;
                     &lt;div class="row align-items-center"&gt;
                         &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                            &lt;img class="img-blog" src="/blog/static/artigos/belisa-apresentacao.webp" /&gt;
+                            &lt;img class="img-blog" src="/blog/static/artigos/ola/belisa-apresentacao.webp" /&gt;
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Belisa Renata&lt;/h3&gt;
@@ -75,7 +75,7 @@
                 &lt;div class="header-container-blog"&gt;
                     &lt;div class="row align-items-center"&gt;
                         &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                            &lt;img class="img-blog" src="/blog/static/artigos/gabs-apresentacao.webp" /&gt;
+                            &lt;img class="img-blog" src="/blog/static/artigos/ola/gabs-apresentacao.webp" /&gt;
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Gabriel Ecker&lt;/h3&gt;
@@ -88,7 +88,7 @@
                 &lt;div class="header-container-blog"&gt;
                     &lt;div class="row align-items-center"&gt;
                         &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                            &lt;img class="img-blog" src="/blog/static/artigos/gislaine-apresentacao.webp" /&gt;
+                            &lt;img class="img-blog" src="/blog/static/artigos/ola/gislaine-apresentacao.webp" /&gt;
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Gislaine Luciane&lt;/h3&gt;
@@ -101,7 +101,7 @@
                 &lt;div class="header-container-blog"&gt;
                     &lt;div class="row align-items-center"&gt;
                         &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                            &lt;img class="img-blog" src="/blog/static/artigos/lanusse-apresentacao.webp" /&gt;
+                            &lt;img class="img-blog" src="/blog/static/artigos/ola/lanusse-apresentacao.webp" /&gt;
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Lanusse Morais&lt;/h3&gt;
@@ -114,7 +114,7 @@
                 &lt;div class="header-container-blog"&gt;
                     &lt;div class="row align-items-center"&gt;
                         &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                            &lt;img class="img-blog" src="/blog/static/artigos/calixto-noah-apresentacao.webp" /&gt;
+                            &lt;img class="img-blog" src="/blog/static/artigos/ola/calixto-noah-apresentacao.webp" /&gt;
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Rafael Calixto&lt;/h3&gt;
@@ -127,7 +127,7 @@
                 &lt;div class="header-container-blog"&gt;
                     &lt;div class="row  align-items-center"&gt;
                         &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                            &lt;img class="img-blog" src="/blog/static/artigos/talita-apresentacao.webp" /&gt;
+                            &lt;img class="img-blog" src="/blog/static/artigos/ola/talita-apresentacao.webp" /&gt;
                         &lt;/div&gt;
                         &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                             &lt;h3 class="blog-title"&gt;Talita Rossari (euzinha)&lt;/h3&gt;

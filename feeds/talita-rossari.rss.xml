@@ -4,7 +4,7 @@
         &lt;div class="header-container-blog"&gt;
             &lt;div class="row  align-items-center"&gt;
                 &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
-                    &lt;img class="img-blog" src="/blog/static/artigos/pysul-pybr-quadrado.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/ola/pysul-pybr-quadrado.png" alt="Imagem do post da Identidade visual" title="Imagem do post  Identidade visual"&gt;
                 &lt;/div&gt;
                 &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
                     &lt;h1 class="blog-title"&gt;Boas vindas!&lt;/h1&gt;
@@ -19,5 +19,5 @@
                 &lt;p&gt;
                     Aqui quem fala é a Talita Rossari, uma das co-organizadoras da Python Sul 2024, e vim dar os boas vindas a todas as pessoas interessadas no evento!
                 &lt;/p&gt;
-                &lt;p&gt;
+                &lt;p id="como-comecou"&gt;
                     Sei que estamos pecando um pouco no online, e deixando todas as pessoas curiosas hehehehe! Mas juro …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Talita Rossari</dc:creator><pubDate>Fri, 12 Jan 2024 12:00:00 -0300</pubDate><guid isPermaLink="false">tag:sul.python.org.br,2024-01-12:/boas-vindas.html</guid><category>artigos</category><category>boas-vindas</category><category>org</category></item></channel></rss>
