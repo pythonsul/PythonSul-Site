@@ -1217,7 +1217,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #pre-contact > .container {
-  background-color: #c1d2e8 !important;
+  background-color: #aab8c9 !important;
   height: 100px !important;
   padding: 0px !important;
   visibility: visible;
@@ -1887,7 +1887,6 @@ html, body {
         width: 100% !important;
 }
 
-
 #pre-sponsorship > .container {
   background-color: #336d9a !important;
   height: 100px !important;
@@ -1914,4 +1913,63 @@ html, body {
   animation: wave 30s -1s linear infinite;
   opacity: 1;
   height: 100% !important;
+}
+
+#sponsorship .section-header {
+  margin-bottom: 0px;
+}
+
+
+#diamond {
+  padding: 60px;
+  background: #aab8c9 !important;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+#diamond  .section-header h2 {
+  color: white;
+}
+
+#pre-diamond {
+  height: 100% !important;
+        width: 100% !important;
+}
+
+#pre-diamond > .container {
+  background-color: #336d9a !important;
+  height: 100px !important;
+  padding: 0px !important;
+  visibility: visible;
+  margin: 0px 0px 0px 0px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#pre-diamond > .container > .section-header{
+  background-color: #c1d2e8;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#pre-diamond > .container > .section-header > .ocean{
+  height: 75px !important;
+  background-color: #c1d2e8;
+}
+
+.wave-diamond {
+  background-image: url(../img/patrocinadores/onda-diamante.svg);
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+  background-size: contain;
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation:wave 50s -5s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+#patrocinadores { 
+  font-size: 25px;
 }
