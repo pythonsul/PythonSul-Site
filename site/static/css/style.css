@@ -1217,7 +1217,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #pre-contact > .container {
-  background-color: #aab8c9 !important;
+  background-color: #202850 !important;
   height: 100px !important;
   padding: 0px !important;
   visibility: visible;
@@ -1972,4 +1972,62 @@ html, body {
 
 #patrocinadores { 
   font-size: 25px;
+}
+
+
+
+#sponsor {
+  padding: 60px;
+  background: #202850 !important;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#sponsor strong {
+  text-align: center;
+  color: white;
+}
+
+#sponsor  .section-header h2 {
+  color: white;
+}
+
+#pre-sponsor {
+  height: 100% !important;
+        width: 100% !important;
+}
+
+#pre-sponsor > .container {
+  background-color: #336d9a !important;
+  height: 100px !important;
+  padding: 0px !important;
+  visibility: visible;
+  margin: 0px 0px 0px 0px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+#pre-sponsor > .container > .section-header{
+  background-color: #aab8c9;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#pre-sponsor > .container > .section-header > .ocean{
+  height: 75px !important;
+  background-color: #c1d2e8;
+}
+
+.wave-sponsor {
+  background-image: url(../img/patrocinadores/onda-apadrinhamento.svg);
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+  background-size: contain;
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation:wave 50s -5s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
