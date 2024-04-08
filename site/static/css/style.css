@@ -1177,7 +1177,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 #pre-code-conduct > .container {
-  background-color: #c1d2e8 !important;
+  background-color: #e6bf89 !important;
 }
 
 #pre-code-conduct > .container > .section-header > .ocean > .wave {
@@ -1873,10 +1873,15 @@ html, body {
 
 #location {
   padding: 60px;
-  background: #c1d2e8 !important;
+  background: #e6bf89 !important;
   background-size: cover;
   overflow: hidden;
   position: relative;
+  color: white;
+}
+
+#location p {
+  color: #20284f;
 }
 
 #pre-location > .container {
@@ -1884,7 +1889,7 @@ html, body {
 }
 
 #pre-location > .container > .section-header > .ocean > .wave {
-  background-color: #c1d2e8;
+  background-color: #e6bf89;
 }
 
 #location ul > li {
