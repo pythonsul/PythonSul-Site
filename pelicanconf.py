@@ -29,6 +29,7 @@ OLD_EVENTS = (
 MENU = (
     ('#intro','Início', True),
     ('#pre-about','Sobre', False),
+    ('#pre-location', 'Local', False),
     ('#pre-code-conduct','Código de Conduta', False),
     ('#pre-sponsorship','Patrocínio', False),
     ('#pre-contact','Contato', False),

@@ -1175,73 +1175,25 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
 }
 
-#pre-code-conduct {
-  height: 100% !important;
-  width: 100% !important;
-}
-
 
 #pre-code-conduct > .container {
-  background-color: #20284f !important;
-  height: 100px !important;
-  padding: 0px !important;
-  visibility: visible;
-  margin: 0px 0px 0px 0px !important;
-  width: 100% !important;
-  max-width: 100% !important;
-}
-
-#pre-code-conduct > .container > .section-header{
-  height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-#pre-code-conduct > .container > .section-header > .ocean{
-  height: 75px !important;
+  background-color: #c1d2e8 !important;
 }
 
 #pre-code-conduct > .container > .section-header > .ocean > .wave {
-  -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
-  mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
   background-color: #336d9a;
-  animation: wave 40s -1s linear infinite;
-  opacity: 1;
-  height: 100% !important;
 }
-
-
-#pre-contact {
-  height: 100% !important;
-        width: 100% !important;
-}
-
 
 #pre-contact > .container {
   background-color: #202850 !important;
-  height: 100px !important;
-  padding: 0px !important;
-  visibility: visible;
-  margin: 0px 0px 0px 0px !important;
-  width: 100% !important;
-  max-width: 100% !important;
 }
 
-#pre-contact > .container > .section-header{
-  height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
 #pre-contact > .container > .section-header > .ocean{
-  height: 75px !important;
+  background-color: #202850 !important;
 }
 
 #pre-contact > .container > .section-header > .ocean > .wave {
-  -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
-  mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
   background-color: #fef7e4;
-  animation: wave 35s -1s linear infinite;
-  opacity: 1;
-  height: 100% !important;
 }
 
 /* for the pen */
@@ -1872,8 +1824,6 @@ html, body {
   margin-top:10px;
 }
 
-
-
 #sponsorship {
   padding: 60px;
   background: #c1d2e8 !important;
@@ -1882,13 +1832,20 @@ html, body {
   position: relative;
 }
 
-#pre-sponsorship {
-  height: 100% !important;
-        width: 100% !important;
-}
-
 #pre-sponsorship > .container {
   background-color: #336d9a !important;
+}
+
+#pre-sponsorship > .container > .section-header > .ocean > .wave {
+  background-color: #c1d2e8;
+}
+
+.pre-wave {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.pre-wave > .container {
   height: 100px !important;
   padding: 0px !important;
   visibility: visible;
@@ -1897,22 +1854,42 @@ html, body {
   max-width: 100% !important;
 }
 
-#pre-sponsorship > .container > .section-header{
+.pre-wave > .container > .section-header{
   height: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
 }
-#pre-sponsorship > .container > .section-header > .ocean{
+.pre-wave > .container > .section-header > .ocean{
   height: 75px !important;
 }
 
-#pre-sponsorship > .container > .section-header > .ocean > .wave {
+.pre-wave > .container > .section-header > .ocean > .wave {
   -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
   mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
-  background-color: #c1d2e8;
   animation: wave 30s -1s linear infinite;
   opacity: 1;
   height: 100% !important;
+}
+
+#location {
+  padding: 60px;
+  background: #c1d2e8 !important;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#pre-location > .container {
+  background-color: #20284f !important;
+}
+
+#pre-location > .container > .section-header > .ocean > .wave {
+  background-color: #c1d2e8;
+}
+
+#location ul > li {
+  list-style: none;
+  font-weight: bold;
 }
 
 #sponsorship .section-header {
@@ -1931,29 +1908,15 @@ html, body {
   color: white;
 }
 
-#pre-diamond {
-  height: 100% !important;
-        width: 100% !important;
-}
-
 #pre-diamond > .container {
   background-color: #336d9a !important;
-  height: 100px !important;
-  padding: 0px !important;
-  visibility: visible;
-  margin: 0px 0px 0px 0px !important;
-  width: 100% !important;
-  max-width: 100% !important;
 }
 
 #pre-diamond > .container > .section-header{
   background-color: #c1d2e8;
-  height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
+
 #pre-diamond > .container > .section-header > .ocean{
-  height: 75px !important;
   background-color: #c1d2e8;
 }
 
