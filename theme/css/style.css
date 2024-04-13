@@ -1902,3 +1902,7 @@ html, body {
 .bt-sponsorship:hover {
   background-color: #fef7e4;
 }
+
+#diamond img {
+  width: 100%;
+}
