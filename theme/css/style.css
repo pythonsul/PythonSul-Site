@@ -105,24 +105,12 @@ h6 {
 --------------------------------*/
 
 .section-header {
-  margin-bottom: 60px;
   position: relative;
   padding-bottom: 20px;
 }
 
-.section-header::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 5px;
-  background: var(--base-color);
-  bottom: 0;
-  left: calc(50% - 25px);
-}
 
 .section-header h2 {
-  font-size: 36px;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -469,164 +457,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Intro Section
 --------------------------------------------------------------*/
 
-#intro {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  overflow: hidden;
-  position: relative;
-}
-
-/* #intro:before {
-  background: url("../img/bg-main.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: bottom;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-} */
-
-#intro .intro-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  top: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 15px 100px;
-}
-
-#intro h1 {
-  color: #fff;
-  font-family: "ribeye","Raleway", sans-serif;
-  font-size: 56px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-#intro h1 span {
-  color: var(--base-color);
-}
-
-#intro p {
-  color: #ebebeb;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-#intro .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(var(--base-color) 50%, rgba(101, 111, 150, 0.15) 52%);
-  border-radius: 50%;
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-#intro .play-btn::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-40%) translateY(-50%);
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-#intro .play-btn:before {
-  content: '';
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation: pulsate-btn 2s;
-  animation: pulsate-btn 2s;
-  -webkit-animation-direction: forwards;
-  animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 2px solid rgba(163, 163, 163, 0.4);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-
-#intro .play-btn:hover::after {
-  border-left: 15px solid var(--base-color);
-  -webkit-transform: scale(20);
-  transform: scale(20);
-}
-
-#intro .play-btn:hover::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-40%) translateY(-50%);
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  -webkit-animation: none;
-  animation: none;
-  border-radius: 0;
-}
-
-#intro .about-btn {
-  font-family: "ribeye","Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  line-height: 1;
-  margin: 10px;
-  color: #fff;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  border: 2px solid var(--base-color);
-}
-
-#intro .about-btn:hover {
-  background: var(--base-color);
-  color: #fff;
-}
 
 @-webkit-keyframes pulsate-btn {
   0% {
@@ -1030,7 +860,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #gallery {
-  padding: 60px;
   overflow: hidden;
 }
 
@@ -1168,7 +997,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #code-conduct {
-  padding: 60px;
   background: #336d9a !important;
   background-size: cover;
   overflow: hidden;
@@ -1180,7 +1008,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #e6bf89 !important;
 }
 
-#pre-code-conduct > .container > .section-header > .ocean > .wave {
+#pre-code-conduct .wave {
   background-color: #336d9a;
 }
 
@@ -1188,11 +1016,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #202850 !important;
 }
 
-#pre-contact > .container > .section-header > .ocean{
+#pre-contact .ocean{
   background-color: #202850 !important;
 }
 
-#pre-contact > .container > .section-header > .ocean > .wave {
+#pre-contact  .wave {
   background-color: #fef7e4;
 }
 
@@ -1205,18 +1033,18 @@ html, body {
 
 /* waves */
 .ocean {
-  height: 300px; /* change the height of the waves here */
+  height: 100px; /* change the height of the waves here */
   width: 100%;
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   overflow: hidden;
+  margin-left: -50px;
 }
 
 .wave {
-  -webkit-mask:  url("../img/ondinha-redonda.svg") repeat-x;
-  mask:  url("../img/ondinha-redonda.svg") repeat-x;
+  -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
   -webkit-mask-size: cover;
   mask-size: cover;
   background-color: #1F284E;
@@ -1228,37 +1056,6 @@ html, body {
   opacity: 1;
 }
 
-.wave:nth-of-type(1) {
-  -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
-  mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
-  background-color: #336d9a;
-  margin-top:0px;
-  animation: wave 40s linear reverse infinite;
-  opacity: 1;
-}
-
-.wave:nth-of-type(2) {
-  background-color: #a9b5c4;
-  margin-top:50px;
-  animation: wave 35s linear reverse infinite;
-  opacity: 1;
-}
-
-.wave:nth-of-type(3) {
-  -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
-  mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
-  background-color: #c1d2e8;
-  margin-top:100px;
-  animation: wave 30s  linear infinite;
-  opacity: 1;
-}
-
-.wave:nth-of-type(4) {
-  background-color: #20284f;
-  margin-top:150px;
-  animation: wave 25s  linear reverse infinite;
-  opacity: 1;
-}
 
 
 @keyframes wave {
@@ -1711,9 +1508,6 @@ html, body {
 }
 
 @media (min-width: 1024px) {
-  #intro {
-    background-attachment: fixed;
-  }
 
   #about {
     background-attachment: fixed;
@@ -1748,18 +1542,6 @@ html, body {
 
   #mobile-nav-toggle {
     display: inline;
-  }
-
-  #intro .intro-container {
-    top: 70px;
-  }
-
-  #intro h1 {
-    font-size: 34px;
-  }
-
-  #intro p {
-    font-size: 16px;
   }
 
   #schedule .nav-tabs a {
@@ -1825,54 +1607,49 @@ html, body {
 }
 
 #sponsorship {
-  padding: 60px;
   background: #c1d2e8 !important;
   background-size: cover;
   overflow: hidden;
   position: relative;
 }
 
-#pre-sponsorship > .container {
+#pre-sponsorship  .container {
   background-color: #336d9a !important;
 }
 
-#pre-sponsorship > .container > .section-header > .ocean > .wave {
+#pre-sponsorship  .wave {
   background-color: #c1d2e8;
 }
 
 .pre-wave {
   height: 100% !important;
   width: 100% !important;
+  margin: -1px;
 }
 
-.pre-wave > .container {
+
+.pre-wave  .container {
   height: 100px !important;
   padding: 0px !important;
   visibility: visible;
   margin: 0px 0px 0px 0px !important;
   width: 100% !important;
   max-width: 100% !important;
+  overflow: hidden;
 }
 
-.pre-wave > .container > .section-header{
+.pre-wave  .section-header{
   height: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
 }
-.pre-wave > .container > .section-header > .ocean{
-  height: 75px !important;
-}
-
-.pre-wave > .container > .section-header > .ocean > .wave {
+.pre-wave .wave {
   -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
   mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
   animation: wave 30s -1s linear infinite;
-  opacity: 1;
-  height: 100% !important;
 }
 
 #location {
-  padding: 60px;
   background: #e6bf89 !important;
   background-size: cover;
   overflow: hidden;
@@ -1885,10 +1662,10 @@ html, body {
 }
 
 #pre-location > .container {
-  background-color: #20284f !important;
+  background-color: #bd641e !important;
 }
 
-#pre-location > .container > .section-header > .ocean > .wave {
+#pre-location  .wave {
   background-color: #e6bf89;
 }
 
@@ -1903,7 +1680,6 @@ html, body {
 
 
 #diamond {
-  padding: 60px;
   background: #aab8c9 !important;
   background-size: cover;
   overflow: hidden;
@@ -1913,27 +1689,27 @@ html, body {
   color: white;
 }
 
-#pre-diamond > .container {
+#pre-diamond  .container {
   background-color: #336d9a !important;
 }
 
-#pre-diamond > .container > .section-header{
+#pre-diamond  .section-header{
   background-color: #c1d2e8;
 }
 
-#pre-diamond > .container > .section-header > .ocean{
+#pre-diamond .ocean{
   background-color: #c1d2e8;
 }
 
 .wave-diamond {
   background-image: url(../img/patrocinadores/onda-diamante.svg);
-  background-repeat: repeat-x;
-  background-position-y: bottom;
-  background-size: contain;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: #1F284E;
   position: absolute;
   width: 200%;
   height: 100%;
-  animation:wave 50s -5s linear infinite;
+  animation: wave 15s -2s linear infinite;
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
@@ -1945,7 +1721,6 @@ html, body {
 
 
 #sponsor {
-  padding: 60px;
   background: #202850 !important;
   background-size: cover;
   overflow: hidden;
@@ -1961,41 +1736,169 @@ html, body {
   color: white;
 }
 
-#pre-sponsor {
-  height: 100% !important;
-        width: 100% !important;
+#pre-sponsor .container {
+  background-color: #336d9a !important;
 }
 
-#pre-sponsor > .container {
-  background-color: #336d9a !important;
-  height: 100px !important;
+#pre-sponsor  .section-header{
+  background-color: #aab8c9;
+}
+.wave-sponsor {
+  background-image: url(../img/patrocinadores/onda-apadrinhamento.svg);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: #1F284E;
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave 25s -2s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+#intro {
+  height: calc(100vh - 90px);
+  margin-top: 90px;
+}
+
+.ocean-intro {
+  width: 100%;
+  overflow: hidden;
+  margin-left: -50px;
+  bottom: 0;
+}
+
+.wave-intro {
+  -webkit-mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  mask:  url("../img/ondinha-ponteaguda.svg") repeat-x;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: #1F284E;
+  position: absolute;
+  width: 200%;
+  height: 100px;
+  transform: translate3d(0, 0, 0);
+  animation: wave 10s -2s linear infinite;
+  opacity: 1;
+}
+
+
+.wave-intro:nth-of-type(1){
+  background-color:#336d9a;
+  bottom: 175px;
+  animation: wave 40s linear infinite;
+}
+
+
+.wave-intro:nth-of-type(2){
+  -webkit-mask:  url("../img/ondinha-redonda.svg") repeat-x;
+  mask:  url("../img/ondinha-redonda.svg") repeat-x;
+  background-color:#a9b5c4;
+  animation: wave 35s linear infinite;
+  bottom: 115px;
+}
+
+.wave-intro:nth-of-type(3){
+  background-color:#c1d2e8;
+  animation: wave 30s -2s linear infinite;
+  bottom: 65px;
+}
+
+.wave-intro:nth-of-type(4){
+  -webkit-mask:  url("../img/ondinha-redonda.svg") repeat-x;
+  mask:  url("../img/ondinha-redonda.svg") repeat-x;
+  background-color:#20284f;
+  animation: wave 25s -2s linear infinite;
+}
+
+.pre-wave-intro {
+  width: 100% !important;
+}
+
+.content {
+  padding-bottom: 50px;
+}
+
+.pre-wave-intro  .container {
+  height: 100%;
   padding: 0px !important;
   visibility: visible;
   margin: 0px 0px 0px 0px !important;
   width: 100% !important;
   max-width: 100% !important;
+  overflow: hidden;
+  position: relative;
 }
 
-#pre-sponsor > .container > .section-header{
-  background-color: #aab8c9;
+.pre-wave-intro .row-wave {
+  bottom: -1px;
+  position: absolute;
+  height: 100px;
+  width: 100%;
+}
+
+.pre-wave-intro  .section-header{
   height: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
 }
-#pre-sponsor > .container > .section-header > .ocean{
-  height: 75px !important;
-  background-color: #c1d2e8;
+
+#center-bg-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    height: calc(100vh - 370px);
 }
 
-.wave-sponsor {
-  background-image: url(../img/patrocinadores/onda-apadrinhamento.svg);
-  background-repeat: repeat-x;
-  background-position-y: bottom;
-  background-size: contain;
-  position: absolute;
-  width: 200%;
-  height: 100%;
-  animation:wave 50s -5s linear infinite;
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
+#pre-c4p {
+  background-color: #20284f;
+}
+
+#pre-c4p .wave {
+  background-color: #bd641e;
+}
+
+#c4p {
+  background-color: #bd641e;
+}
+
+
+#c4p {
+  background-color: #bd641e;
+  color: white;
+}
+
+#c4p h2 {
+  color: white !important;
+}
+
+
+.bt-c4p {
+  background-color: #336d9a;
+  border-color: #336d9a;
+  color: #fffffd;
+}
+
+.bt-c4p:nth-of-type(1) {
+  margin-top:10px;
+}
+
+.bt-c4p:hover {
+  color: #20284f;
+  background-color: #a9b5c4;
+}
+
+.bt-sponsorship:hover {
+  background-color: #fef7e4;
 }
