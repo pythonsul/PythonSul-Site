@@ -26,10 +26,6 @@ jQuery(document).ready(function( $ ) {
     $('#header').addClass('header-scrolled');
   }
 
-  // Real view height for mobile devices
-  if (window.matchMedia("(max-width: 767px)").matches) {
-    $('#intro').css({ height: $(window).height() });
-  }
 
 
   // Initialize Venobox

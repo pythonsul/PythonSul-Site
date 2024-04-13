@@ -29,8 +29,8 @@ OLD_EVENTS = (
 MENU = (
     ('#intro','Início', True),
     ('#pre-about','Sobre', False),
+    ('#pre-c4p','Atividades', False),
     ('#pre-location', 'Local', False),
-    ('#pre-code-conduct','Código de Conduta', False),
     ('#pre-sponsorship','Patrocínio', False),
     ('#pre-contact','Contato', False),
     ('/blog','Blog', False),
@@ -41,6 +41,7 @@ SOCIAL = (
     ('instagram','https://www.instagram.com/pythonsul'),
     ('twitter', 'https://twitter.com/PythonSul'),
     ('telegram', 'https://t.me/PythonSulBR'),
+    ('linkedin', 'https://www.linkedin.com/in/python-sul/'),
 )
 
 DEFAULT_PAGINATION = False
