@@ -1906,3 +1906,26 @@ html, body {
 #diamond img {
   width: 100%;
 }
+
+#tickets button{
+  font-size: 26px;
+}
+
+.bt-tickets {
+  background-color: #bd641e;
+  border-color: #bd641e;
+  color: #fffffd;
+}
+
+.bt-tickets:nth-of-type(1) {
+  margin-top:20px;
+}
+
+.bt-tickets:hover {
+  color: #20284f;
+  background-color: #e6bf89;
+}
+
+#pre-about {
+  background-color: #20284f;
+}
