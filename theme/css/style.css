@@ -1974,3 +1974,7 @@ html, body {
   color: #e6be89;
   text-decoration: none;
 }
+
+#keynotes .carousel-control-prev, #keynotes .carousel-control-next{
+  width: 30px;
+}
