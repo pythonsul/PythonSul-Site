@@ -139,6 +139,15 @@ jQuery(document).ready(function( $ ) {
     modal.find('#ticket-type').val(ticketType);
   })
 
+  $('#day1').show()
+
+  $('.btn-toggle').click(function() {
+    $('.toggle').hide()
+    $('.btn-toggle').removeClass("active-toggle")
+
+    $($(this).data("target")).show()
+    $(this).addClass("active-toggle")
+  })
 // custom code
 
 });
