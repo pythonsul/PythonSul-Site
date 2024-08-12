@@ -1987,6 +1987,10 @@ html, body {
   font-weight: bold;
 }
 
+.schedule-title > a {
+  color: #336d9a;
+}
+
 .schedule-author {
   font-style: italic;
   font-weight: normal;
