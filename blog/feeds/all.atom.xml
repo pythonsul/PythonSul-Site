@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog Python Sul - 2024</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2024-03-25T12:00:00-03:00</updated><entry><title>Boas vindas</title><link href="/pages/boas-vindas.html" rel="alternate"></link><published>2024-01-12T12:00:00-03:00</published><updated>2024-01-12T12:00:00-03:00</updated><author><name>Talita Rossari</name></author><id>tag:None,2024-01-12:/pages/boas-vindas.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog Python Sul - 2024</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2024-07-03T12:00:00-03:00</updated><entry><title>Boas vindas</title><link href="/pages/boas-vindas.html" rel="alternate"></link><published>2024-01-12T12:00:00-03:00</published><updated>2024-01-12T12:00:00-03:00</updated><author><name>Talita Rossari</name></author><id>tag:None,2024-01-12:/pages/boas-vindas.html</id><summary type="html">
         
         &lt;div class="header-container-blog"&gt;
             &lt;div class="row  align-items-center"&gt;
@@ -575,4 +575,208 @@
                 &lt;a href="http://datarudder.com"&gt;Visite o site&lt;/a&gt;
             &lt;/div&gt;
         &lt;/div&gt;
-    </content><category term="artigos"></category><category term="data-rudder"></category><category term="patrocinio"></category></entry></feed>
+    </content><category term="artigos"></category><category term="data-rudder"></category><category term="patrocinio"></category></entry><entry><title>Financeiro, valor de ingressos e SOS Rio grande do Sul</title><link href="/pages/updates-org-financeiro.html" rel="alternate"></link><published>2024-07-03T12:00:00-03:00</published><updated>2024-07-03T12:00:00-03:00</updated><author><name>Org Python Sul</name></author><id>tag:None,2024-07-03:/pages/updates-org-financeiro.html</id><summary type="html">
+        
+        &lt;div class="header-container-blog"&gt;
+            &lt;div class="row  align-items-center"&gt;
+                &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/financeiro/capa.png" alt="Atualizações da organização do evento" title="Atualizações da organização do evento"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
+                    &lt;h1 class="blog-title"&gt;Financeiro, valor de ingressos e Vida&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-12 col-md-12 col-sm-12"&gt;
+                &lt;div class="alert alert-warning" role="alert"&gt;
+                    Eu escrevi esse texto a um tempinho, só esqueci de lançar, me perdoem por isso, mas a vida tava uma loucura.
+                    &lt;br&gt;
+                    Então entendam o contexto/época que escrevi esse texto ❤️
+                &lt;/div&gt;
+                Olá pessoal, a quanto tempo né?
+                &lt;br&gt;
+                &lt;p&gt;
+                    Já adianto alguns pedidos de desculpas, eu e …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+        
+        &lt;div class="header-container-blog"&gt;
+            &lt;div class="row  align-items-center"&gt;
+                &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/financeiro/capa.png" alt="Atualizações da organização do evento" title="Atualizações da organização do evento"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
+                    &lt;h1 class="blog-title"&gt;Financeiro, valor de ingressos e Vida&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-12 col-md-12 col-sm-12"&gt;
+                &lt;div class="alert alert-warning" role="alert"&gt;
+                    Eu escrevi esse texto a um tempinho, só esqueci de lançar, me perdoem por isso, mas a vida tava uma loucura.
+                    &lt;br&gt;
+                    Então entendam o contexto/época que escrevi esse texto ❤️
+                &lt;/div&gt;
+                Olá pessoal, a quanto tempo né?
+                &lt;br&gt;
+                &lt;p&gt;
+                    Já adianto alguns pedidos de desculpas, eu e a org demos uma sumidinha daqui,
+                    um pouco por conta da vida e dia a dia. E muito por todo o resto.
+                    &lt;br&gt;Mas também porque não somos bons em escrever. Principalmente nesse momento.
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    Hoje vim explicar duas coisinhas da org:
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            A primeira delas é o desastre do Rio Grande do Sul e como isso afetou nossa organização.
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            E a segunda é o valor do ingresso.
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    Caso você não saiba, o RS viveu, vive e está tentando sobreviver a um dos maiores eventos climáticos da
+                    história do Brasil.
+                    &lt;br&gt;Mais de &lt;b&gt;95% das cidades do Estado&lt;/b&gt; foram afetadas pela enchente, se não parece muito
+                    em porcentagem para você, pense que isso representa quase &lt;b&gt;10% das cidades do Brasil&lt;/b&gt; (473 cidades afetadas).
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    No começo das enchentes eu estava em Porto Alegre, e não vou mentir, não estava achando que era tamanha
+                    a gravidade da situação, até porque eu estava segura na casa do Cifali. Mas com o tempo começou a ter barulho
+                    de sirenes, helicópteros e comecei a ver pessoas realmente desabrigadas ao redor.
+                &lt;/p&gt;
+                &lt;div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1"&gt;
+                    &lt;figure class="figure"&gt;
+                        &lt;img class="figure-img img-fluid" src="/blog/static/artigos/financeiro/tragedia-rs.jpg" alt="Vista aérea de Porto Alegre alagada após enchentes de maio de 2024" title="Vista aérea de Porto Alegre alagada após enchentes de maio de 2024"&gt;
+                        &lt;figcaption class="figure-caption"&gt;Vista aérea de Porto Alegre alagada após enchentes de maio de 2024 / Crédito: Ricardo Stuckert/Presidência da República&lt;/figcaption&gt;
+                    &lt;/figure&gt;
+                &lt;/div&gt;
+                &lt;p&gt;
+                    Tive que dar uma respirada funda e desassociar a situação para conseguir aguentar ficar por lá.
+                    Só consegui pensar melhor quando estava em Floripa, e só consegui chegar em Floripa porque meu pai saiu
+                    daqui e foi me buscar lá. Eu tive sorte, mas sinceramente fiquei apavorada.
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    Além de mim, outras pessoas da org também estão em um misto de sentimentos.
+                    Alguns têm famílias e amigos nas áreas afetadas ou por perto,
+                    outras pessoas que já moraram em algumas das cidades afetadas. Então foi difícil para nós mantermos o foco,
+                    mantermos ativos na divulgação e animados. O RS é ⅓ da comunidade do Sul do Brasil.
+                    E ver membros da comunidade sofrendo, dói.
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    É inacreditável o que o RS está vivendo, e por mais que já tenha se passado um mês e tenha melhorado um pouco,
+                    ainda tem inúmeras famílias que estão desabrigadas e precisando de algo. Então se você conseguir, continue ajudando.
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    Pensamos muito em se deveríamos manter o evento, conversamos com algumas pessoas. E decidimos manter,
+                    para dar uma chama de calor para a comunidade Python daqui do Sul.
+                    E esperamos fazer o melhor evento possível!
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    Como decidimos manter o evento, precisamos fazer acontecer. E para conseguir fazer acontecer,
+                    precisamos de dinheiro, e como precisamos de dinheiro, precisamos vender os ingressos!
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    Mas também sabemos que é difícil para alguns entender o por que os ingressos dos eventos estão ficando cada vez mais caros.
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    Então vim aqui explicar um pouco da nossa conta de padaria.
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    Hoje o custo do evento até agora é de R$ 41.190.
+                    &lt;br /&gt;
+                    Nesse valor está incluso o que estamos considerando essencial: camisetas, filmagem, fotografia, custos de keynotes
+                    (palestrantes principais), auxílios a palestrantes de outras regiões, coffee break, infra do pretalxs e espaço Kids.
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    E atualmente temos 2 empresas patrocinadoras: A PSF e a Data Rudder. Além de 2 patrocinadores,
+                    temos a Jessica Temporal e o Jairo Jair como madrinha e padrinho do evento. (inclusive, amo vocês)
+                    Tirando as taxas da APyB temos em caixa um pouco mais de R$ 27.000.
+                &lt;/p&gt;
+
+                &lt;div class="row"&gt;
+                    &lt;div class="col-lg-3 offset-lg-3 col-md-3 offset-md-3 col-sm-6"&gt;
+                        &lt;img class="img-fluid" src="/theme/img/patrocinadores/data-rudder.png" alt="" title=""&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-lg-3 col-md-3 col-sm-6"&gt;
+                        &lt;img class="img-fluid" src="/theme/img/patrocinadores/psf.png" alt="" title=""&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;p class="text-center"&gt;Patrocinadores da Python Sul 2024&lt;/p&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-lg-3 offset-lg-3 col-md-3 offset-md-3 col-sm-6"&gt;
+                        &lt;img class="img-fluid" src="/theme/img/patrocinadores/jessica-temporal.png" alt="" title=""&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-lg-3 col-md-3 col-sm-6"&gt;
+                        &lt;img class="img-fluid" src="/theme/img/patrocinadores/jairo-jair.png" alt="" title=""&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;p class="text-center"&gt;Madrinha e padrinho da Python Sul 2024&lt;/p&gt;
+
+                &lt;p&gt;
+                    Estamos negociando outros patrocínios, porém como não temos certeza, não podemos levar em conta
+                    para o evento acontecer. O que nos deixa com um valor de R$ 13.190 para arrecadar com ingressos.
+                    Dividindo o valor pela quantidade de ingressos que teremos para venda: 162 (seria os 220 lugares
+                    do CESUSC - ingressos de patrocinadores, palestrantes e voluntários) + a taxa do eventbrite para
+                    organizadores (9,7%). Nos resulta um valor de R$ 89,56 por ingresso.
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    Como queremos incluir coisas desejáveis no evento, como auxílio de custo para palestrantes,
+                    estamos começando os lotes (sem ser o promocional) como R$ 90 a meia e R$ 100 o ingresso social.
+                    E iremos aumentar o preço até R$ 135 a meia e R$ 150 o ingresso social.
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    Todo mundo da organização queria fazer o evento mais barato possível (inclusive queriamos que fosse de graça), porém primeiro temos que pagar o evento.
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    &lt;b&gt;Caso você queira muito ir no evento e não tenha dinheiro, conversa com a gente, vamos ver o que podemos fazer ❤️&lt;/b&gt;
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    Esperamos que vocês entendam os valores que estamos realizando, e garantimos que estamos trabalhando para fazer
+                    cada centavo valer a pena. Afinal, somos parte da comunidade Python.
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    Outra coisa importante para frizar é: caso conseguirmos outros patrocinadores (nos patrocineeee), iremos utilizar o dinheiro extra para:
+                    &lt;ol&gt;
+                        &lt;li&gt;
+                            Oferecer mais cupons de desconto, queremos diminuir o preço para ter mais gente com a gente ❤️
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            Melhorar a vida das pessoas palestrantes (afinal, estão cedendo seu tempo)
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            Ter coisas mais legais para o evento, queremos que ele seja inesquecivel para vocês ❤️
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            Deixar caixa para a PyBR, pois acreditamos que a PyBR é o evento mais diversificado de pessoas e assuntos da comunidade Python no Brasil. Além de que a Python Sul só existiu porque nos encontramos na PyBR 2023 ❤️
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            Ter algum caixa para iniciar o proximo evento, pois é sempre bom começar com algum caixa.
+                        &lt;/li&gt;
+                    &lt;/ol&gt;
+                &lt;/p&gt;
+
+                &lt;p&gt;
+                    Com carinho e afeto,
+                    &lt;br /&gt;
+                    Talita Rossari, co-organizadora da Python Sul 2024.
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </content><category term="artigos"></category><category term="ingresso"></category><category term="financeiro"></category><category term="rio grande do sul"></category></entry></feed>

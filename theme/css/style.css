@@ -1978,3 +1978,57 @@ html, body {
 #keynotes .carousel-control-prev, #keynotes .carousel-control-next{
   width: 30px;
 }
+
+.schedule-interval {
+  white-space: nowrap;
+}
+
+.schedule-title {
+  font-weight: bold;
+}
+
+.schedule-title > a {
+  color: #336d9a;
+}
+
+.schedule-author {
+  font-style: italic;
+  font-weight: normal;
+}
+
+.table-v-align {
+  vertical-align: middle;
+}
+
+.table-schedule > thead > tr > th {
+  background-color: #20284f;
+  color: white;
+}
+
+.table-schedule > tbody > tr > td{
+  background-color: #c1d2e8;
+}
+
+.table-schedule > tbody > tr > td:first-child {
+  background-color: #20284f;
+  color: white;
+}
+
+.table-schedule > tbody > tr > td:is(.schedule-title) {
+  border-bottom: none;
+}
+
+.btn-toggle {
+  background-color: #20284f;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.btn-toggle:hover, .active-toggle {
+  background-color: #c1d2e8;
+  color: black;
+}
+
+.toggle {
+  display: none;
+}
