@@ -30,7 +30,7 @@ MENU = (
     ('#intro','Início', True),
     ('#pre-about','Sobre', False),
     ('#pre-keynotes','Keynotes', False),
-    ('#pre-c4p','Cronograma', False),
+    ('#pre-lineup','Cronograma', False),
     ('#pre-location', 'Local', False),
     ('#pre-sponsorship','Patrocínio', False),
     ('#pre-contact','Contato', False),
