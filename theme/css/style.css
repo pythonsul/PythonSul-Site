@@ -1678,7 +1678,6 @@ html, body {
   margin-bottom: 0px;
 }
 
-
 #diamond {
   background: #aab8c9 !important;
   background-size: cover;
@@ -1709,9 +1708,45 @@ html, body {
   position: absolute;
   width: 200%;
   height: 100%;
-  animation: wave 15s -2s linear infinite;
+  animation: wave 20s -2s linear infinite;
   transform: translate3d(0, 0, 0);
   opacity: 1;
+}
+
+.wave-ouro {
+  background-image: url(../img/patrocinadores/onda-ouro.svg);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: #1F284E;
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave 25s -2s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+
+#ouro {
+  background: #fff6e1 !important;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+#ouro  .section-header h2 {
+  color: #202850;
+}
+
+#pre-ouro .container {
+  background-color: #336d9a !important;
+}
+
+#pre-ouro  .section-header{
+  background-color: #c1d2e8;
+}
+
+#pre-ouro .ocean{
+  background-color: #c1d2e8;
 }
 
 #patrocinadores { 
@@ -1751,7 +1786,7 @@ html, body {
   position: absolute;
   width: 200%;
   height: 100%;
-  animation: wave 25s -2s linear infinite;
+  animation: wave 30s -2s linear infinite;
   transform: translate3d(0, 0, 0);
   opacity: 1;
 }
