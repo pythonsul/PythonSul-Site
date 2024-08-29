@@ -1004,8 +1004,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
+#code-conduct a {
+  color: #fef7e4;
+}
+
+
 #pre-code-conduct > .container {
-  background-color: #202850 !important;
+  background-color: #c1d2e8 !important
 }
 
 #pre-code-conduct .wave {
@@ -2066,4 +2071,32 @@ html, body {
 
 .toggle {
   display: none;
+}
+
+
+.wave-apoio {
+  background-image: url(../img/apoio/onda-apoio.svg);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: #1F284E;
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave 25s -2s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+
+
+#apoio {
+  background: #c1d2e8 !important;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#apoio strong {
+  text-align: center;
+  color: #202850;
 }
