@@ -33,7 +33,7 @@ MENU = (
     ('#pre-lineup','Cronograma', False),
     ('#pre-location', 'Local', False),
     ('#pre-sponsorship','Patrocínio', False),
-    ('#pre-contact','Contato', False),
+    ('#pre-code-conduct','Código de Conduta', False),
     ('/blog','Blog', False),
 )
 
