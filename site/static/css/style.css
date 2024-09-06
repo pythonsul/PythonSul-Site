@@ -2100,3 +2100,40 @@ html, body {
   text-align: center;
   color: #202850;
 }
+
+
+.wave-prata {
+  background-image: url(../img/patrocinadores/onda-prata.svg);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: #1F284E;
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave 20s -2s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+
+#prata {
+  background: #c1d2e8 !important;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+#prata  .section-header h2 {
+  color: #202850;
+}
+
+#pre-prata .container {
+  background-color: #336d9a !important;
+}
+
+#pre-prata  .section-header{
+  background-color: #c1d2e8;
+}
+
+#pre-prata .ocean{
+  background-color: #c1d2e8;
+}
