@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Python Sul - 2024</title><link href="https://sul.python.org.br/" rel="alternate"></link><link href="https://sul.python.org.br/feeds/all.atom.xml" rel="self"></link><id>https://sul.python.org.br/</id><updated>2024-07-03T12:00:00-03:00</updated><entry><title>Boas vindas</title><link href="https://sul.python.org.br/boas-vindas.html" rel="alternate"></link><published>2024-01-12T12:00:00-03:00</published><updated>2024-01-12T12:00:00-03:00</updated><author><name>Talita Rossari</name></author><id>tag:sul.python.org.br,2024-01-12:/boas-vindas.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Python Sul - 2024</title><link href="https://sul.python.org.br/" rel="alternate"></link><link href="https://sul.python.org.br/feeds/all.atom.xml" rel="self"></link><id>https://sul.python.org.br/</id><updated>2024-09-09T12:00:00-03:00</updated><entry><title>Boas vindas</title><link href="https://sul.python.org.br/boas-vindas.html" rel="alternate"></link><published>2024-01-12T12:00:00-03:00</published><updated>2024-01-12T12:00:00-03:00</updated><author><name>Talita Rossari</name></author><id>tag:sul.python.org.br,2024-01-12:/boas-vindas.html</id><summary type="html">
         
         &lt;div class="header-container-blog"&gt;
             &lt;div class="row  align-items-center"&gt;
@@ -779,4 +779,60 @@
                 &lt;/p&gt;
             &lt;/div&gt;
         &lt;/div&gt;
-    </content><category term="artigos"></category><category term="ingresso"></category><category term="financeiro"></category><category term="rio grande do sul"></category></entry></feed>
+    </content><category term="artigos"></category><category term="ingresso"></category><category term="financeiro"></category><category term="rio grande do sul"></category></entry><entry><title>Guia turístico</title><link href="https://sul.python.org.br/guia-turistico.html" rel="alternate"></link><published>2024-09-09T12:00:00-03:00</published><updated>2024-09-09T12:00:00-03:00</updated><author><name>Gabriel Ecker</name></author><id>tag:sul.python.org.br,2024-09-09:/guia-turistico.html</id><summary type="html">
+        
+        &lt;div class="header-container-blog"&gt;
+            &lt;div class="row  align-items-center"&gt;
+                &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/guia/feira.jpg" alt="Imagem da entrada do mercado público de Florianópolis, local turístico" title="Imagem da entrada do mercado público de Florianópolis, local turístico"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
+                    &lt;h1 class="blog-title"&gt;Guia turístico&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-12 col-md-12 col-sm-12"&gt;
+                &lt;p&gt;Oie galera! Tudo bem?&lt;/p&gt;
+                &lt;p&gt;Para ajudar todos que estão vindo de outras cidades, fizemos algumas listinhas com locais interessantes para vocês conhecerem!&lt;/p&gt;
+                &lt;p&gt;
+                    A ilha possui uma diversidade muito grande de opções, tendo locais feitos para quem curte explorar a cultura e culinária local,
+                    e locais com opções mais …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+        
+        &lt;div class="header-container-blog"&gt;
+            &lt;div class="row  align-items-center"&gt;
+                &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/guia/feira.jpg" alt="Imagem da entrada do mercado público de Florianópolis, local turístico" title="Imagem da entrada do mercado público de Florianópolis, local turístico"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
+                    &lt;h1 class="blog-title"&gt;Guia turístico&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-12 col-md-12 col-sm-12"&gt;
+                &lt;p&gt;Oie galera! Tudo bem?&lt;/p&gt;
+                &lt;p&gt;Para ajudar todos que estão vindo de outras cidades, fizemos algumas listinhas com locais interessantes para vocês conhecerem!&lt;/p&gt;
+                &lt;p&gt;
+                    A ilha possui uma diversidade muito grande de opções, tendo locais feitos para quem curte explorar a cultura e culinária local,
+                    e locais com opções mais tradicionais com um toque especial dos habitantes de Floripa.
+                &lt;/p&gt;
+                &lt;p&gt;
+                    Separamos com carinho algumas opções de locais que conhecemos e entendemos que podem agradar a todos.
+                &lt;/p&gt;
+                &lt;p&gt;
+                    Mas atenção! Floripa é uma cidade turística e alguns locais não são tão acessíveis financeiramente.
+                &lt;/p&gt;
+                &lt;p&gt;
+                    Tentamos oferecer opções para todos, mas ressaltamos que é importante vocês checarem no Maps ou Instagram a média de valores praticados no local
+                    que pretendem conhecer, não queremos ninguém sendo negativamente surpreso na hora da conta &amp;#128517;
+                &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="https://maps.app.goo.gl/ntHBYHGwta2QiWNx6" target="_blank"&gt;Cafés gostosos!&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="https://maps.app.goo.gl/rMYknFTyckBa8Ms36" target="_blank"&gt;Para matar a fome!&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="https://maps.app.goo.gl/NyStxCKJsED11vzZ8" target="_blank"&gt;Beber e esquecer dos problemas!&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="https://maps.app.goo.gl/q65Ydd2csbSbjWG86" target="_blank"&gt;PGD - parques gastronômicos democráticos!&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </content><category term="artigos"></category><category term="guia"></category><category term="turistico"></category></entry></feed>
