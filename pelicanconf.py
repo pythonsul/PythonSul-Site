@@ -29,13 +29,12 @@ OLD_EVENTS = (
 
 MENU = (
     ('#intro','Início', True),
-    ('#pre-about','Sobre', False),
-    ('#pre-keynotes','Keynotes', False),
-    ('#pre-lineup','Cronograma', False),
-    ('#pre-location', 'Local', False),
-    ('#pre-sponsorship','Patrocínio', False),
-    ('#pre-code-conduct','Código de Conduta', False),
-    ('blog','Blog', False),
+    ('#about','Sobre', False),
+    ('#keynotes','Keynotes', False),
+    ('#c4p','Cronograma', False),
+    ('#location', 'Local', False),
+    ('#sponsorship','Patrocínio', False),
+    ('#code-conduct','Código de Conduta', False),
 )
 
 # Social widget
