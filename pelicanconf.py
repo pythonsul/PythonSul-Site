@@ -23,8 +23,8 @@ DEFAULT_LANG = 'pt-br'
 
 # OLD_EVENTS
 OLD_EVENTS = (
-    ('2023','/2023'),
     ('2024','/2024'),
+    ('2023','/2023'),
 )
 
 MENU = (
