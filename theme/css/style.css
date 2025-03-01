@@ -9,14 +9,14 @@
 # General
 --------------------------------------------------------------*/
 :root {
-  --base-color: #BD651D;
+  --base-color: #ffdf57;
 }
 
 
 body {
   background: #fef7e454;
   color: #2f3138;
-  font-family: "nunito", "Open Sans", sans-serif;
+  font-family:sans-serif;
   overflow-x: hidden;
 }
 
@@ -44,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "ribeye", "Raleway", sans-serif;
+  font-family:sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -143,12 +143,12 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  background-color: #336d9a;
+  background-color: #39393d;
 }
 
 #header.header-scrolled,
 #header.header-fixed {
-  background: #336d9a;
+  background: #39393d;
   height: 70px;
   padding: 15px 0;
   transition: all 0.5s;
@@ -159,7 +159,7 @@ h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: "ribeye","Raleway", sans-serif;
+  font-family:sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -234,7 +234,7 @@ h6 {
   content: "\f107";
   position: absolute;
   right: 15px;
-  font-family: FontAwesome;
+  font-family:sans-serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -257,7 +257,7 @@ h6 {
   text-decoration: none;
   display: inline-block;
   color: white;
-  font-family: "nunito","Raleway", sans-serif;
+  font-family:sans-serif;
   font-weight: 600;
   font-size: 14px;
   outline: none;
@@ -374,7 +374,7 @@ h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: #336d9a;
+  background: #39393d;
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -491,7 +491,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background-color: #20284f;
+  background-color: #247177;
   overflow: hidden;
   position: relative;
   color: #fff;
@@ -529,7 +529,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   margin-bottom: 20px;
   color: #fff;
-  font-family: "nunito", "Open Sans", sans-serif;
+  font-family:sans-serif;
   font-weight: 500;
   text-align: justify;
 }
@@ -962,7 +962,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 18px 0;
   display: block;
   position: relative;
-  font-family: "ribeye","Raleway", sans-serif;
+  font-family:sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
@@ -997,7 +997,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #code-conduct {
-  background: #336d9a !important;
+  background: #39393d !important;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -1014,15 +1014,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #pre-code-conduct .wave {
-  background-color: #336d9a;
+  background-color: #39393d;
 }
 
 #pre-contact > .container {
-  background-color: #336d9a !important;
+  background-color: #39393d !important;
 }
 
 #pre-contact .ocean{
-  background-color: #336d9a !important;
+  background-color: #39393d !important;
 }
 
 #pre-contact  .wave {
@@ -1033,7 +1033,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 html, body {
   margin: 0;
   min-height: 100%;
-  background-color: #fef7e454;
+  background-color: #eeeeee54;
 }
 
 /* waves */
@@ -1184,7 +1184,7 @@ html, body {
 
 #contact {
   padding: 60px 0;
-  background-color: #fef7e4;
+  background-color: none;
 }
 
 #contact .contact-info {
@@ -1211,7 +1211,7 @@ html, body {
   font-weight: bold;
   text-transform: uppercase;
   color: #112363;
-  font-family: "nunito", "Open Sans", sans-serif;
+  font-family:sans-serif;
 }
 
 #contact .contact-info a {
@@ -1291,15 +1291,14 @@ html, body {
 
 #footer .footer-top {
   padding: 10px 0 30px 0;
-  background: url(../img/footer.webp) center center repeat;
-  background-color: #fef7e4;
+  background-color: #39393d;
   background-size: contain;
   overflow: hidden;
   position: relative;
 }
 .footer-top .container {
   opacity: 0.95;
-  background-color: #fef7e4;
+  background-color: #39393d;
   padding: 25px 15px 0px 15px;
 }
 
@@ -1348,7 +1347,7 @@ html, body {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-family: "ribeye","Raleway", sans-serif;
+  font-family:sans-serif;
   font-weight: 700;
   color: #fff;
 }
@@ -1362,15 +1361,15 @@ html, body {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "ribeye","Raleway", sans-serif;
+  font-family:sans-serif;
   color: #fff;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #222636;
-  color: #eee;
+  background: #eee;
+  color: #222636;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1389,16 +1388,16 @@ html, body {
 #footer .footer-top h1 {
   font-size: 14px;
   font-weight: bold;
-  color: #20284f;
+  color: #eee;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
   border-bottom: 2px solid var(--base-color);
-  font-family: "nunito", "Open Sans", sans-serif;
+  font-family:sans-serif;
 }
 
 .footer-top p {
-  color: #20284f;
+  color: #fff;
 
 }
 
@@ -1428,7 +1427,7 @@ html, body {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #222636;
+  color: #eee;
 }
 
 #footer .footer-top .footer-links ul a:hover {
@@ -1535,7 +1534,7 @@ html, body {
 
 @media (max-width: 991px) {
   #header {
-    background: #336d9a;
+    background: #39393d;
     height: 70px;
     padding: 15px 0;
     transition: all 0.5s;
@@ -1655,15 +1654,14 @@ html, body {
 }
 
 #location {
-  background: #e6bf89 !important;
+  background: none !important;
   background-size: cover;
   overflow: hidden;
   position: relative;
-  color: white;
 }
 
 #location p {
-  color: #20284f;
+  color: #333;
 }
 
 #pre-location > .container {
@@ -1694,7 +1692,7 @@ html, body {
 }
 
 #pre-diamond  .container {
-  background-color: #336d9a !important;
+  background-color: #39393d !important;
 }
 
 #pre-diamond  .section-header{
@@ -1743,7 +1741,7 @@ html, body {
 }
 
 #pre-ouro .container {
-  background-color: #336d9a !important;
+  background-color: #39393d !important;
 }
 
 #pre-ouro  .section-header{
@@ -1777,7 +1775,7 @@ html, body {
 }
 
 #pre-sponsor .container {
-  background-color: #336d9a !important;
+  background-color: #39393d !important;
 }
 
 #pre-sponsor  .section-header{
@@ -1824,7 +1822,7 @@ html, body {
 
 
 .wave-intro:nth-of-type(1){
-  background-color:#336d9a;
+  background-color:#39393d;
   bottom: 175px;
   animation: wave 40s linear infinite;
 }
@@ -1902,7 +1900,7 @@ html, body {
 }
 
 #pre-lineup {
-  background-color: #336d9a;
+  background-color: #39393d;
 }
 
 #pre-lineup .wave {
@@ -1910,24 +1908,24 @@ html, body {
 }
 
 #c4p {
-  background-color: #bd641e;
+  background-color: #e39845;
 }
 
 
 #c4p {
-  background-color: #bd641e;
-  color: white;
+  background-color: #e39845ff;
+  color: #39393d;
 }
 
 #c4p h2 {
-  color: white !important;
+  color: #39393d !important;
 }
 
 
 .bt-c4p {
-  background-color: #336d9a;
-  border-color: #336d9a;
-  color: #fffffd;
+  background-color: #39393d;
+  border-color: #39393d;
+  color: #39393d;
 }
 
 .bt-c4p:nth-of-type(1) {
@@ -1973,7 +1971,7 @@ html, body {
 
 #keynotes {
   text-align: left;
-  background-color: #336d9a;
+  background-color: #39393d;
 }
 
 
@@ -1983,7 +1981,7 @@ html, body {
 
 
 #pre-keynotes .wave {
-  background-color: #336d9a;
+  background-color: #39393d;
 }
 
 #keynotes h3 {
@@ -2028,7 +2026,7 @@ html, body {
 }
 
 .schedule-title > a {
-  color: #336d9a;
+  color: #39393d;
 }
 
 .schedule-author {
@@ -2127,7 +2125,7 @@ html, body {
 }
 
 #pre-prata .container {
-  background-color: #336d9a !important;
+  background-color: #39393d !important;
 }
 
 #pre-prata  .section-header{

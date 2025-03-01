@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Python Sul - 2024 - Talita &amp; Org</title><link href="/" rel="alternate"></link><link href="/feeds/talita-org.atom.xml" rel="self"></link><id>/</id><updated>2024-02-03T15:00:00-03:00</updated><entry><title>Retro Nov 2023 - Jan 2024</title><link href="/retro-nov-2023-jan-2024.html" rel="alternate"></link><published>2024-02-02T10:00:00-03:00</published><updated>2024-02-03T15:00:00-03:00</updated><author><name>Talita &amp; Org</name></author><id>tag:None,2024-02-02:/retro-nov-2023-jan-2024.html</id><summary type="html">
+        
+        &lt;div class="header-container-blog"&gt;
+            &lt;div class="row  align-items-center"&gt;
+                &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/retro-nov-2023-jan-2024/retro-nov-2023-jan-2024.png" alt="Imagem do post da retrospectiva de Novembro de 2023 até Janeiro 2024" title="Imagem do post Retrospectiva Nov 2023 - Jan 2024"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
+                    &lt;h1 class="blog-title"&gt;Retrospectiva Python Sul &lt;br&gt; Nov 2023 - Jan 2024&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-12 col-md-12 col-sm-12"&gt;
+                &lt;h2&gt; Bora recaptular?&lt;/h2&gt;
+                    &lt;p&gt;Primeiramente, essa é a versão blog da &lt;a target="_blank" href="https://drive.google.com/file/d/13_qpnhcBGH8rTjf2rearqvaVWlZ_0SIS/view?usp=drive_link"&gt;apresentação&lt;/a&gt; que fizemos na &lt;a href="https://www.youtube.com/watch?v=YFOq6JFePSE" target="_blank"&gt;Python Floripa do dia 27/01&lt;/a&gt;. Logo, se você já viu, lê mesmo assim &amp;#129294;&lt;/p&gt;
+                    &lt;p&gt;Ah, o comecinho já foi comentado aqui no blog, mas o resto é novo!&lt;/p&gt;
+                &lt;h2&gt;Os boas …&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+        
+        &lt;div class="header-container-blog"&gt;
+            &lt;div class="row  align-items-center"&gt;
+                &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/retro-nov-2023-jan-2024/retro-nov-2023-jan-2024.png" alt="Imagem do post da retrospectiva de Novembro de 2023 até Janeiro 2024" title="Imagem do post Retrospectiva Nov 2023 - Jan 2024"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
+                    &lt;h1 class="blog-title"&gt;Retrospectiva Python Sul &lt;br&gt; Nov 2023 - Jan 2024&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-12 col-md-12 col-sm-12"&gt;
+                &lt;h2&gt; Bora recaptular?&lt;/h2&gt;
+                    &lt;p&gt;Primeiramente, essa é a versão blog da &lt;a target="_blank" href="https://drive.google.com/file/d/13_qpnhcBGH8rTjf2rearqvaVWlZ_0SIS/view?usp=drive_link"&gt;apresentação&lt;/a&gt; que fizemos na &lt;a href="https://www.youtube.com/watch?v=YFOq6JFePSE" target="_blank"&gt;Python Floripa do dia 27/01&lt;/a&gt;. Logo, se você já viu, lê mesmo assim &amp;#129294;&lt;/p&gt;
+                    &lt;p&gt;Ah, o comecinho já foi comentado aqui no blog, mas o resto é novo!&lt;/p&gt;
+                &lt;h2&gt;Os boas vindas&lt;/h2&gt;
+                    &lt;p&gt;Assim como no &lt;a href="boas-vindas#como-comecou" target="_blank"&gt;post de boas vindas&lt;/a&gt;, comentei que desafiei a galera do Sul na PyBR que aconteceu Caxias do Sul a encontrar uma sede melhor pra PySul que Floripa.&lt;/p&gt;
+                &lt;h2 id="topicos"&gt;Os Tópicos&lt;/h2&gt;
+                    &lt;p&gt;Divulgamos a quantidade de tópicos que criamos no telegram da org da PySul.&lt;/p&gt;
+                    &lt;img style="width: 50%;" src="/blog/static/artigos/retro-nov-2023-jan-2024/topicos-org-pysul.png" /&gt;
+                    &lt;br&gt;&lt;br&gt;
+                    &lt;small&gt;PS: Após a Python Floripa criamos novos tópicos &amp;#128514;&lt;/small&gt;
+                    &lt;br&gt;&lt;br&gt;
+                &lt;h2&gt;A galere atual&lt;/h2&gt;
+                    &lt;p&gt;Apresentamos a galere, como no &lt;a href="boas-vindas#apresentacao-galere" target="_blank"&gt;post de boas vindas&lt;/a&gt;.&lt;/p&gt;
+                &lt;h2&gt;Os Pilares da organização&lt;/h2&gt;
+                    &lt;p&gt;Nós apresentamos aquilo que determinamos como pilares da organização da PySul 2024:&lt;/p&gt;
+                    &lt;h5 class="estrelas"&gt;Confiança acima de tudo!&lt;/h5&gt;
+                    &lt;p&gt;Ninguém está deixando de fazer algo porque é babaca, e sim todas as pessoas estão dando o seu melhor.&lt;/p&gt;
+                    &lt;h5 class="estrelas"&gt;A saúde mental de todas as pessoas estão acima do evento.&lt;/h5&gt;
+                    &lt;p&gt;Todas as pessoas dessa org já participaram de organizações de evento antes, e sabem a importância de estar saudavel mentalmente para tocar o evento.
+                        &lt;br&gt;&lt;small&gt;E colocamos isso como meta interna, pois muitos já tem CID e não querem mais &amp;#128514;&lt;/small&gt;
+                    &lt;/p&gt;
+                    &lt;h5 class="estrelas"&gt;Sempre se comunicar caso precisar de ajuda!&lt;/h5&gt;
+                    &lt;p&gt;Assim como confiamos em todas as pessoas, esperamos que todas peçam ajuda caso precise, pois somos um evento de comunidade, e toda comunidade é uma rede de apoio.&lt;/p&gt;
+                    &lt;h5 class="estrelas"&gt;Todas as cobranças dentro da org não são pessoais, e sim para fazer o evento acontecer&lt;/h5&gt; 
+                    &lt;p&gt;
+                        &lt;h6&gt;Esse é um dos pilares mais importantes!&lt;/h6&gt;
+                        Conflitos e cobranças acontecem e fazem parte quando todas as pessoas querem o melhor para o evento.&lt;br&gt;
+                        O importante é não levar para o pessoal, afinal, nosso trabalho na comunidade não somos nós.
+                        &lt;small&gt;É claro que não vale chamar o amiguinho de corno.&lt;/small&gt;
+                    &lt;/p&gt;
+                    &lt;h5 class="estrelas"&gt;O grupo de terapia coletiva serve pra xingar geral, inclusive uns aos outros, e não dar solução para os problemas&lt;/h5&gt;
+                    &lt;p&gt;Como é possivel &lt;a href="#topicos"&gt;ver na foto acima&lt;/a&gt;, temos um grupo denominado "terapia coletiva". &lt;br&gt;
+                        Ele foi feito para xingar e chamar para 5min de soco na amizade.&lt;br&gt;
+                        O desabafo e xingamento é uma forma de tirar o peso da pressão que é fazer esse evento acontecer, nós só criamos um espaço para isso.&lt;br&gt;
+                        &lt;b&gt;E é um espaço criado unicamente para xingar, não solucionar problemas.&lt;/b&gt;&lt;/p&gt;
+                    &lt;h5 class="estrelas"&gt;Teremos um core pequeno de org, porém expansível verticalmente.&lt;/h5&gt;
+                    &lt;p&gt;Com nossas experiencias, percebemos que quanto mais pessoas envolvidas, mais dificil é tomar uma decisão importante.&lt;br&gt;
+                        O que queremos é que tenha um grupo pequeno de lideres dentro organização que serão responsável por alguns pontos principais do evento.&lt;br&gt;
+                        E essa pessoa lider é responsável por zelar pelo seu núcleo, caso você precise de ajuda, chame!&lt;br&gt;
+                        &lt;strong&gt;Mas isso não quer dizer que não iremos ampliar o nucleo de org em algum momento, mas sim que cada "adição" de pessoa no grupo vai ser muito bem pensada.&lt;/strong&gt;
+                        &lt;h6&gt;Afinal, &lt;b&gt;confiança é algo que se conquista&lt;/b&gt;, e confiança é nosso primeiro pilar.&lt;/h6&gt;
+                    &lt;/p&gt;
+                &lt;h2&gt;A identidade visual&lt;/h2&gt;
+                &lt;p&gt;
+                    Repassamos tudo o que foi explicado pelos designers no &lt;a target="_blank" href="identidade-visual"&gt;post de identidade visual&lt;/a&gt;.&lt;br&gt;
+                    Mas também apresentamos a bernunça de uma forma única:&lt;/br&gt;
+                    &lt;img style="width: 50%;" src="/blog/static/artigos/retro-nov-2023-jan-2024/bernunca-explicacao.gif"&gt;
+                    &lt;br&gt;&lt;br&gt;
+                    Como vocês conseguem ver, a Bernunça na dança do boi de mamão é um ser que se multiplica, assim como a comunidade Python!
+                &lt;/p&gt;
+                &lt;h2&gt;Os proximos passos:&lt;/h2&gt;
+                    &lt;h3&gt;Patrocinio&lt;/h3&gt;
+                        &lt;p&gt;A PySul ser um evento barato de fazer, mas isso não quer dizer que não precisamos de dinheiro!&lt;br&gt;
+                            Precisamos de dinheiro o evento acontecer!&lt;br&gt;&lt;br&gt;
+                            Estamos em contato com várias empresas, mas estamos sentindo falta de algumas empresas do Sul do Brasil para somar com nós, você sabe alguma? Você quer doar?&lt;/br&gt;&lt;br&gt;
+                            &lt;strong&gt;Entre em contato!&lt;/strong&gt;
+                        &lt;/p&gt;
+                    &lt;h3&gt;Comunidade&lt;/h3&gt;
+                        &lt;h4&gt;A importancia da comunidade&lt;/h4&gt;
+                            &lt;p&gt;
+                                Sem a comunidade, a Python Sul é só um evento de tecnologia, 
+                                não é nada de errado caso fosse, mas gostamos do "tchan" que 
+                                é o diferencial da comunidade!
+                                &lt;br&gt;
+                                &lt;h5&gt;Sem vocês nós não existimos!&lt;/h5&gt;
+                                &lt;br&gt;
+                                Sem comunidade, não há palestras interessantes.&lt;br&gt;
+                                Sem comunidade, não há pessoas interagindo com as outras.&lt;br&gt;
+                                Sem comunidade, não há espaços seguros.&lt;br&gt;
+                            &lt;/p&gt;
+                        &lt;h4&gt;O que pensamos em fazer&lt;/h4&gt;
+                            &lt;p&gt;
+                                Com o destravamento de algumas demandas como a data e local, iremos nos jogar de cabeça nas comunidades aqui do sul do Brasil!
+                                &lt;h5&gt;Nosso plano louco&lt;/h5&gt;
+                                    &lt;h6&gt;A criação de um núcleo dedicado!&lt;/h6&gt;
+                                        &lt;p&gt;
+                                            Cada vez mais percebemos que tracionar demanda muito esforço, tempo e dinheiro.
+                                            &lt;br&gt;
+                                            Por conta disso, iremos criar um núcleo dedicado para fortalecimento das comunidades regionais!
+                                        &lt;/p&gt;
+                                    &lt;h6&gt;Org da Python Floripa&lt;/h6&gt;
+                                        &lt;p&gt;
+                                            Precisamos aumentar a rotatividade da organização da Python Floripa!
+                                            &lt;br&gt;
+                                            Não podemos organizar a Python Floripa e a Python Sul ao mesmo tempo.
+                                            &lt;br&gt;
+                                            Para isso, vamos lançar a iniciativa:
+                                            &lt;ul&gt;
+                                                &lt;li&gt;Palestre na Python Floripa e ganhe um ingresso para a Python Sul!&lt;/li&gt;
+                                                &lt;li&gt;Organize uma Python Floripa e também ganhe um ingresso!&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/p&gt;
+                                    &lt;h6&gt;Viagens&lt;/h6&gt;
+                                        &lt;p&gt;
+                                            Atualmente temos o alcance de Floripa, mas logo estaremos viajando em pequenas distancias pelo Sul, espalhando a palavra da Python Sul!
+                                            &lt;br&gt;
+                                            Muito provavelmente iremos para:
+                                            &lt;ul&gt;
+                                                &lt;li&gt;Curitiba (alô comunidade de Curitiba);&lt;/li&gt;
+                                                &lt;li&gt;Blumenau (alô comunidade de Blumenau);&lt;/li&gt;
+                                                &lt;li&gt;Caxias do Sul (alô comunidade de Caxias);&lt;/li&gt;
+                                                &lt;li&gt;Araranguá (alô comunidade de Araranguá);&lt;/li&gt;
+                                            &lt;/ul&gt;
+                                        &lt;/p&gt;
+                                    &lt;h6&gt;Evangelização por todo o Sul!&lt;/h6&gt;
+                                        &lt;p&gt;
+                                            Não conseguimos ir a todas as regiões do Sul do Brasil, precisamos de braços em &lt;b&gt;todos&lt;/b&gt; os estados e regiões!
+                                            &lt;br&gt;&lt;br&gt;
+                                            &lt;strong style="font-size: 17px;"&gt;Conhece alguém? Chama a gente :)&lt;/strong&gt;
+                                        &lt;/p&gt;
+                                    &lt;h6&gt;Redes sociais&lt;/h6&gt;
+                                        &lt;p&gt;
+                                            &lt;strong style="font-size: 17px;"&gt;Nós realmente precisamos de ajuda!&lt;/strong&gt;
+                                            &lt;br&gt;&lt;br&gt;
+                                            Somos um bando de low profile tentando entender como funciona o algoritmo do Instagram.
+                                        &lt;/p&gt;
+                            &lt;/p&gt;
+                        &lt;h4&gt;Ta, mas e a data??&lt;/h4&gt;
+                        &lt;p&gt;
+                            &lt;img style="width: 100%;" src="/theme/img/logo-main.svg"&gt;
+                            &lt;br&gt;&lt;br&gt;
+                            &lt;h5&gt;
+                                É isso mesmo pessoal, a PySul irá ocorrer dia 13, 14 e 15 de Setembro!
+                            &lt;/h5&gt;
+                        &lt;/p&gt;
+                        &lt;style&gt;
+                            .text-amarelo {
+                                color: #bd651d;
+                            }
+                        &lt;/style&gt;
+                        &lt;h1 style="text-align: center"&gt;
+                            &lt;b class="text-amarelo"&gt;Nos vemos todo mês na&lt;/b&gt;&lt;br&gt;
+                            Python Floripa,&lt;br&gt;
+                            &lt;b class="text-amarelo"&gt;aleatoriamente em algum&lt;/b&gt;&lt;br&gt;
+                            evento na região&lt;br&gt;
+                            &lt;b class="text-amarelo"&gt;e em Setembro na&lt;/b&gt;&lt;br&gt;
+                            Py&lt;b class="text-amarelo"&gt;Sul&lt;/b&gt;!
+                        &lt;/h1&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </content><category term="artigos"></category><category term="retro"></category><category term="andamento"></category><category term="org"></category></entry></feed>
