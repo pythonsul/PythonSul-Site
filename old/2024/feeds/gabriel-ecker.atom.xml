@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Python Sul - 2024 - Gabriel Ecker</title><link href="/" rel="alternate"></link><link href="/feeds/gabriel-ecker.atom.xml" rel="self"></link><id>/</id><updated>2024-09-09T12:00:00-03:00</updated><entry><title>Data Rudder</title><link href="/data-rudder.html" rel="alternate"></link><published>2024-03-25T12:00:00-03:00</published><updated>2024-03-25T12:00:00-03:00</updated><author><name>Gabriel Ecker</name></author><id>tag:None,2024-03-25:/data-rudder.html</id><summary type="html">
+        
+        &lt;div class="header-container-blog"&gt;
+            &lt;div class="row  align-items-center"&gt;
+                &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/data-rudder/banner.gif" alt="Animação da bernuça comendo a logo da data-rudder" title="Animação da bernuça comendo a logo da data-rudder"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
+                    &lt;h1 class="blog-title"&gt;Data Rudder&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-12 col-md-12 col-sm-12"&gt;
+                &lt;p&gt;
+                    Olá gente! Tudo bem?&lt;br&gt;
+                    Nós, da organização da Python Sul 2024 temos uma ótima notícia!
+                    Temos a nossa primeira patrocinadora do evento, a Data Rudder!&lt;br&gt;
+                    Com isso, vamos apresentar para vocês a empresa, contando um pouco da sua história, bem como suas áreas de atuação.
+                &lt;/p&gt;
+                &lt;h4&gt;Sobre a Data …&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+        
+        &lt;div class="header-container-blog"&gt;
+            &lt;div class="row  align-items-center"&gt;
+                &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/data-rudder/banner.gif" alt="Animação da bernuça comendo a logo da data-rudder" title="Animação da bernuça comendo a logo da data-rudder"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
+                    &lt;h1 class="blog-title"&gt;Data Rudder&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-12 col-md-12 col-sm-12"&gt;
+                &lt;p&gt;
+                    Olá gente! Tudo bem?&lt;br&gt;
+                    Nós, da organização da Python Sul 2024 temos uma ótima notícia!
+                    Temos a nossa primeira patrocinadora do evento, a Data Rudder!&lt;br&gt;
+                    Com isso, vamos apresentar para vocês a empresa, contando um pouco da sua história, bem como suas áreas de atuação.
+                &lt;/p&gt;
+                &lt;h4&gt;Sobre a Data Rudder&lt;/h4&gt;
+                &lt;p&gt;
+                    A Data Rudder é uma empresa especializada em soluções antifraude.
+                    Sua história começou em 2018, quando as cofundadoras Rafaela Helbing e Thais Nolasco
+                    viram a oportunidade de inovar oferecendo ao mercado projetos personalizados
+                    de data analytics e auto machine learning. 
+                &lt;/p&gt;
+                &lt;div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/data-rudder/cofundadoras.png" alt="Rafaela Helbing e Thais Nolasco, cofundadoras da DataRudder" title="Rafaela Helbing e Thais Nolasco, cofundadoras da DataRudder"&gt;
+                &lt;/div&gt;
+                &lt;br /&gt;
+                &lt;p&gt;
+                    Apesar das entregas serem bem-recebidas pelos clientes, o formato de prestação de serviços precisava de melhorias,
+                    principalmente em relação ao acompanhamento do modelo preditivo a longo prazo.
+                    Foi então, em 2020, que surgiu a ideia de transformar a experiência em data analytics em um produto, o DeLorean.
+                    A partir daí, a empresa ampliou seu portfólio de produtos, direcionando seu foco ao mercado financeiro e às
+                    demandas de prevenção de riscos.
+                &lt;/p&gt;
+                &lt;p&gt;
+                    Ao longo de sua trajetória, a Data Rudder recebeu investimentos de empresas como Darwin, BTG Pactual,
+                    Sinqia e L4 Venture Capital, da B3. Atualmente, possui colaboradores espalhados por todo o Brasil e
+                    conta com mais de 60 empresas do ecossistema financeiro em sua carteira de clientes.
+                &lt;/p&gt;
+                &lt;h4&gt;Seus produtos e serviços&lt;/h4&gt;
+                &lt;h5&gt;DeLorean Antifraude Transacional&lt;/h5&gt;
+                &lt;p&gt;
+                    O DeLorean Antifraude Transacional é uma plataforma unificada, capaz de detectar o risco em transações via PIX,
+                    TED, boleto e cartão de crédito. Cruzando dados históricos e informações de mercado para monitorar cada
+                    transação, a solução identifica em milissegundos a suspeita de fraude, garantindo a segurança dos usuários
+                    e a reputação das empresas. Através desse produto, as instituições conseguem verificar a presença de contas
+                    laranja e contas de passagem nas operações financeiras.
+                &lt;/p&gt;
+                &lt;h5&gt;DataBusters&lt;/h5&gt;
+                &lt;p&gt;
+                    O DataBusters é um produto em parceria com a B3 - a Bolsa de Valores do Brasil, desenvolvido para apoiar
+                    as empresas regulamentadas pelo Banco Central no cumprimento das exigências da Resolução Conjunta nº6 sobre
+                    o compartilhamento dos indícios de fraude. A plataforma opera através da interoperabilidade, permitindo que
+                    as instituições registrem os indícios no banco de dados e façam a consulta das informações de todo mercado. 
+                &lt;/p&gt;
+                &lt;h5&gt;Monitora PLD&lt;/h5&gt;
+                &lt;p&gt;
+                    O Monitora PLD foi criado para atuar na identificação de casos de lavagem de dinheiro e financiamento ao terrorismo.
+                    A plataforma está em compliance com as Circulares nº4.001 e nº3.978 do Banco Central e oferece também recursos
+                    adicionais para apoiar as instituições no cumprimento das exigências de segurança da Lei nº14.790 de regulamentação
+                    das casas de apostas esportivas. Acompanhando cada movimentação financeira, a solução permite enriquecer a análise
+                    com listas restritivas e internacionais e oferece decisões automáticas de aprovação ou reporte ao COAF. 
+                &lt;/p&gt;
+                &lt;h5&gt;Cultura e Valores&lt;/h5&gt;
+                &lt;p&gt;
+                    A Data Rudder se orgulha em ter um time diverso e comprometido em construir uma cultura plural e inovadora.
+                    Seus valores se baseiam em pilares como a inovação, o trabalho em equipe, o comprometimento e a transparência.
+                    A empresa acredita que a individualidade de cada integrante do time é importante para a construção coletiva de
+                    ideias e soluções, usando a tecnologia e inteligência de mercado como catalisador para novas propostas. 
+                &lt;/p&gt;
+                &lt;div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/data-rudder/equipe.png" alt="Foto com equipe da DataRudder" title="Foto com equipe da DataRudder"&gt;
+                &lt;/div&gt;
+                &lt;br /&gt;
+                Se identificou com a Data Rudder e tem interesse em fazer parte do time?
+                &lt;a href="http://datarudder.com"&gt;Visite o site&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </content><category term="artigos"></category><category term="data-rudder"></category><category term="patrocinio"></category></entry><entry><title>Guia turístico</title><link href="/guia-turistico.html" rel="alternate"></link><published>2024-09-09T12:00:00-03:00</published><updated>2024-09-09T12:00:00-03:00</updated><author><name>Gabriel Ecker</name></author><id>tag:None,2024-09-09:/guia-turistico.html</id><summary type="html">
+        
+        &lt;div class="header-container-blog"&gt;
+            &lt;div class="row  align-items-center"&gt;
+                &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/guia/feira.jpg" alt="Imagem da entrada do mercado público de Florianópolis, local turístico" title="Imagem da entrada do mercado público de Florianópolis, local turístico"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
+                    &lt;h1 class="blog-title"&gt;Guia turístico&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-12 col-md-12 col-sm-12"&gt;
+                &lt;p&gt;Oie galera! Tudo bem?&lt;/p&gt;
+                &lt;p&gt;Para ajudar todos que estão vindo de outras cidades, fizemos algumas listinhas com locais interessantes para vocês conhecerem!&lt;/p&gt;
+                &lt;p&gt;
+                    A ilha possui uma diversidade muito grande de opções, tendo locais feitos para quem curte explorar a cultura e culinária local,
+                    e locais com opções mais …&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</summary><content type="html">
+        
+        &lt;div class="header-container-blog"&gt;
+            &lt;div class="row  align-items-center"&gt;
+                &lt;div class="col-lg-3 col-md-3 col-sm-3 col-3"&gt;
+                    &lt;img class="img-blog" src="/blog/static/artigos/guia/feira.jpg" alt="Imagem da entrada do mercado público de Florianópolis, local turístico" title="Imagem da entrada do mercado público de Florianópolis, local turístico"&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-9 col-md-9 col-sm-9 col-9 blog-title-container"&gt;
+                    &lt;h1 class="blog-title"&gt;Guia turístico&lt;/h1&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-12 col-md-12 col-sm-12"&gt;
+                &lt;p&gt;Oie galera! Tudo bem?&lt;/p&gt;
+                &lt;p&gt;Para ajudar todos que estão vindo de outras cidades, fizemos algumas listinhas com locais interessantes para vocês conhecerem!&lt;/p&gt;
+                &lt;p&gt;
+                    A ilha possui uma diversidade muito grande de opções, tendo locais feitos para quem curte explorar a cultura e culinária local,
+                    e locais com opções mais tradicionais com um toque especial dos habitantes de Floripa.
+                &lt;/p&gt;
+                &lt;p&gt;
+                    Separamos com carinho algumas opções de locais que conhecemos e entendemos que podem agradar a todos.
+                &lt;/p&gt;
+                &lt;p&gt;
+                    Mas atenção! Floripa é uma cidade turística e alguns locais não são tão acessíveis financeiramente.
+                &lt;/p&gt;
+                &lt;p&gt;
+                    Tentamos oferecer opções para todos, mas ressaltamos que é importante vocês checarem no Maps ou Instagram a média de valores praticados no local
+                    que pretendem conhecer, não queremos ninguém sendo negativamente surpreso na hora da conta &amp;#128517;
+                &lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="https://maps.app.goo.gl/ntHBYHGwta2QiWNx6" target="_blank"&gt;Cafés gostosos!&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="https://maps.app.goo.gl/rMYknFTyckBa8Ms36" target="_blank"&gt;Para matar a fome!&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="https://maps.app.goo.gl/NyStxCKJsED11vzZ8" target="_blank"&gt;Beber e esquecer dos problemas!&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="https://maps.app.goo.gl/q65Ydd2csbSbjWG86" target="_blank"&gt;PGD - parques gastronômicos democráticos!&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </content><category term="artigos"></category><category term="guia"></category><category term="turistico"></category></entry></feed>

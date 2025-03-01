@@ -4,12 +4,12 @@ from __future__ import unicode_literals
 from decouple import config
 import os, sys
 
-SITENAME = 'Python Sul - 2024'
-SITEYEAR = 2024
+SITENAME = 'Python Sul - 2025'
+SITEYEAR = 2025
 
 SITEURL = config('SITE_URL', default='')
 
-PATH = os.path.join(os.getcwd(), 'blog/content')
+PATH = os.path.join(os.getcwd(), 'content')
 
 SITEMAP = {
     'format': 'xml',
@@ -24,6 +24,7 @@ DEFAULT_LANG = 'pt-br'
 # OLD_EVENTS
 OLD_EVENTS = (
     ('2023','/2023'),
+    ('2024','/2024'),
 )
 
 MENU = (
@@ -34,7 +35,7 @@ MENU = (
     ('#pre-location', 'Local', False),
     ('#pre-sponsorship','Patrocínio', False),
     ('#pre-code-conduct','Código de Conduta', False),
-    ('/blog','Blog', False),
+    ('blog','Blog', False),
 )
 
 # Social widget
@@ -52,20 +53,3 @@ SITE_META_DESCRIPTION = "Evento da comunidade Python do sul do pais, com intuito
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
-EVENTO = {
-    "data": "2024",
-    "data_completa": "2024",
-    "local": "Florianopolis",
-    "call_for_papers_link": '',
-    "inscricao_link": '',
-}
-
-CATEGORIES_SAVE_AS = ''
-ARCHIVES_SAVE_AS = ''
-TAGS_SAVE_AS = ''
-AUTHORS_SAVE_AS = ''
-
-if 'IS_BLOG' in os.environ:
-    parent_path = os.path.dirname(os.path.abspath('blog'))
-    sys.path.append(parent_path)
-    from blog.blog_pelicanconf import *
