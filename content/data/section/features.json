@@ -1,0 +1,86 @@
+[
+  {
+    "language": "pt-br",
+    "title": "Sobre a PySul 2025",
+    "description": "A Python Sul (PySul) 2025 é um evento que reúne entusiastas e profissionais de Python para explorar suas diversas aplicações, incluindo desenvolvimento web, ciência de dados, inteligência artificial, automação e DevOps, com o objetivo de promover o aprendizado, o networking e a troca de experiências.",
+    "imageCaption": "Conheça nosso macote Caramelo, símbolo de persistência e luta.",
+    "cards": [
+      {
+        "title": "Palestras",
+        "description": "Palestras sobre Python, IA, web e mais.",
+        "icon": "svg/icons/megaphone.svg"
+      },
+      {
+        "title": "Tutoriais",
+        "description": "Participe de sessões práticas para aprimorar suas habilidades.",
+        "icon": "svg/icons/code-xml.svg"
+      },
+      {
+        "title": "Networking e Conexões",
+        "description": "Conecte-se com outros profissionais e entusiastas de Python.",
+        "icon": "svg/icons/message-square.svg"
+      },
+      {
+        "title": "Comunidade Python",
+        "description": "Faça parte de um ambiente acolhedor e diverso.",
+        "icon": "svg/icons/heart-handshake.svg"
+      }
+    ]
+  },
+  {
+    "language": "en",
+    "title": "About PySul 2025",
+    "description": "Python Sul (PySul) 2025 is an event that brings together Python enthusiasts and professionals to explore its various applications, including web development, data science, artificial intelligence, automation, and DevOps, with the goal of promoting learning, networking, and the exchange of experiences.",
+    "imageCaption": "Meet our mascot Caramelo, a symbol of persistence and struggle.",
+    "cards": [
+      {
+        "title": "Talks",
+        "description": "Talks on Python, AI, web, and more.",
+        "icon": "svg/icons/megaphone.svg"
+      },
+      {
+        "title": "Workshops",
+        "description": "Join hands-on sessions to enhance your skills.",
+        "icon": "svg/icons/code-xml.svg"
+      },
+      {
+        "title": "Networking and Connections",
+        "description": "Connect with other Python professionals and enthusiasts.",
+        "icon": "svg/icons/message-square.svg"
+      },
+      {
+        "title": "Python Community",
+        "description": "Be part of a welcoming and diverse environment.",
+        "icon": "svg/icons/heart-handshake.svg"
+      }
+    ]
+  },
+  {
+    "language": "es",
+    "title": "Descubrí PySul 2025",
+    "description": "PySul 2025 es un evento que reúne a entusiastas y profesionales de Python para explorar sus diversas aplicaciones, incluyendo desarrollo web, ciencia de datos, inteligencia artificial, automatización y DevOps, con el objetivo de promover el aprendizaje, el networking y el intercambio de experiencias.",
+    "imageCaption": "Conocé a nuestra mascota Caramelo, símbolo de persistencia y lucha.",
+    "cards": [
+      {
+        "title": "Conferencias",
+        "description": "Charlas sobre Python, inteligencia artificial, web y más.",
+        "icon": "svg/icons/megaphone.svg"
+      },
+      {
+        "title": "Tutoriales",
+        "description": "Participá en sesiones prácticas para mejorar tus habilidades.",
+        "icon": "svg/icons/code-xml.svg"
+      },
+      {
+        "title": "Networking y Conexiones",
+        "description": "Conectate con otros profesionales y entusiastas de Python.",
+        "icon": "svg/icons/message-square.svg"
+      },
+      {
+        "title": "Comunidad Python",
+        "description": "Formá parte de un ambiente cálido y diverso.",
+        "icon": "svg/icons/heart-handshake.svg"
+      }
+    ]
+  }
+]

@@ -1,0 +1,97 @@
+{{/* Initialize current page variable */}}
+{{ $currentPage := . }}
+
+<header class="main-header">
+  <div class="main-header__nav-container">
+    {{/* Mobile menu toggle button */}}
+    <button id="mobile-menu-button" class="mobile-menu--toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle Mobile Menu">
+      {{ partial "svg/icons/menu.svg" }}
+    </button>
+    {{/* Desktop navigation menu */}}
+    <nav class="desktop-menu--content" aria-label="Main Desktop Navigation">
+      <div class="desktop-menu--wrapper">
+        {{/* Site logo linking to homepage */}}
+        <a href="{{ .Site.Home.RelPermalink }}" class="logo" title="{{ .Site.Title }}" aria-label="Home">
+          {{/* Show event logo or name */}}
+          {{ $logo := resources.Get "images/logo_colored.png" }}
+          {{ if $logo }}
+            <img src="{{ $logo.Permalink }}" width="" height="32px" alt="{{ .Site.Title | safeHTML }}" class="site-footer__logo">
+          {{ else }}
+            <span class="site-footer__name">
+              {{ .Site.Title | safeHTML }}
+            </span>
+          {{ end }}
+        </a>
+        <ul class="desktop-menu--links">
+          {{/* Render main navigation links with active state */}}
+          {{ range .Site.Menus.main }}
+          {{ $isActive := eq $currentPage.RelPermalink .URL }}
+          <li>
+            <a href="{{ .URL | absLangURL }}" class="{{ if $isActive }} active{{ end }}" aria-current="{{ if $isActive }}page{{ else }}false{{ end }}">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="desktop-menu--cta-options">
+        {{/* Call to action button for subscription */}}
+        <a variant="button" class="btn" href="#cfp">
+          {{ T "cfp" | safeHTML }}
+        </a>
+        <div class="main-header__options">
+          <div class="language-switcher dropdown" data-event-listener="dropdown">
+            {{/* Language switcher dropdown */}}
+            <button class="language-switcher__toggle dropdown-toggle ghost" id="language-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Select Language">
+              {{ $currentLang := .Site.Language.Lang }}
+              {{ $flag := printf "svg/flags/%s.svg" $currentLang }}
+              {{ partial $flag }}
+            </button>
+            <div class="dropdown-menu language-switcher__menu" role="menu" aria-labelledby="language-toggle">
+              {{ range $.Site.Home.AllTranslations }}
+                <a href="{{ .Permalink }}" class="language-switcher__item ghost" role="menuitem">
+                  {{ .Language.LanguageName }}
+                </a>
+              {{ end }}
+            </div>
+          </div>
+          <div class="color-mode dropdown" data-event-listener="dropdown">
+            {{/* Color mode switcher dropdown */}}
+            <button class="color-mode__toggle dropdown-toggle ghost system" id="color-mode-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Select Color Mode">
+              <div class="icon-box">
+                {{ partial "svg/icons/sun-moon.svg" }}
+                {{ partial "svg/icons/moon.svg" }}
+                {{ partial "svg/icons/sun.svg" }}
+              </div>
+            </button>
+            <div class="dropdown-menu color-mode__menu" role="menu" aria-labelledby="color-mode-toggle">
+              <button class="color-mode__item ghost system" data-event-listener="color-mode" data-mode="system" role="menuitem">
+                <div class="icon-box"></div>
+                <span>System</span>
+              </button>
+              <button class="color-mode__item ghost dark" data-event-listener="color-mode" data-mode="dark" role="menuitem">
+                <div class="icon-box"></div>
+                <span>Dark</span>
+              </button>
+              <button class="color-mode__item ghost light" data-event-listener="color-mode" data-mode="light" role="menuitem">
+                <div class="icon-box"></div>
+                <span>Light</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    {{/* Mobile navigation menu */}}
+    <nav id="mobile-menu" class="mobile-menu--content" aria-label="Main Mobile Navigation">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" variant="link">
+        {{ .Name }}
+      </a>
+      {{ end }}
+      <!--a variant="button" class="btn" href="/subscribe">
+        Inscrever-se
+      </a-->
+    </nav>
+  </div>
+</header>

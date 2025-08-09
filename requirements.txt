@@ -1,5 +1,0 @@
-pelican[markdown]
-livereload
-invoke
-ghp-import
-python-decouple

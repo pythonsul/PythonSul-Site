@@ -1,0 +1,66 @@
+// Variables
+$base-font-size: 1rem;
+$px-per-rem: 16px;
+$font-size: $base-font-size;
+
+// Functions
+@function font-size-from-factor($factor-value) {
+  @return $factor-value * $base-font-size;
+}
+
+@function font-size-from-px($px-value) {
+  @return ($px-value / $px-per-rem) * $base-font-size;
+}
+
+// Mixin for responsive font sizes
+@mixin responsive-font($mobile, $tablet, $desktop) {
+  font-size: $mobile;
+  line-height: 1.2;
+
+  @media (min-width: $breakpoint-sm) {
+    font-size: $mobile;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $tablet;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: $desktop;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    font-size: $desktop;
+  }
+
+  @media (min-width: $breakpoint-2xl) {
+    font-size: $desktop;
+  }
+}
+
+// Map for heading font sizes
+$heading-font-sizes: (
+  h1: (2em, 2.5em, 2.5em, 700),
+  h2: (1.5em, 1.7em, 2em, 600),
+  h3: (1.125em, 1.250em, 1.5em, 600),
+  h4: (0.950em, 1.1em, 1.250em, 500),
+  h5: (1em, 1.25em, 1.5em, 500),
+  h6: (0.875em, 1em, 1.25em, 500)
+);
+
+// Generate heading styles
+@each $heading, $values in $heading-font-sizes {
+  #{$heading} {
+    @include responsive-font(nth($values, 1), nth($values, 2), nth($values, 3));
+    font-weight: nth($values, 4);
+  }
+}
+
+// Paragraph
+p {
+  @include responsive-font(1rem, 1rem, 1rem);
+  line-height: 1.5;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  word-spacing: -0.1em;
+}

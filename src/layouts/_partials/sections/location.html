@@ -1,0 +1,83 @@
+{{/* Get current language, event, location, and date data */}}
+{{ $currentLang := .Site.Language.Lang }}
+{{ $event := .Site.Data.event }}
+{{ $location := $event.location }}
+{{ $date := $event.date }}
+
+{{/* Format event date for display */}}
+{{ $eventDate := dict
+  "Start"  (dateFormat "02" (time $date.start))
+  "Finish" (dateFormat "02" (time $date.finish))
+  "Month"  (title (dateFormat "January" (time $date.finish)))
+  "Year"   (dateFormat "2006" (time $date.finish))
+}}
+
+{{/* Render location section for the current language */}}
+{{ range where .Site.Data.section.location "language" $currentLang }}
+  <section id="local" class="location">
+    <div class="location__container">
+      <div class="location__details">
+        {{/* Section title */}}
+        <h2 class="location__title">
+          {{ .title | safeHTML }}
+        </h2>
+
+        {{/* Venue name */}}
+        <h3 class="location__venue">
+          {{ $location.name | safeHTML }}
+        </h3>
+
+        {{/* Location description */}}
+        <p class="location__description">
+          {{ .description | safeHTML }}
+        </p>
+
+        {{/* Location info list: address and date */}}
+        <ul class="location__info-list">
+          <li class="location__info-item">
+            {{ partial "svg/icons/map-pin.svg" }}
+            <address class="location__info-address">
+              <span class="location__info-label">
+                {{ T "address" | safeHTML }}:
+              </span>
+              <span>{{ $location.address | safeHTML }}</span>
+            </address>
+          </li>
+
+          <li class="location__info-item">
+            {{ partial "svg/icons/calendar.svg" }}
+            <div class="location__info-date">
+              <span class="location__info-label">
+                {{ T "date" | safeHTML }}:
+              </span>
+              <span>{{ i18n "event_date_format" $eventDate}}</span>
+            </div>
+          </li>
+        </ul>
+
+        {{/* Button to open map in new tab */}}
+        <a href="{{ $location.map }}" class="btn accent cta__open-map" target="_blank" rel="noopener noreferrer">
+          {{ T "how_to_get_there" | safeHTML }}
+          {{ partial "svg/icons/external-link.svg" }}
+        </a>
+      </div>
+
+      {{/* Map image and overlay section */}}
+      <div class="location__map">
+        <div class="location__map-image">
+          <div class="image-overlay">
+            {{ partial "svg/icons/map-pin.svg" }}
+            <span class="image-overlay__text">
+              {{ T "local_map" | safeHTML }}
+            </span>
+          </div>
+          {{ partial "svg/map.svg" }}
+        </div>
+        <a href="{{ $location.map }}" class="btn accent cta__open-map" target="_blank" rel="noopener noreferrer">
+          {{ T "how_to_get_there" | safeHTML }}
+          {{ partial "svg/icons/external-link.svg" }}
+        </a>
+      </div>
+    </div>
+  </section>
+{{ end }}

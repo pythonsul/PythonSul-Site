@@ -1,0 +1,34 @@
+{{ $currentLang := .Site.Language.Lang }}
+
+{{/* Loop through blog section data for the current language */}}
+{{ range where .Site.Data.section.blog "language" $currentLang }}
+<section class="blog-section" id="blog">
+  <div class="blog-section__container">
+    {{/* Section title */}}
+    <h2 class="section-title">
+      {{ .title }}
+    </h2>
+    {{/* Section description */}}
+    <p class="section-description">
+      {{ .description }}
+    </p>
+    <div class="latest-posts">
+      {{/* Get latest 3 published blog posts */}}
+      {{ $posts := where site.RegularPages "Type" "blog" }}
+      {{ $posts = first 3 (where $posts ".Params.draft" "=" false) }}
+      {{ $posts = sort $posts ".Date" "desc" }}
+      {{ range $posts }}
+        {{/* Render each post card */}}
+        {{ partial "core/card.html" . }}
+      {{ end }}
+    </div>
+    <div class="blog__all-content">
+      {{/* Link to all blog posts */}}
+      <a href='{{ relLangURL "/blog" }}' class="btn accent">
+        {{ .allPostsLink | safeHTML }}
+        {{ partial "svg/icons/arrow-right.svg" }}
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

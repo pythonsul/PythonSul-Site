@@ -1,0 +1,207 @@
+// Features Section Styles
+// Main container for the features section, sets background and text colors.
+.features {
+  @extend .section;
+  background-color: var(--color-about-bg);
+  color: var(--color-about-text);
+
+  @media (min-width: $breakpoint-xl) {
+    height: fit-content;
+    padding-block: $space-12;
+  }
+}
+
+// Features Container
+// Layout for the features content, switches between flex and grid based on screen size.
+.features--container {
+  @include flex-column-reverse;
+  align-items: center;
+  gap: $space-6;
+
+  @media (min-width: $breakpoint-xl) {
+    @include grid(2, $space-8);
+    align-items: start;
+  }
+
+  @media (min-width: $breakpoint-2xl) {
+    margin-inline: auto;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    gap: $space-4;
+  }
+}
+
+// Features Mascot
+// Styles for the mascot image and caption, responsive to orientation and screen size.
+.features--mascot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 8rem;
+
+  @media (min-width: $breakpoint-xl) {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    align-self: center;
+  }
+
+  @media (orientation: landscape) and (max-height: $height-md) {
+    height: 35vh;
+  }
+
+  figure {
+    width: 100%;
+    height: 100%;
+
+    img {
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: $radius-2;
+      box-shadow: $box-shadow-md;
+    }
+
+    figcaption {
+      position: absolute;
+      right: 0;
+      color: var(--color-text);
+    }
+  }
+}
+
+// Features Content
+// Content area for features, adjusts margin and padding responsively.
+.features--content {
+  margin-top: 8rem;
+
+  @media (min-width: $breakpoint-xl) {
+    margin-top: 0;
+    padding-top: $space-8;
+  }
+
+  .section-title,
+  .section-description {
+    max-width: 35rem;
+
+    @media (min-width: $breakpoint-md) {
+      text-align: left;
+    }
+  }
+}
+
+// Features Cards
+// Card grid for individual features, includes card, icon, title, content, and collapse button.
+.features-cards {
+  @include flex-column-center;
+  background-color: var(--color-about-card-bg);
+  gap: $space-1;
+  width: 100%;
+  height: inherit;
+
+  @media (min-width: $breakpoint-md) {
+    @include grid(2, $space-3);
+  }
+
+  // Individual Card
+  .card {
+    width: 100%;
+    height: inherit;
+    padding: $space-4;
+    transition: box-shadow 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: $box-shadow-md;
+      transform: translateY(-2px);
+    }
+  }
+
+  // Icon Box
+  .icon-box {
+    @include flex-center;
+    width: $space-6;
+    height: $space-6;
+    background-color: var(--color-about-card-icon-bg);
+    border-radius: $radius-2;
+    margin-bottom: $space-2;
+    position: absolute;
+    top: $space-3;
+    left: $space-4;
+
+    svg {
+      width: $font-size;
+      height: $font-size;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      position: initial;
+      width: $space-11;
+      height: $space-11;
+      margin-bottom: $space-4;
+
+      svg {
+        width: $font-size * 2;
+        height: $font-size * 2;
+      }
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      width: $space-8;
+      height: $space-8;
+
+      svg {
+        width: $font-size * 1.3;
+        height: $font-size * 1.3;
+      }
+    }
+  }
+
+  // Card Title
+  .card-title {
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--color-about-card-text);
+    margin-left: $space-7;
+
+    @media (min-width: $breakpoint-md) {
+      margin-left: 0;
+    }
+  }
+
+  // Card Content
+  .card-content {
+    height: fit-content;
+    color: var(--about-card-text);
+    margin: 0;
+    padding: 0;
+    margin-top: $space-4;
+    text-align: left;
+
+    @media (min-width: $breakpoint-md) {
+      display: flex;
+      max-height: fit-content;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      margin-top: $space-2;
+    }
+  }
+
+  // Card Collapse Button
+  .card-collapse {
+    position: absolute;
+    height: 2 * $space-4 + $space-5;
+    width: 2 * $space-4 + $space-5;
+
+    @media (min-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+}

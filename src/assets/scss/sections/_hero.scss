@@ -1,0 +1,341 @@
+// ==========================================
+// Hero Section Styles
+// ==========================================
+// This file contains styles for the hero section, including layout, background,
+// content, countdown, call-to-action, and images. Media queries are grouped at the end.
+// ==========================================
+
+
+// ------------------------------------------
+// 1. Hero Section: Layout & Background
+// ------------------------------------------
+
+.hero-section {
+  @include flex-center-align-start;
+  height: calc(100svh - #{$header-height});
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  color: var(--color-hero-text);
+
+  @media (min-width: $breakpoint-md) {
+    height: fit-content;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    height: calc(100svh - #{$header-height});
+    @include responsive-container;
+  }
+
+  @media (min-width: $breakpoint-2xl) {
+    height: fit-content;
+    padding-block: $space-4;
+  }
+}
+
+.hero-section__background-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  figcaption {
+    display: none;
+  }
+
+  img {
+    @include img-cover(center);
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    transform: scale(1.1);
+    filter: blur(2px);
+  }
+
+  &::after {
+    @include gradient-to-r(var(--color-hero-bg-start), var(--color-hero-bg-end));
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.95;
+    backdrop-filter: brightness(0.9);
+  }
+}
+
+
+// ------------------------------------------
+// 2. Hero Section: Container & Content
+// ------------------------------------------
+
+.hero-section__container {
+  @extend .section-container;
+  @include flex-column-reverse;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+
+  @media (min-width: $breakpoint-lg) {
+    @include grid(2, $space-5);
+    align-items: center;
+    padding-block: $space-6;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    @include grid(2, $space-8);
+    padding-block: $space-6;
+  }
+
+  @media (min-width: $breakpoint-2xl) {
+    @include grid(2, $space-12);
+    padding-block: $space-4;
+  }
+}
+
+.hero-section__content {
+  @include responsive-container;
+  height: 100%;
+  position: relative;
+  padding-block: $space-6;
+  text-align: left;
+
+  &--local {
+    display: none;
+    width: fit-content;
+    margin-bottom: $space-2;
+    padding: $space-2 $space-4;
+    opacity: 0.9;
+    background-color: rgba(map-get($slate, 800), 0.5);
+    border-radius: $radius-100;
+
+    @media (min-width: $breakpoint-xl) {
+      display: block;
+    }
+  }
+
+  &--title {
+    margin-bottom: $space-3;
+    font-weight: 800;
+
+    strong {
+      font-weight: inherit;
+      color: map-get($yellow, 500);
+    }
+  }
+
+  &--description {
+    font-weight: 400;
+    font-size: 1.115rem;
+    margin-bottom: $space-6;
+    line-height: 1.3;
+    text-wrap: balance;
+
+    @media (min-width: $breakpoint-xl) {
+      font-size: 1.25rem;
+      max-width: 48ch;
+    }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    height: fit-content;
+    padding: 0;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    padding-block: 0;
+  }
+
+  @media (min-width: $breakpoint-2xl) {
+    padding-block: $space-8;
+  }
+}
+
+
+// ------------------------------------------
+// 3. Hero Section: Countdown
+// ------------------------------------------
+
+.hero-section__countdown {
+  @include flex-start;
+  flex-wrap: nowrap;
+  gap: $space-2;
+  margin-block: $space-4 $space-6;
+  justify-content: center;
+  text-align: center;
+
+  @media (min-width: $breakpoint-md) {
+    margin-block: $space-10 $space-6;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    justify-content: flex-start;
+    gap: $space-4;
+    margin-block: 0;
+    margin-top: 2 * $space-6;
+  }
+}
+
+.hero-section__countdown-item {
+  @include flex-column-center;
+  width: 100%;
+  min-width: $space-10;
+  padding-block: $space-3;
+  background-color: rgba($white, 0.05);
+  border-radius: $radius-2;
+  box-shadow: $box-shadow-md;
+
+  span:first-child {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  span:last-child {
+    opacity: 0.75;
+    font-size: 0.75rem;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    padding-block: $space-6;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    padding-block: $space-4;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    min-width: 2 * $space-8;
+    padding-block: $space-6;
+
+    span:first-child {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+
+// ------------------------------------------
+// 4. Hero Section: Call To Action (CTA)
+// ------------------------------------------
+
+.hero-section__cta {
+  @include flex-start;
+  flex-direction: column;
+  gap: $space-4;
+
+  position: absolute;
+  bottom: $space-6;
+  left: $space-4;
+  right: $space-4;
+
+  .btn {
+    width: 100%;
+
+    &.outline {
+      color: var(--color-hero-text);
+
+      svg {
+        stroke: currentColor;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    position: initial;
+    inset: auto;
+    flex-direction: row;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    align-items: center;
+    padding-right: $space-10;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    margin-top: $space-10;
+  }
+}
+
+
+// ------------------------------------------
+// 5. Hero Section: Images
+// ------------------------------------------
+
+.hero-section__images {
+  position: relative;
+  width: 100vw;
+  height: fit-content;
+  border-radius: 0;
+
+  @media (min-width: $breakpoint-lg),
+  (orientation: landscape) and (max-height: $height-xs) {
+    width: 100%;
+  }
+}
+
+.hero-section__images-container {
+  @include flex-center;
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  background-color: map-get($slate, 200);
+  border-radius: 0;
+  box-shadow: $box-shadow-md;
+  overflow: hidden;
+
+  figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    img {
+      @include img-cover(center);
+      border-radius: inherit;
+      transform: scale(1.3) translateY(-10%);
+    }
+
+    figcaption {
+      position: absolute;
+      right: $space-1;
+      bottom: $space-1;
+      font-weight: 600;
+      color: var(--color-hero-image-caption);
+      display: none;
+      padding: $space-2;
+      background-color: rgba(map-get($slate, 700), 0.8);
+      border-radius: $radius-2;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    height: 10rem;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    height: 20rem;
+    border-radius: $radius-2;
+    box-shadow: $box-shadow-light;
+
+    figure {
+      figcaption {
+        display: block;
+      }
+
+      img {
+        transform: scale(1.5) translateY(-5%);
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    height: 25rem;
+    border-radius: $radius-2;
+
+    figure {
+      img {
+        transform: scale(1.5) translateY(-5%) translateX(2%);
+      }
+    }
+  }
+}

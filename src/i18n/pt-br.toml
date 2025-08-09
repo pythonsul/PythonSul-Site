@@ -1,0 +1,64 @@
+# Portuguese (Brazil) Translation File
+
+[address]
+other = "Endereço"
+
+[date]
+other = "Data"
+
+[how_to_get_there]
+other = "Como chegar"
+
+[local_map]
+other = "Mapa do local"
+
+[event_date_format]
+other = "{{ .Start }} a {{ .Finish }} de {{ .Month }} de {{ .Year }}"
+
+[past_events]
+other = "Outras Edições"
+
+[wayback_title]
+other = "Voltar para o site atual"
+
+[wayback_banner]
+other = "Você está acessando o site de uma edição anterior da Python Sul. Para voltar ao site atual, use o botão flutuante."
+
+[blog_post_date_format]
+other = "{{ .Day }} de {{ .Month }} de {{ .Year }}"
+
+[know_more_about]
+other = "Saiba mais sobre"
+
+[site_description]
+other = "A PySul é uma comunidade dedicada a promover o uso e desenvolvimento de Python no Sul do Brasil.<br> Junte-se a nós para aprender, compartilhar e crescer juntos na linguagem Python."
+
+[want_to_contribute]
+other = "Como participar"
+
+[want_to_contribute_description]
+other = "Quer contribuir com conteúdo, melhorar o site ou ajudar na organização do evento?<br> Veja como:"
+
+[contribute]
+other = "Contribuir"
+
+[code_of_conduct]
+other = "Código de conduta"
+
+[stay_connected]
+other = "Saiba das novidades"
+
+[about]
+other = "Sobre"
+
+[categories]
+other = "Categorias"
+
+[related_posts]
+other = "Posts Relacionados"
+
+[social_medias]
+other = "Redes Sociais"
+
+[cfp]
+other = "Submissão de Palestras"

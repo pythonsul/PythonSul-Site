@@ -1,0 +1,51 @@
+// ==========================================
+// Blog Section
+// Base styles and layout for the blog section
+// ==========================================
+.blog-section {
+  @extend .section;
+  background-color: var(--color-bg);
+
+  // Container for the blog section
+  &__container {
+    @extend .section-container;
+  }
+
+  // Latest Posts Grid
+  .latest-posts {
+    @include grid(1, $space-4);
+    text-align: left;
+
+    // Post Card
+    .card {
+      padding: 0;
+    }
+
+    // Article inside Latest Posts
+    article {
+      padding-inline: 0 $space-6;
+
+      @media (min-width: $breakpoint-md) {
+        padding-inline: 0;
+      }
+    }
+
+    // Responsive Grid
+    @media (min-width: $breakpoint-sm) {
+      @include grid(2, $space-8);
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      @include grid(3, $space-8);
+    }
+  }
+}
+
+// ==========================================
+// Blog All Content Section
+// Styles for the "All Content" area of the blog
+// ==========================================
+.blog__all-content {
+  margin-top: $space-8;
+  text-align: center;
+}

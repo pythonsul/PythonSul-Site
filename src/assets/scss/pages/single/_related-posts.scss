@@ -1,0 +1,42 @@
+.related-posts {
+  @include responsive-container;
+  max-width: 100%;
+  padding-block: $space-2;
+
+  @media (min-width: $breakpoint-md) {
+    margin-top: $space-10;
+    padding-block: $space-10;
+  }
+
+  .section-title {
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: $space-8;
+    text-align: center;
+  }
+
+  .post-grid {
+    @include grid(1, $space-6);
+
+    @media (min-width: $breakpoint-md) {
+      @include grid(2, $space-6);
+    }
+
+    @media (min-width: ($breakpoint-lg)) {
+      @include grid(3, $space-6);
+    }
+  }
+
+  .post-card {
+    background-color: var(--color-content-card-bg);
+    border-radius: $radius-6;
+    box-shadow: $box-shadow-md;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(0);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

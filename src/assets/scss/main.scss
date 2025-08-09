@@ -1,0 +1,31 @@
+@import "./core/mixins"; // Core mixins and utility functions
+
+@import "./base/resets"; // CSS resets for cross-browser consistency
+@import "./base/index"; // Font definitions and imports
+@import "./base/variables"; // SCSS variables for colors, spacing, etc.
+@import "./base/typography"; // Base typography styles
+@import "./base/colors"; // Base color definitions
+
+@import "./theme/colors/main"; // Theme-specific color overrides
+
+@import "./components/anchor"; // Anchor (link) component styles
+@import "./components/input"; // Input field styles
+@import "./components/header"; // Header component styles
+@import "./components/footer"; // Footer component styles
+@import "./components/section"; // Section layout styles
+@import "./components/dropdown"; // Dropdown menu styles
+@import "./components/card"; // Card component styles
+
+@import "./sections/hero"; // Homepage hero section
+@import "./sections/features"; // Homepage features section
+@import "./sections/details"; // Homepage details section
+@import "./sections/call-for-papers"; // Call for papers section
+@import "./sections/blog"; // Blog section styles
+@import "./sections/location"; // Location/map section
+@import "./sections/sponsors"; // Sponsors section
+@import "./sections/subscribe"; // Newsletter subscribe section
+
+@import "./pages/single-post"; // Single blog post layout
+@import "./pages/content-list"; // Content list page layout
+
+@import "../custom.css"; // Custom CSS overrides

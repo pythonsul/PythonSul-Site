@@ -1,0 +1,158 @@
+// ==============================
+// Location Section Styles
+// ==============================
+// Main container for the location section, including layout and responsive behavior.
+.location {
+  @extend .section;
+  @include flex-center;
+  @include responsive-container;
+
+  // ------------------------------
+  // Location Container
+  // ------------------------------
+  &__container {
+    @extend .section-container;
+    @include flex-column-start;
+
+    @media screen and (min-width: $breakpoint-md) {
+      @include grid(2, $space-2);
+    }
+
+    @media (min-width: $breakpoint-xl) {
+      @include grid(2, $space-8);
+    }
+  }
+
+  // ------------------------------
+  // Location Details
+  // ------------------------------
+  &__details {
+    @include flex-column-start;
+    text-align: left;
+  }
+
+  &__title {
+    @extend .section-title;
+    margin-bottom: $space-6;
+    text-align: left;
+  }
+
+  &__venue {
+    margin-bottom: $space-3;
+  }
+
+  &__description {
+    @extend .section-description;
+    text-align: left;
+    max-width: 45ch;
+  }
+
+  // ------------------------------
+  // Location Map
+  // ------------------------------
+  &__map {
+    @include flex-column-start;
+    justify-content: space-between;
+    gap: $space-6;
+    padding-top: $space-5;
+
+    &-image {
+      @include map-image-box;
+
+      .image-overlay {
+        @include image-overlay-text(var(--color-text));
+      }
+
+      img,
+      svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: $radius-2;
+        transform: scale(1.8);
+
+        @media (min-width: $breakpoint-xl) {
+          transform: scale(1.4);
+        }
+      }
+    }
+
+    .badge {
+      @include badge;
+    }
+
+    .cta__open-map {
+      display: none !important;
+    }
+  }
+
+  // ------------------------------
+  // Location Info List
+  // ------------------------------
+  &__info-list {
+    @include flex-column-start;
+    gap: $space-5;
+    margin-bottom: $space-6;
+
+    .location__info-item {
+      @include location-info-item;
+
+      .location__info-label {
+        font-weight: 600;
+        color: var(--color-text-muted);
+      }
+
+      .location__info-address,
+      .location__info-date {
+        @include flex-column-start;
+        align-items: flex-start;
+        flex-shrink: 0;
+      }
+    }
+
+    svg {
+      @include location-icon(var(--color-text));
+    }
+  }
+
+  // ------------------------------
+  // Location Details (Alternative)
+  // ------------------------------
+  &-details {
+    h3 {
+      margin-bottom: $space-3;
+    }
+
+    .address-wrapper {
+      @include flex-column-start;
+      gap: $space-2;
+
+      &__item {
+        @include flex-start;
+        gap: $space-2;
+      }
+    }
+  }
+
+  // ------------------------------
+  // Call To Action Button
+  // ------------------------------
+  .cta__open-map {
+    background-color: var(--color-button-bg-accent);
+
+    &:hover {
+      background-color: var(--color-button-bg-accent-hover);
+      color: var(--color-button-text-accent-hover);
+    }
+  }
+
+  // ------------------------------
+  // Responsive Height
+  // ------------------------------
+  @media (min-width: $breakpoint-xl) {
+    height: fit-content;
+  }
+}

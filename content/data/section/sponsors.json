@@ -1,0 +1,37 @@
+{
+  "meta": [
+    {
+      "language": "pt-br",
+      "title": "Patrocinadores",
+      "description": "Ajude a fazer da Python Sul 2025 um evento ainda mais incrível!",
+      "footer": {
+        "title": "Quer patrocinar a PySul 2025?",
+        "description": "Junte-se a nós e apoie a maior conferência Python do Sul do Brasil.<br> Diferentes níveis de patrocínio disponíveis."
+      }
+    },
+    {
+      "language": "en",
+      "title": "Sponsors",
+      "description": "Help make PySul 2025 an even more amazing event!",
+      "footer": {
+        "title": "Want to sponsor PySul 2025?",
+        "description": "Join us and support the largest Python conference in Southern Brazil.<br> Different sponsorship levels are available."
+      }
+    },
+    {
+      "language": "es",
+      "title": "Patrocinadores",
+      "description": "¡Ayudanos a hacer de PySul 2025 un evento aún más increíble!",
+      "footer": {
+        "title": "¿Querés patrocinar PySul 2025?",
+        "description": "Sumate y apoyá la conferencia de Python más grande del sur de Brasil.<br> Diferentes niveles de patrocinio disponibles."
+      }
+    }
+  ],
+  "platinum": [],
+  "diamond": [],
+  "gold": [],
+  "silver": [],
+  "bronze": [],
+  "supporters": []
+}

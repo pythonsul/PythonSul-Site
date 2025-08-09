@@ -1,0 +1,58 @@
+[
+  {
+    "language": "pt-br",
+    "title": "Python Sul 2025:<br>Nos vemos em <strong>Porto Alegre</strong>!",
+    "description": "O maior evento de Python do Sul do Brasil, reunindo profissionais em IA, DevOps, desenvolvimento e muito mais",
+    "imageCaption": "Participantes da edição anterior",
+    "cta": [
+      {
+        "type": "accent",
+        "text": "Submeter palestra",
+        "link": "#cfp",
+        "minBreakpoint": "desktop"
+      },
+      {
+        "type": "outline",
+        "text": "Saiba mais",
+        "link": "#about",
+        "minBreakpoint": "small"
+      }
+    ]
+  },
+  {
+    "language": "en",
+    "title": "Python Sul 2025:<br>See you in <strong>Porto Alegre</strong>!",
+    "description": "The biggest Python event in Southern Brazil, bringing together professionals in AI, DevOps, development, and more.",
+    "imageCaption": "Participants from the previous edition",
+    "cta": [
+      {
+        "type": "accent",
+        "text": "Submit a talk",
+        "link": "#cfp"
+      },
+      {
+        "type": "outline",
+        "text": "Learn more",
+        "link": "#about"
+      }
+    ]
+  },
+  {
+    "language": "es",
+    "title": "Python Sul 2025:<br>¡Nos vemos en <strong>Porto Alegre</strong>!",
+    "description": "El evento más grande de Python del sur de Brasil, reuniendo profesionales en IA, DevOps, desarrollo y mucho más.",
+    "imageCaption": "Participantes de la edición anterior",
+    "cta": [
+      {
+        "type": "accent",
+        "text": "Enviar una charla",
+        "link": "#cfp"
+      },
+      {
+        "type": "outline",
+        "text": "Saber más",
+        "link": "#about"
+      }
+    ]
+  }
+]

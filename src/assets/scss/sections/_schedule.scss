@@ -1,0 +1,181 @@
+.schedule {
+  @extend .section;
+  background-color: map-get($yellow, 50);
+  box-shadow: $box-shadow-strong;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    h2 {
+      color: $text-dark;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: var(--color-text);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: start;
+  }
+}
+
+.day-card {
+  background-color: $white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-border);
+
+  &__header {
+    background-color: map-get($teal, 600);
+    color: $white;
+    padding: 1.5rem;
+    text-align: center;
+
+    .day-title {
+      font-weight: bold;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    .day-subtitle {
+      font-weight: 400;
+      opacity: 0.9;
+      margin: 0;
+    }
+  }
+
+  &__body {
+    padding: 2rem 1.5rem;
+  }
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 28px;
+    bottom: 10px;
+    width: 2px;
+    background-color: map-get($slate, 500);
+  }
+
+  &__item {
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__time {
+    font-weight: bold;
+    color: $text-dark;
+    flex-shrink: 0;
+    padding-top: 2px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 22px;
+      top: 6px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: $white;
+      border: 3px solid map-get($teal, 600);
+    }
+  }
+
+  &__details {
+    h4 {
+      color: var(--color-text);
+      margin-top: 0;
+      margin-bottom: 0.25rem;
+    }
+
+    .location {
+      color: map-get($slate, 600);
+    }
+  }
+}
+
+.event-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  font-weight: bold;
+  color: $white;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  &--keynote {
+    background-color: $tag-color-keynote;
+  }
+
+  &--talk {
+    background-color: $tag-color-talk;
+  }
+
+  &--interval {
+    background-color: $tag-color-interval;
+  }
+
+  &--workshop {
+    background-color: $tag-color-workshop;
+  }
+
+  &--lightning {
+    background-color: $tag-color-lightning;
+  }
+
+  &--registration {
+    background-color: $tag-color-registration;
+  }
+
+  &--end {
+    background-color: $tag-color-end;
+  }
+}
+
+@media (max-width: 1024px) {
+  .schedule-section__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-section__header {
+    h2 {}
+  }
+
+  .timeline__item {
+    gap: 1rem;
+  }
+
+  .timeline::before {
+    left: 24px;
+  }
+
+  .timeline__time::before {
+    left: 18px;
+  }
+}

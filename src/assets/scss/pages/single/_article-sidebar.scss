@@ -1,0 +1,96 @@
+.article-sidebar {
+  @include flex-column-center;
+  gap: $space-2;
+  overflow: hidden;
+
+  @media (min-width: $breakpoint-md) {
+    margin-top: $space-6;
+    padding-left: $space-6;
+    padding-block: $space-10;
+    gap: $space-6;
+    border-left: 1px solid var(--color-border);
+  }
+
+  .sidebar__section {
+    width: 100%;
+    padding-bottom: $space-4;
+    padding-inline: $space-3;
+    transition: background-color 0.2s ease;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--color-border);
+      margin-bottom: $space-2;
+    }
+
+    &:hover {
+      background-color: var(--color-accent-50);
+    }
+  }
+
+  .sidebar__title {
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    color: var(--color-text);
+    margin-bottom: $space-3;
+    padding-bottom: $space-4;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .sidebar__description {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    font-size: 0.9rem;
+    margin-bottom: $space-4;
+  }
+
+  .sidebar__categories {
+    list-style: none;
+    padding-left: 0;
+    padding-inline-start: 0;
+
+    .sidebar__category {
+      width: 100%;
+      margin-bottom: $space-2;
+    }
+  }
+
+  .sidebar__link {
+    @include flex-start;
+    padding: $space-2 $space-3;
+    color: var(--color-text);
+    border-radius: $radius-6;
+    transition: background-color 0.25s ease, color 0.25s ease,
+      transform 0.15s ease;
+
+    &:hover {
+      background-color: var(--color-accent-100);
+      color: var(--color-accent);
+      transform: translateX(2px);
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: $space-1;
+      height: $space-1;
+      background-color: var(--color-accent);
+      border-radius: 50%;
+      margin-right: $space-3;
+      opacity: 0.6;
+      transition: opacity 0.25s ease;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    svg {
+      margin-left: $space-2;
+      width: $space-4;
+      height: $space-4;
+      stroke: var(--color-text);
+      transition: fill 0.25s ease;
+    }
+  }
+}
