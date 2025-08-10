@@ -1,0 +1,86 @@
+{{/* Set language, event, location, date, and time variables */}}
+{{ $currentLang := .Site.Language.Lang }}
+{{ $event := .Site.Data.event }}
+{{ $location := $event.location.place }}
+{{ $date := $event.date }}
+{{ $time := $event.time }}
+
+{{/* Format event date for display */}}
+{{ $eventDate := dict
+"Start" (dateFormat "02" (time $date.start))
+"Finish" (dateFormat "02" (time $date.finish))
+"Month" (title (dateFormat "January" (time $date.finish)))
+"Year" (dateFormat "2006" (time $date.finish))
+}}
+
+<span id="event-date-start" class="hidden">
+  {{ $date.start }} {{ $time.start }}
+</span>
+
+{{/* Render hero section for current language */}}
+{{ range where .Site.Data.section.hero "language" $currentLang }}
+<section class="hero-section">
+  <div class="hero-section__background-overlay">
+    {{/* Background image with overlay */}}
+    {{ partial "core/image.html" (dict "src" "/images/poa_bg.jpg" "alt" .imageCaption ) }}
+  </div>
+  <div class="hero-section__container">
+    <div class="hero-section__content">
+      <div class="hero-section__content--local">
+        {{/* Event date and location */}}
+        {{ i18n "event_date_format" $eventDate}} • {{ $location }}
+      </div>
+      <h1 class="hero-section__content--title">
+        {{/* Hero title */}}
+        {{ .title | safeHTML }}
+      </h1>
+      <p class="hero-section__content--description">
+        {{/* Hero description */}}
+        {{ .description | safeHTML }}
+      </p>
+      <div class="hero-section__countdown" id="countdown-timer">
+        {{/* Countdown timer for event start */}}
+        <div id="days" class="hero-section__countdown-item">
+          <span>0</span>
+          <span>Dias</span>
+        </div>
+        <div id="hours" class="hero-section__countdown-item">
+          <span>0</span>
+          <span>Horas</span>
+        </div>
+        <div id="minutes" class="hero-section__countdown-item">
+          <span>0</span>
+          <span>Min</span>
+        </div>
+        <div id="seconds" class="hero-section__countdown-item">
+          <span>0</span>
+          <span>Seg</span>
+        </div>
+      </div>
+      <div class="hero-section__cta">
+        {{/* Render CTA buttons if available, else show default */}}
+        {{ $cta := .cta }}
+        {{ if $cta }}
+        {{ range $cta }}
+        <a href="{{ .link }}" class="btn accent {{ .type }}">
+          {{ partial "svg/icons/arrow-right.svg" }}
+          {{ .text }}
+        </a>
+        {{ end }}
+        {{ else }}
+        <a href="/" class="btn accent">
+          {{ partial "svg/icons/arrow-right.svg" }}
+          I'm a cta button
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    <div class="hero-section__images">
+      <div class="hero-section__images-container">
+        {{/* Hero section image */}}
+        {{ partial "core/image.html" (dict "src" "/images/personas.jpg" "alt" .imageCaption ) }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

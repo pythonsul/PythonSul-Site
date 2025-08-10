@@ -1,0 +1,29 @@
+[[main]]
+name = "Início"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Sobre"
+url = "#about"
+weight = 2
+
+[[main]]
+name = "Submissão de Palestras"
+url = "#cfp"
+weight = 3
+
+[[main]]
+name = "Blog"
+url = "#blog"
+weight = 4
+
+[[main]]
+name = "Patrocinadores"
+url = "#sponsors"
+weight = 5
+
+[[main]]
+name = "Código de conduta"
+url = "/codigo-de-conduta/"
+weight = 6

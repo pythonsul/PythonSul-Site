@@ -1,0 +1,67 @@
+.details-section {
+  @include responsive-container;
+  padding-top: $space-8;
+  padding-bottom: $space-8;
+
+  background-color: var(--details-bg);
+  color: var(--details-title);
+  box-shadow: $box-shadow-strong;
+
+  &__container {
+    @extend .section-container;
+    text-align: center;
+
+    &--title {
+      margin-bottom: $space-4;
+    }
+
+    &--description {
+      opacity: 0.9;
+    }
+  }
+
+  &__cards {
+    @include grid(3, $space-6);
+  }
+
+  &__card {
+    @include flex-column-center;
+    padding: $space-10 $space-4;
+    background-color: map-get($teal, 600);
+    box-shadow: $box-shadow-md;
+    border-radius: $radius-2;
+
+    &:hover {
+      box-shadow: $box-shadow-strong;
+    }
+
+    .icon-box {
+      @include flex-center;
+      width: $space-8;
+      height: $space-8;
+      background-color: rgba($white, 0.2);
+      border-radius: 50%;
+      margin-bottom: $space-4;
+    }
+
+    .item-number {
+      background-color: map-get($yellow, 400);
+      color: $black;
+      padding: $space-1 $space-4;
+      border-radius: $radius-6;
+      font-weight: 600;
+      margin-bottom: $space-3;
+      display: inline-block;
+    }
+
+    h3 {
+      font-weight: 500;
+      margin-bottom: $space-3;
+    }
+
+    p {
+      opacity: 0.9;
+      line-height: 1.625;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{{ if .IsNamedParams }} 
+    {{ $src := .Get "src" }} {{/* Get the image source path from shortcode params */}}
+    {{ $image := resources.Get $src }} {{/* Load the image resource */}}
+    {{ $imageLQ := $image.Resize "600x webp q80" }} {{/* Low quality WebP for small screens */}}
+    {{ $imageMQ := $image.Resize "1000x webp q80" }} {{/* Medium quality WebP for medium screens */}}
+    {{ $imageHQ := $image.Resize "1400x webp q100" }} {{/* High quality WebP for large screens */}}
+    {{ $imageJPG := $image.Resize "1400x jpg q100" }} {{/* High quality JPG fallback */}}
+    <figure>
+        <picture>
+            <source srcset="{{ $imageLQ.Permalink }}" width="{{ $imageLQ.Width }}"
+                height="{{ $imageLQ.Height }}" media="(max-width: 800px)" type="image/webp">
+                {{/* Use low quality WebP for screens up to 800px */}}
+            <source srcset="{{ $imageMQ.Permalink }}" width="{{ $imageMQ.Width }}"
+                height="{{ $imageMQ.Height }}" media="(max-width: 1024px)" type="image/webp">
+                {{/* Use medium quality WebP for screens up to 1024px */}}
+            <source srcset="{{ $imageHQ.Permalink }}" width="{{ $imageHQ.Width }}"
+                height="{{ $imageHQ.Height }}" media="(min-width: 1024px)" type="image/webp">
+                {{/* Use high quality WebP for screens wider than 1024px */}}
+            <source srcset="{{ $imageJPG.Permalink }}" width="{{ $imageJPG.Width }}"
+                height="{{ $imageJPG.Height }}" media="(min-width: 1024px)" type="image/jpg">
+                {{/* Fallback to high quality JPG for large screens */}}
+            <img src="{{ $image.Permalink }}" alt='{{ .Get " alt " }}' loading=lazy>
+                {{/* Fallback <img> tag with alt text and lazy loading */}}
+        </picture>
+        {{ if .Get "caption" }}
+            <figcaption>
+                {{ .Get "caption" }} {{/* Optional image caption */}}
+            </figcaption>
+        {{ end }}
+    </figure>
+{{ end }}

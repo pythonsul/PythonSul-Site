@@ -1,0 +1,164 @@
+$theme-dark: (
+  // Primary accent colors
+  accent: map-get($blue, 500),
+  accent-hover: map-get($blue, 600),
+
+  // Background and foreground
+  bg: map-get($dark, 500),
+  fg: map-get($dark-foreground, 600),
+
+  // Text colors
+  text: map-get($dark-foreground, 600),
+  text-hover: map-get($dark-foreground, 700),
+  text-description: map-get($dark-foreground, 500),
+  text-secondary: map-get($slate, 300),
+  text-secondary-hover: map-get($dark, 600),
+  text-muted: map-get($slate, 400),
+  text-on-accent: map-get($slate, 100),
+
+  // Link colors
+  link: map-get($dark-foreground, 600),
+  link-hover: map-get($dark-foreground, 700),
+  link-secondary: map-get($dark, 600),
+  link-inverted: map-get($slate, 50),
+
+  // Borders and shadows
+  border: map-get($slate, 600),
+  shadow: 0 2px 4px rgba(0, 0, 0, 0.6),
+  shadow-rgba: rgba(map-get($slate, 100), 0.2),
+
+  // Footer section
+  footer-bg: darken(map-get($blue, 950), 2%),
+  footer-text: map-get($slate, 200),
+  footer-text-soft: map-get($slate, 300),
+  footer-text-hover: map-get($slate, 300),
+
+  // Hero section
+  hero-bg-start: darken(map-get($blue, 800), 15%),
+  hero-bg-end: darken(map-get($blue, 900), 15%),
+  hero-image-caption: rgba($white, 0.8),
+  hero-text: map-get($slate, 200),
+
+  // About section
+  about-bg: rgba(map-get($yellow, 600), 0.2),
+  about-text: map-get($slate, 100),
+  about-card-bg: rgba(map-get($dark, 600), 0.5),
+  about-card-icon-bg: map-get($slate, 300),
+  about-card-title: map-get($slate, 50),
+  about-card-text: map-get($slate, 300),
+
+  // Call for papers (cfp) section
+  cfp-bg: map-get($teal, 800),
+  cfp-text: map-get($slate, 100),
+  cfp-card-bg: rgba(map-get($teal, 800), 0.5),
+  cfp-card-icon-bg: map-get($teal, 500),
+  cfp-card-icon-color: map-get($slate, 100),
+
+  // Details section
+  details-bg: map-get($teal, 600),
+  details-card-bg: map-get($teal, 500),
+  details-title: $white,
+  details-text: $white,
+  details-icon-bg: rgba($white, 0.2),
+
+  // Input fields
+  input-bg: map-get($dark, 700),
+  input-border: map-get($slate, 500),
+  input-border-hover: map-get($slate, 600),
+  input-border-focus: map-get($blue, 500),
+  input-text: map-get($slate, 200),
+  input-placeholder: map-get($slate, 400),
+
+  // Header section
+  header-bg: map-get($dark, 500),
+  header-border: map-get($slate, 700),
+  header-system-mode: linear-gradient(136deg, map-get($dark, 800) 50%, map-get($light, 100) 50%),
+  header-dark-mode: map-get($dark, 800),
+  header-light-mode: map-get($slate, 100),
+  header-text: map-get($slate, 100),
+  header-link-bg-hover: rgba(map-get($dark, 800), 0.2),
+  header-link-text-hover: map-get($slate, 200),
+
+  // Content list and cards
+  content-list-header: map-get($blue, 900),
+  content-list-text: map-get($slate, 300),
+  content-card-bg: map-get($dark, 600),
+  content-list-search-icon: map-get($slate, 400),
+  content-list-filter-label: map-get($slate, 500),
+  content-list-title: map-get($slate, 100),
+  content-list-count: map-get($slate, 300),
+  content-list-separator: map-get($slate, 100),
+  content-list-ellipsis: map-get($slate, 100),
+  content-list-page-active-bg: map-get($dark, 600),
+  content-list-page-active-border: map-get($dark, 700),
+  content-list-page-active-text: map-get($slate, 100),
+
+  // Map fallback color
+  map-fallback: map-get($slate, 600),
+
+  // Newsletter section
+  newsletter-bg: darken(map-get($blue, 900), 0.2),
+  newsletter-text: map-get($slate, 200),
+
+  // Sponsor tiers
+  tier-diamond-start: map-get($purple, 600),
+  tier-diamond-end: map-get($purple, 700),
+  tier-gold-start: map-get($yellow, 600),
+  tier-gold-end: map-get($yellow, 700),
+  tier-silver-start: map-get($slate, 500),
+  tier-silver-end: map-get($slate, 600),
+  tier-bronze-start: map-get($brown, 500),
+  tier-bronze-end: map-get($brown, 600),
+
+  // Single post section
+  single-post-bg: map-get($dark, 600),
+  single-post-text: map-get($slate, 100),
+  single-post-title: map-get($slate, 100),
+  single-post-description: map-get($slate, 100),
+  single-post-separator: map-get($slate, 300),
+  single-post-header-bg: map-get($blue, 800),
+  single-post-header-text: map-get($slate, 100),
+);
+
+$buttons-dark: (
+  // Button backgrounds
+  bg: map-get($teal, 800),
+  bg-hover: map-get($teal, 900),
+  bg-secondary: map-get($yellow, 600),
+  bg-secondary-hover: map-get($yellow, 500),
+  bg-destructive: map-get($red, 500),
+  bg-destructive-hover: map-get($red, 600),
+  bg-outline-hover: map-get($dark, 500),
+  bg-outline-inverted: transparent,
+  bg-outline-inverted-hover: rgba(map-get($slate, 900), 0.2),
+  bg-accent: map-get($blue, 600),
+  bg-accent-hover: map-get($blue, 700),
+  bg-ghost: transparent,
+  bg-ghost-hover: map-get($slate, 700),
+  bg-on-accent: map-get($dark, 500),
+  bg-on-accent-hover: map-get($dark, 600),
+
+  // Button borders
+  border-outline: map-get($slate, 400),
+  border-outline-hover: map-get($slate, 700),
+  border-outline-inverted: map-get($slate, 400),
+  border-outline-inverted-hover: map-get($slate, 200),
+
+  // Button text
+  text: $white,
+  text-hover: $white,
+  text-secondary: $white,
+  text-secondary-hover: $white,
+  text-destructive: $white,
+  text-destructive-hover: $white,
+  text-outline: map-get($slate, 100),
+  text-outline-hover: map-get($slate, 100),
+  text-outline-inverted: $white,
+  text-outline-hover-inverted: $white,
+  text-accent: $white,
+  text-accent-hover: $white,
+  text-ghost: map-get($slate, 200),
+  text-ghost-hover: map-get($slate, 200),
+  text-on-accent: map-get($slate, 200),
+  text-on-accent-hover: map-get($slate, 100),
+);

@@ -1,0 +1,84 @@
+{{/* Get the current language */}}
+{{ $currentLang := .Site.Language.Lang }}
+
+{{ $sponsorshipPlans := .Site.Data.event.sponsorship.plans }}
+
+{{/* Loop through sponsors section for the current language */}}
+{{ range where .Site.Data.section.sponsors.meta "language" $currentLang }}
+<section class="sponsors" id="sponsors">
+  <div class="section-container">
+    <header class="sponsors__header">
+      <h2 class="section-title">
+        {{ .title | safeHTML }}
+      </h2>
+      <p class="section-description">
+        {{ .description | safeHTML }}
+      </p>
+    </header>
+
+    <div class="sponsors__tiers">
+      {{/* Diamond sponsors tier */}}
+      <section class="sponsor__tier sponsors__tier--diamond">
+        <h3 class="sponsor__tier-title">
+          Patrocinador Diamante
+        </h3>
+        <ul class="sponsor__tier-logos sponsors__logos--diamond">
+          <li class="sponsor-logo">
+            <!-- Sponsor logo goes here -->
+          </li>
+        </ul>
+      </section>
+      {{/* Gold sponsors tier */}}
+      <section class="sponsor__tier sponsors__tier--gold">
+        <h3 class="sponsor__tier-title">
+          Patrocinador Ouro
+        </h3>
+        <ul class="sponsor__tier-logos sponsors__logos--gold">
+          <li class="sponsor-logo"></li>
+        </ul>
+      </section>
+      {{/* Silver sponsors tier */}}
+      <section class="sponsor__tier sponsors__tier--silver">
+        <h3 class="sponsor__tier-title">
+          Patrocinador Prata
+        </h3>
+        <ul class="sponsor__tier-logos sponsors__logos--silver">
+          <li class="sponsor-logo"></li>
+        </ul>
+      </section>
+      {{/* Bronze sponsors tier */}}
+      <section class="sponsor__tier sponsors__tier--bronze">
+        <h3 class="sponsor__tier-title">
+          Patrocinador Bronze
+        </h3>
+        <ul class="sponsor__tier-logos sponsors__logos--bronze">
+          <li class="sponsor-logo"></li>
+        </ul>
+      </section>
+    </div>
+
+    <footer class="sponsors__footer">
+      <h3 class="sponsors__footer-title">
+        {{ .footer.title | safeHTML }}
+      </h3>
+      <p class="sponsors__footer-text">
+        {{ .footer.description | safeHTML }}
+      </p>
+      <div class="sponsors__footer-cta">
+        {{/* Prepare sponsorship plans links, prioritizing current language */}}
+        {{ $first := where $sponsorshipPlans "language" $currentLang }}
+        {{ $others := where $sponsorshipPlans "language" "ne" $currentLang }}
+        {{ $sortedContent := append $others $first }}
+
+        {{/* Render sponsorship plan links */}}
+        {{ range $sortedContent }}
+            <a href="{{ .Site.BaseURL }}/documents/plano-de-patrocinio-pt-br.pdf" class="btn on-accent" target="_blank" rel="noopener noreferrer">
+              {{ .title | safeHTML }}
+              {{ partial "svg/icons/download.svg" }}
+            </a>
+        {{ end }}
+      </div>
+    </footer>
+  </div>
+</section>
+{{ end }}

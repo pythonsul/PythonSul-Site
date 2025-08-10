@@ -1,0 +1,70 @@
+// Section Component Styles
+// ------------------------
+// Styles for the main section container, including responsive padding and shadow.
+
+.section {
+  @include responsive-container;
+  position: relative;
+  padding-block: $space-6;
+  box-shadow: $box-shadow-strong;
+  text-align: center;
+
+  // Responsive padding for large screens
+  @media (min-width: $breakpoint-lg) {
+    padding-block: $space-10;
+  }
+
+  // Responsive padding for extra-large screens
+  @media (min-width: $breakpoint-2xl) {
+    padding-block: $space-11;
+  }
+}
+
+// Section Container Styles
+// ------------------------
+// Flex column centering for section content.
+
+.section-container {
+  width: 100%;
+  @include flex-column-center;
+}
+
+// Section Title Styles
+// --------------------
+// Styles for section titles, including responsive text alignment.
+
+.section-title {
+  text-align: left;
+  margin-bottom: $space-4;
+  font-weight: 700;
+  width: 100%;
+  max-width: 60ch;
+
+  // Center title on medium screens and up
+  @media screen and (min-width: $breakpoint-md) {
+    text-align: center;
+  }
+}
+
+// Section Description Styles
+// --------------------------
+// Styles for section descriptions, including responsive alignment and spacing.
+
+.section-description {
+  width: 100%;
+  max-width: 90ch;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: $space-4;
+  text-align: justify;
+
+  // Center description text on medium screens and up
+  @media screen and (min-width: $breakpoint-md) {
+    text-align: center;
+  }
+
+  // Increase bottom margin on extra-large screens
+  @media screen and (min-width: $breakpoint-2xl) {
+    margin-bottom: $space-8;
+  }
+}

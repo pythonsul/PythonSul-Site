@@ -1,0 +1,43 @@
+{{/* Load image source and alt text, set defaults if not provided */}}
+{{ $sourcePath := .src | default "/images/placeholder.png" }}
+{{ $alt := .alt | default "Image placeholder" }}
+{{ $isAvatar := isset . "avatar" }}
+{{ $image := resources.Get $sourcePath }}
+{{ $image := $image | default (resources.Get "/images/placeholder.png") }}
+
+{{/* Set responsive image sizes based on avatar flag */}}
+{{ $sizeSmall := cond $isAvatar "16x" "600x" }}
+{{ $sizeMedium := cond $isAvatar "32x" "1000x" }}
+{{ $sizeLarge := cond $isAvatar "64x" "1400x" }}
+{{ $sizeFull := cond $isAvatar "64x" "1400x" }}
+
+{{ with $image }}
+  {{/* Generate resized images in WebP and JPEG formats */}}
+  {{ $webpSmall := .Resize (printf "%s webp q70" $sizeSmall) }}
+  {{ $webpMedium := .Resize (printf "%s webp q70" $sizeMedium) }}
+  {{ $webpLarge := .Resize (printf "%s webp q70" $sizeLarge) }}
+  {{ $jpegFull := .Resize (printf "%s jpg q80" $sizeFull) }}
+
+  <figure>
+    <picture>
+      {{/* JPEG fallback for large screens */}}
+      <source srcset="{{ $jpegFull.Permalink }}" type="image/jpeg" media="(min-width: 1024px)">
+      {{/* WebP for large, medium, and small screens */}}
+      <source srcset="{{ $webpLarge.Permalink }}" type="image/webp" media="(min-width: 1024px)">
+      <source srcset="{{ $webpMedium.Permalink }}" type="image/webp" media="(max-width: 1024px)">
+      <source srcset="{{ $webpSmall.Permalink }}" type="image/webp" media="(max-width: 800px)">
+      {{/* Fallback img tag with alt text and lazy loading */}}
+      <img
+        src="{{ $jpegFull.Permalink }}"
+        alt="{{ $alt | plainify }}"
+        width="{{ $jpegFull.Width }}"
+        height="{{ $jpegFull.Height }}"
+        loading="lazy"
+        decoding="async">
+    </picture>
+    {{/* Show figcaption if alt is set and not an avatar */}}
+    {{ if and $alt (not $isAvatar) }}
+      <figcaption>CC: {{ $alt }}</figcaption>
+    {{ end }}
+  </figure>
+{{ end }}

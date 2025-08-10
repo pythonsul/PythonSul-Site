@@ -1,10 +1,5 @@
-output/
-.venv/
-.vscode/
-.env
-__pycache__/
-*~
-*.swp
-*.sublime-project
-*.sublime-workspace
+/resources/
+/public/
+/static/
+.hugo_build.lock
 *.DS_Store

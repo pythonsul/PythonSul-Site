@@ -1,0 +1,258 @@
+[
+  {
+    "language": "pt-br",
+    "bottom": {
+      "text": "PySul • Porto Alegre • Desenvolvido com ❤️ pela comunidade",
+      "links": [
+        {
+          "title": "Como contribuir",
+          "url": "https://github.com/pythonsul/PythonSul-Site/blob/main/CONTRIBUTING.md",
+          "external": true
+        },
+        {
+          "title": "Reportar um erro",
+          "url": "https://github.com/pythonsul/PythonSul-Site/issues/new",
+          "external": true
+        }
+      ]
+    },
+    "menu": [
+      {
+        "id": "quick-links",
+        "title": "Links Rápidos",
+        "items": [
+          {
+            "title": "Sobre a Python Sul",
+            "url": "sobre-a-python-sul/"
+          },
+          {
+            "title": "Local",
+            "url": "#local"
+          },
+          {
+            "title": "Chamada de Trabalhos",
+            "url": "#cfp"
+          }
+        ]
+      },
+      {
+        "id": "community",
+        "title": "Comunidades",
+        "items": [
+          {
+            "title": "APYB",
+            "url": "https://apyb.python.org.br/a-associacao/associacao/",
+            "external": true
+          },
+          {
+            "title": "Evento Python Brasil 2025",
+            "url": "https://2025.pythonbrasil.org.br/",
+            "external": true
+          },
+          {
+            "title": "Python Brasil",
+            "url": "https://python.org.br/",
+            "external": true
+          }
+        ]
+      },
+      {
+        "id": "information",
+        "title": "Informações",
+        "items": [
+          {
+            "title": "Fundo para Inclusão",
+            "url": "https://apyb.python.org.br/apyb/fundo-inclus%C3%A3o/",
+            "external": true
+          },
+          {
+            "title": "Código de Conduta",
+            "url": "https://apyb.python.org.br/pythonbrasil/cdc/",
+            "external": true
+          },
+          {
+            "title": "Política de Privacidade",
+            "url": "/politica-privacidade",
+            "external": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "language": "es",
+    "bottom": {
+      "text": "PySul • Porto Alegre • Desarrollado con ❤️ por la comunidad",
+      "links": [
+        {
+          "title": "Cómo colaborar",
+          "url": "https://github.com/pythonsul/PythonSul-Site/blob/main/CONTRIBUTING.md",
+          "external": true
+        },
+        {
+          "title": "Reportar un problema",
+          "url": "https://github.com/pythonsul/PythonSul-Site/issues/new",
+          "external": true
+        }
+      ]
+    },
+    "menu": [
+      {
+        "id": "quick-links",
+        "title": "Enlaces rápidos",
+        "items": [
+          {
+            "title": "Acerca de Python Sul",
+            "url": "#about"
+          },
+          {
+            "title": "Lugar",
+            "url": "#local"
+          },
+          {
+            "title": "Llamado a ponencias",
+            "url": "#cfp"
+          },
+          {
+            "title": "Blog",
+            "url": "#blog"
+          }
+        ]
+      },
+      {
+        "id": "community",
+        "title": "Comunidades",
+        "items": [
+          {
+            "title": "APYB",
+            "url": "https://apyb.python.org.br/a-associacao/associacao/",
+            "external": true
+          },
+          {
+            "title": "Conferencia Python Brasil 2025",
+            "url": "https://2025.pythonbrasil.org.br/",
+            "external": true
+          },
+          {
+            "title": "Python Brasil",
+            "url": "https://python.org.br/",
+            "external": true
+          }
+        ]
+      },
+      {
+        "id": "information",
+        "title": "Información",
+        "items": [
+          {
+            "title": "Accesibilidad",
+            "url": "/"
+          },
+          {
+            "title": "Código de Conducta",
+            "url": "/about"
+          },
+          {
+            "title": "Política de Privacidad",
+            "url": "/programming",
+            "external": true
+          },
+          {
+            "title": "Términos y Condiciones",
+            "url": "/sponsors",
+            "external": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "language": "en",
+    "bottom": {
+      "text": "PySul • Porto Alegre • Developed with ❤️ by the community",
+      "links": [
+        {
+          "title": "How to contribute",
+          "url": "https://github.com/pythonsul/PythonSul-Site/blob/main/CONTRIBUTING.md",
+          "external": true
+        },
+        {
+          "title": "Report an issue",
+          "url": "https://github.com/pythonsul/PythonSul-Site/issues/new",
+          "external": true
+        }
+      ]
+    },
+    "menu": [
+      {
+        "id": "quick-links",
+        "title": "Quick Links",
+        "items": [
+          {
+            "title": "About Python Sul",
+            "url": "/"
+          },
+          {
+            "title": "Venue",
+            "url": "/about"
+          },
+          {
+            "title": "Speakers",
+            "url": "/programming"
+          },
+          {
+            "title": "Program",
+            "url": "/sponsors"
+          }
+        ]
+      },
+      {
+        "id": "community",
+        "title": "Communities",
+        "items": [
+          {
+            "title": "APYB",
+            "url": "https://apyb.python.org.br/a-associacao/associacao/",
+            "external": true
+          },
+          {
+            "title": "Conferencia Python Brasil 2025",
+            "url": "https://2025.pythonbrasil.org.br/",
+            "external": true
+          },
+          {
+            "title": "Python Brasil",
+            "url": "https://python.org.br/",
+            "external": true
+          }
+        ]
+      },
+      {
+        "id": "information",
+        "title": "Information",
+        "items": [
+          {
+            "title": "Fund for Inclusion (pt-BR)",
+            "url": "https://apyb.python.org.br/apyb/fundo-inclus%C3%A3o/",
+            "external": true
+          },
+          {
+            "title": "Code of Conduct",
+            "url": "",
+            "external": true
+          },
+          {
+            "title": "Privacy Policy",
+            "url": "/programming",
+            "external": true
+          },
+          {
+            "title": "Terms of Use",
+            "url": "/sponsors",
+            "external": true
+          }
+        ]
+      }
+    ]
+  }
+]

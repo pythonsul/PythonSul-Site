@@ -1,0 +1,40 @@
+<head>
+  {{/* Set character encoding */}}
+  <meta charset="utf-8">
+  {{/* Responsive viewport settings */}}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{/* Dynamic page title: Home or Page Title | Site Title */}}
+  <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+
+  {{/* Meta description: page or site default */}}
+  <meta name="description"
+    content="{{ with .Params.description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  {{/* Meta keywords: page or site default */}}
+  <meta name="keywords" content="{{ with .Params.keywords }}{{ . }}{{ else }}{{ site.Params.keywords }}{{ end }}">
+  {{/* Meta author: page or site default */}}
+  <meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}{{ site.Params.author }}{{ end }}">
+
+  {{/* Search engine robots instructions */}}
+  <meta name="robots" content="index, follow">
+  {{/* IE compatibility mode */}}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {{/* Browser theme color */}}
+  <meta name="theme-color" content="#ffffff">
+  {{/* Enable Apple mobile web app features */}}
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  {{/* Web app manifest */}}
+  <link rel="manifest" href="/site.webmanifest">
+
+  {{/* Favicon */}}
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.BaseURL }}/images/favicon-16x16.png">
+  <link rel="manifest" href="{{ .Site.BaseURL }}/site.webmanifest">
+
+  {{/* Canonical URL for SEO */}}
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  {{/* Include cached CSS partial */}}
+  {{ partialCached "head/css.html" . }}
+</head>

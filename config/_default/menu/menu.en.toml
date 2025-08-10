@@ -1,0 +1,29 @@
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "About"
+url = "#about"
+weight = 2
+
+[[main]]
+name = "Call for Papers"
+url = "#cfp"
+weight = 3
+
+[[main]]
+name = "Blog"
+url = "#blog"
+weight = 4
+
+[[main]]
+name = "Sponsors"
+url = "#sponsors/"
+weight = 5
+
+[[main]]
+name = "Code of Conduct"
+url = "/code-of-conduct/"
+weight = 6

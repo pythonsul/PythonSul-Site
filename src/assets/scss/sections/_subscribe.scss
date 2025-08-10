@@ -1,0 +1,49 @@
+// =======================================
+// Newsletter Subscribe Section Styles
+// =======================================
+
+.subscribe-newsletter-section {
+  // Base section styles
+  @extend .section;
+  background-color: var(--color-newsletter-bg);
+  color: var(--color-newsletter-text);
+
+  // ---------------------------------------
+  // Content Block
+  // ---------------------------------------
+  &__content {
+    @include flex-column-center;
+
+    h2 {
+      @extend .section-title;
+    }
+
+    p {
+      @extend .section-description;
+      hyphens: initial;
+      max-width: 65rem;
+    }
+  }
+
+  // ---------------------------------------
+  // Newsletter Form Container
+  // ---------------------------------------
+  .newsletter-container {
+    @include flex-column-center;
+    gap: $space-4;
+    width: 100%;
+    margin-top: $space-6;
+
+    .btn {
+      @extend .btn;
+      @extend .outline;
+      width: 100%;
+    }
+
+    // Responsive layout for medium screens and up
+    @media (min-width: $breakpoint-md) {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+  }
+}

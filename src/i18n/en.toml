@@ -1,0 +1,64 @@
+# English (United States) Translation File
+
+[address]
+other = "Address"
+
+[date]
+other = "Date"
+
+[how_to_get_there]
+other = "How to get there"
+
+[local_map]
+other = "Local Map"
+
+[event_date_format]
+other = "{{ .Start }} - {{ .Finish }} {{ .Month }}, {{ .Year }}"
+
+[past_events]
+other = "Past Editions"
+
+[wayback_title]
+other = "Return to Main Site"
+
+[wayback_banner]
+other = "You are accessing the site of a previous edition of Python Sul. To return to the current site, use the floating button."
+
+[blog_post_date_format]
+other = "{{ .Day }} {{ .Month }} {{ .Year }}"
+
+[know_more_about]
+other = "Know more about"
+
+[site_description]
+other = "PySul is a community dedicated to promoting the use and development of Python in southern Brazil.<br> Join us to learn, share, and grow together in the Python language."
+
+[want_to_contribute]
+other = "Como participar"
+
+[want_to_contribute_description]
+other = "Want to contribute content, improve the site, or help organize the event?<br> Find out how:"
+
+[contribute]
+other = "Contribute"
+
+[code_of_conduct]
+other = "Code of Conduct"
+
+[stay_connected]
+other = "Stay Updated"
+
+[about]
+other = "About"
+
+[categories]
+other = "Categories"
+
+[related_posts]
+other = "Related Posts"
+
+[social_medias]
+other = "Social Media"
+
+[cfp]
+other = "Call for Proposals"
