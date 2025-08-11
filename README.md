@@ -1,6 +1,6 @@
 # Site Python Sul 2025
 
-![Build Status](https://github.com/tomkiel/python-sul-2025/actions/workflows/build.yml/badge.svg)
+![Build Status](https://github.com/pythonsul/python-sul-site/actions/workflows/build.yml/badge.svg)
 
 **URL**: [sul.python.org.br](https://sul.python.org.br)
 
