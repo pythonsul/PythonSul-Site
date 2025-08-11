@@ -72,7 +72,7 @@
 
         {{/* Render sponsorship plan links */}}
         {{ range $sortedContent }}
-            <a href="{{ .Site.BaseURL }}/documents/plano-de-patrocinio-pt-br.pdf" class="btn on-accent" target="_blank" rel="noopener noreferrer">
+            <a href="{{ .url }}" class="btn on-accent" target="_blank" rel="noopener noreferrer">
               {{ .title | safeHTML }}
               {{ partial "svg/icons/download.svg" }}
             </a>
