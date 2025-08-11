@@ -2,7 +2,7 @@
 
 ![Build Status](https://github.com/tomkiel/python-sul-2025/actions/workflows/build.yml/badge.svg)
 
-**URL**: [sul.python.org.br/es/](sul.python.org.br/es/)
+**URL**: [sul.python.org.br/es/](https://sul.python.org.br/es/)
 
 ## Versiones alternativas de la documentación
 

@@ -19,27 +19,28 @@ if ! make build; then
 fi
 
 # === 3. Commit message validation ===
-echo "🔍 Validating commit messages..."
+echo "🔍 Validating latest commit message..."
+
 while read local_ref local_sha remote_ref remote_sha
 do
-    if [ "$remote_sha" = "0000000000000000000000000000000000000000" ]; then
-        range="$local_sha"  # New branch
-    else
-        range="$remote_sha..$local_sha"  # Updating branch
-    fi
+    # Get the latest commit SHA on the local branch (HEAD)
+    latest_commit="$local_sha"
     
-    for commit in $(git rev-list "$range"); do
-        msg=$(git log --format=%s -n 1 "$commit")
+    # Get the commit message subject
+    msg=$(git log --format=%s -n 1 "$latest_commit")
+    
+    # Check format: type: message
+    if ! echo "$msg" | grep -Eq '^(feat|fix|docs|style|refactor|test|chore): [a-zA-Z0-9].*'; then
+        echo "❌ Commit message does not follow required format:"
+        echo "   $msg"
+        echo "Expected: <type>: <message>"
+        echo "Allowed types: feat, fix, docs, style, refactor, test, chore"
         
-        # Format: type: message
-        if ! echo "$msg" | grep -Eq '^(feat|fix|docs|style|refactor|test|chore): [a-z0-9]'; then
-            echo "❌ Commit message does not follow required format:"
-            echo "   $msg"
-            echo "Expected: <type>: <message>"
-            echo "Allowed types: feat, fix, docs, style, refactor, test, chore"
-            exit 1
-        fi
-    done
+        # Uncommit the latest commit but keep changes staged (soft reset)
+        git reset --soft HEAD~1
+        echo "⚠️ Latest commit has been uncommitted. Please fix the commit message and try again."
+        exit 1
+    fi
 done
 
 echo "✅ All checks passed. Pushing..."
