@@ -2,9 +2,14 @@
 
 ![Build Status](https://github.com/tomkiel/python-sul-2025/actions/workflows/build.yml/badge.svg)
 
+**URL**: [sul.python.org.br/en/](sul.python.org.br/en/)
+
+## Alternatives doc versions
+
 - [Portuguese](./README-pt.md)
 - [Spanish](./README-es.md)
 
+---
 This repository hosts the **official website** source code for **Python Sul 2025**, a community-driven conference uniting Python enthusiasts across Southern Brazil. Built with [Hugo](https://gohugo.io/), the site supports **three languages** (Portuguese, Spanish, English) and is designed for straightforward content management and community collaboration.
 
 ---
@@ -50,6 +55,14 @@ This repository hosts the **official website** source code for **Python Sul 2025
 ├── .gitignore
 ├── Makefile
 ├── README.md
+├── Dockerfile
+├── podman-compose.yml
+├── CNAME
+├── .githooks/
+│   ├── pre-push
+├── .github/
+│   ├── workflows/
+│   │   └── build.yml
 ├── config/
 │   ├── README.md
 │   └── _default/
@@ -122,17 +135,20 @@ Language settings are configured in [`config/_default/languages.toml`](config/_d
 
 ### Prerequisites
 
-- [Hugo Extended](https://gohugo.io/getting-started/installing/) version `0.148.2` (see Makefile for auto-install)
+- Default: [Hugo Extended](https://gohugo.io/getting-started/installing/) version `0.148.2` (see Makefile for auto-install)
+- Container: [Podman or Docker](https://podman.io/) 
 
 ### Common Commands
 
 | Command               | Description                    |
 |-----------------------|-------------------------------|
+| `make check`          | Verify Hugo version and environment |
 | `make install`        | Install Hugo                  |
-| `make check`          | Verify Hugo version           |
 | `make serve`          | Serve site locally for dev    |
 | `make build`          | Build production site         |
-| `make create_post`    | Create a new blog post        |
+| `make create-post`    | Create a new blog post        |
+| `podman-compose up -d --remove-orphans`    | Serve site locally using podman  |
+
 
 Check the [`Makefile`](Makefile) for full details.
 
