@@ -2,9 +2,14 @@
 
 ![Build Status](https://github.com/tomkiel/python-sul-2025/actions/workflows/build.yml/badge.svg)
 
+**URL**: [sul.python.org.br](https://sul.python.org.br)
+
+## Versões alternativas da documentação
+
 - [Spanish](./README-pt.md)
 - [English](./README-en.md)
 
+---
 Este repositório contém o código-fonte do **site oficial** do **Python Sul 2025**, uma conferência comunitária que reúne entusiastas e profissionais de Python no Sul do Brasil. Construído com [Hugo](https://gohugo.io/), o site suporta **três idiomas** (português, espanhol e inglês) e foi projetado para facilitar o gerenciamento de conteúdo e a colaboração da comunidade.
 
 ---
@@ -50,6 +55,14 @@ O **Python Sul (PySul)** é um evento comunitário que conecta desenvolvedores, 
 ├── .gitignore
 ├── Makefile
 ├── README.md
+├── Dockerfile
+├── podman-compose.yml
+├── CNAME
+├── .githooks/
+│   ├── pre-push
+├── .github/
+│   ├── workflows/
+│   │   └── build.yml
 ├── config/
 │   ├── README.md
 │   └── _default/
@@ -122,17 +135,19 @@ A configuração dos idiomas está em [`config/_default/languages.toml`](config/
 
 ### Pré-requisitos
 
-- [Hugo Extended](https://gohugo.io/getting-started/installing/) versão `0.148.2` (veja o Makefile para instalação automática)
+- Padrão: [Hugo Extended](https://gohugo.io/getting-started/installing/) versão `0.148.2` (veja o Makefile para instalação automática)
+- Usando container: [Podman or Docker](https://podman.io/) 
 
 ### Comandos Comuns
 
 | Comando               | Descrição                        |
 |-----------------------|---------------------------------|
+| `make check`          | Verificar versão do Hugo e ambiente |
 | `make install`        | Instalar Hugo                   |
-| `make check`          | Verificar versão do Hugo        |
-| `make serve`          | Rodar site localmente para dev  |
+| `make serve`     | Rodar site localmente para dev  |
 | `make build`          | Gerar site para produção        |
-| `make create_post`    | Criar uma nova postagem no blog |
+| `make create-post`    | Criar uma nova postagem no blog* |
+| `podman-compose up -d --remove-orphans`    | Rodar site localmente com podman |
 
 Confira o [`Makefile`](Makefile) para mais detalhes.
 

@@ -1,110 +1,171 @@
-OS := $(shell uname -s)
-HUGO := $(shell command -v hugo 2>/dev/null)
+###############################################################################
+# Python Sul 2025 - Porto Alegre Makefile
+# author: Regis Tomkiel<me@tomkiel.com.br>
+#
+# Content map:
+# - check-env: Verify environment setup
+# - install: Install Hugo Extended
+# - update: Update Hugo Extended to the required version
+# - serve: Start Hugo development server
+# - build: Build the site using Hugo
+# - create-post: Create a new blog post *inprogress*
+###############################################################################
 
-MIN_VERSION := 0.148.2
+#------------------------------------------------------------------------------
+# Configuration Variables
+#------------------------------------------------------------------------------
+OS_NAME           := $(shell uname -s)
+GIT_BIN           := $(shell command -v git 2>/dev/null)
+HUGO_BIN          := $(shell command -v hugo 2>/dev/null)
+REQUIRED_HUGO_VER := 0.148.2
 
-ifeq ($(OS),Linux)
-	SYSTEM := linux
-	BIN_PATH := $(HOME)/.local/bin
-else ifeq ($(OS),Darwin)
-	SYSTEM := macos
-	BIN_PATH := /usr/local/bin
-else ifeq ($(OS),Windows_NT)
-	SYSTEM := windows
-	# Use forward slashes for paths inside Makefile shell commands
-	BIN_PATH := $(subst \,/,$(USERPROFILE))/bin
+# Platform detection and paths
+ifeq ($(OS_NAME),Linux)
+	PLATFORM      := linux
+	BIN_DIR       := $(HOME)/.local/bin
+else ifeq ($(OS_NAME),Darwin)
+	PLATFORM      := macos
+	BIN_DIR       := /usr/local/bin
+else ifeq ($(OS_NAME),Windows_NT)
+	PLATFORM      := windows
+	BIN_DIR       := $(subst \,/,$(USERPROFILE))/bin
 else
-	SYSTEM := unknown
-	BIN_PATH := unknown
+	PLATFORM      := unknown
+	BIN_DIR       := unknown
 endif
 
-RELEASE_URL = https://github.com/gohugoio/hugo/releases/download/v$(MIN_VERSION)/hugo_extended_$(MIN_VERSION)_$(SYSTEM)-64bit.tar.gz
+HUGO_RELEASE_URL  := https://github.com/gohugoio/hugo/releases/download/v$(REQUIRED_HUGO_VER)/hugo_extended_$(REQUIRED_HUGO_VER)_$(PLATFORM)-64bit.tar.gz
 
-.PHONY: check install update serve build create_post
+#------------------------------------------------------------------------------
+# Phony Targets
+#------------------------------------------------------------------------------
+.PHONY: check-env install update serve build create-post setup-git-hooks verify-git
 
-check:
-	@if [ -z "$(HUGO)" ]; then \
-		echo "Hugo is not installed. Run 'make install' to install Hugo Extended."; \
+#------------------------------------------------------------------------------
+# Environment Checks & Setup
+#------------------------------------------------------------------------------
+
+check-env: verify-git setup-git-hooks check
+	@echo "✅ Environment check complete."
+
+verify-git:
+	@if [ -z "$(GIT_BIN)" ]; then \
+		echo "❌ Git is not installed. Please install Git before continuing."; \
 		exit 1; \
 	else \
-		echo "Hugo found at $(HUGO)"; \
-		HUGO_VERSION=$$($(HUGO) version | awk '{print $$2}' | sed 's/v//' | cut -d'-' -f1); \
-		if [ "$$HUGO_VERSION" != "$(MIN_VERSION)" ]; then \
-			echo "Warning: Installed Hugo version ($$HUGO_VERSION) does not match the required version ($(MIN_VERSION)). Consider updating."; \
+		echo "✅ Git found at $(GIT_BIN)"; \
+	fi
+
+setup-git-hooks: verify-git
+	@echo "🔧 Setting up local Git hooks path..."
+	@if [ ! -d ".githooks" ]; then \
+		mkdir -p .githooks; \
+		touch .githooks/pre-push; \
+		echo "📂 Created .githooks directory."; \
+	fi
+	@chmod -R u+x .githooks/pre-push
+	@$(GIT_BIN) config core.hooksPath .githooks
+	@echo "✅ Git hooks path set to .githooks for this repository."
+
+check:
+	@if [ -z "$(HUGO_BIN)" ]; then \
+		echo "❌ Hugo is not installed. Run 'make install' to install Hugo Extended."; \
+		exit 1; \
+	else \
+		echo "✅ Hugo found at $(HUGO_BIN)"; \
+		HUGO_VERSION=$$($(HUGO_BIN) version | awk '{print $$2}' | sed 's/v//' | cut -d'-' -f1); \
+		if [ "$$HUGO_VERSION" != "$(REQUIRED_HUGO_VER)" ]; then \
+			echo "⚠️  Installed Hugo version ($$HUGO_VERSION) does not match required version ($(REQUIRED_HUGO_VER)). Consider updating."; \
 		else \
-			echo "Hugo version is up to date."; \
+			echo "✅ Hugo version is up to date."; \
 		fi; \
 	fi
 
-update:
-	@echo "Updating to Hugo Extended version $(MIN_VERSION)..."
-	@if [ -z "$(HUGO)" ]; then \
-		echo "Hugo is not installed. Run 'make install' to install Hugo Extended."; \
+#------------------------------------------------------------------------------
+# Hugo Installation & Update
+#------------------------------------------------------------------------------
+
+install:
+	@echo "🖥️  Detected OS: $(PLATFORM)"
+	@if [ "$(PLATFORM)" = "unknown" ]; then \
+		echo "❌ Unsupported OS. Please install Hugo manually."; \
+		exit 1; \
+	fi
+	@if [ -z "$(HUGO_BIN)" ]; then \
+		echo "⬇️  Installing Hugo Extended version $(REQUIRED_HUGO_VER)..."; \
+		TEMP_DIR=$$(mktemp -d); \
+		cd $$TEMP_DIR; \
+		echo "🔗 Downloading $(HUGO_RELEASE_URL)..."; \
+		curl -L -o hugo.tar.gz "$(HUGO_RELEASE_URL)"; \
+		tar -xzf hugo.tar.gz; \
+		if [ "$(PLATFORM)" = "windows" ]; then \
+			mkdir -p "$(BIN_DIR)"; \
+			mv hugo.exe "$(BIN_DIR)/hugo.exe"; \
+			echo "✅ Moved hugo.exe to $(BIN_DIR). Ensure it's in your PATH."; \
+		else \
+			sudo mkdir -p "$(BIN_DIR)"; \
+			mv hugo "$(BIN_DIR)/hugo"; \
+			echo "✅ Moved hugo to $(BIN_DIR). Ensure $(BIN_DIR) is in your PATH."; \
+		fi; \
+		echo "✅ Hugo installation complete."; \
+	else \
+		echo "✅ Hugo is already installed at $(HUGO_BIN)"; \
+	fi
+
+
+update: check-env
+	@echo "🔄 Updating to Hugo Extended version $(REQUIRED_HUGO_VER)..."
+	@if [ -z "$(HUGO_BIN)" ]; then \
+		echo "❌ Hugo is not installed. Run 'make install' to install Hugo Extended."; \
 		exit 1; \
 	else \
-		HUGO_VERSION=$$($(HUGO) version | awk '{print $$2}' | sed 's/v//' | cut -d'-' -f1); \
-		if [ "$$HUGO_VERSION" = "$(MIN_VERSION)" ]; then \
-			echo "Hugo is already at the required version ($(MIN_VERSION)). No update needed."; \
+		HUGO_VERSION=$$($(HUGO_BIN) version | awk '{print $$2}' | sed 's/v//' | cut -d'-' -f1); \
+		if [ "$$HUGO_VERSION" = "$(REQUIRED_HUGO_VER)" ]; then \
+			echo "✅ Hugo is already at required version ($(REQUIRED_HUGO_VER)). No update needed."; \
 		else \
-			echo "Current Hugo version is $$HUGO_VERSION. Updating to $(MIN_VERSION)..."; \
-			echo "Removing existing Hugo at $(HUGO)..."; \
-			if [ "$(SYSTEM)" = "windows" ]; then \
-				del "$(HUGO)" || echo "Failed to remove Hugo executable. Please remove manually."; \
+			echo "⚠️  Current Hugo version is $$HUGO_VERSION. Updating to $(REQUIRED_HUGO_VER)..."; \
+			echo "🗑️  Removing existing Hugo at $(HUGO_BIN)..."; \
+			if [ "$(PLATFORM)" = "windows" ]; then \
+				del "$(HUGO_BIN)" || echo "Failed to remove Hugo executable. Please remove manually."; \
 			else \
-				sudo rm -f "$(HUGO)" || echo "Failed to remove Hugo executable. Please remove manually."; \
+				sudo rm -f "$(HUGO_BIN)" || echo "Failed to remove Hugo executable. Please remove manually."; \
 			fi; \
 			$(MAKE) install; \
 		fi; \
 	fi
 
-install:
-	@echo "Detected OS: $(SYSTEM)"
-	@if [ "$(SYSTEM)" = "unknown" ]; then \
-		echo "Unsupported OS. Please install Hugo manually."; \
-		exit 1; \
-	fi
+#------------------------------------------------------------------------------
+# Site Operations
+#------------------------------------------------------------------------------
 
-	@if [ -z "$(HUGO)" ]; then \
-		echo "Installing Hugo Extended version $(MIN_VERSION)..."; \
-		TEMP_DIR=$$(mktemp -d); \
-		cd $$TEMP_DIR; \
-		echo "Downloading $(RELEASE_URL)..."; \
-		curl -L -o hugo.tar.gz "$(RELEASE_URL)"; \
-		tar -xzf hugo.tar.gz; \
-		if [ "$(SYSTEM)" = "windows" ]; then \
-			mkdir -p "$(BIN_PATH)"; \
-			mv hugo.exe "$(BIN_PATH)/hugo.exe"; \
-			echo "Moved hugo.exe to $(BIN_PATH). Make sure it's in your PATH."; \
-		else \
-			sudo mkdir -p "$(BIN_PATH)"; \
-			mv hugo "$(BIN_PATH)/hugo"; \
-			echo "Moved hugo to $(BIN_PATH)."; \
-			echo "If on Linux or macOS, ensure $(BIN_PATH) is in your PATH."; \
-		fi; \
-		echo "Installation complete."; \
-	else \
-		echo "Hugo is already installed at $(HUGO)"; \
-	fi
+serve: check-env
+	@echo "🚀 Starting Hugo development server..."
+	@$(HUGO_BIN) server --bind=0.0.0.0 --renderToMemory --disableFastRender
 
-serve: check
-	@$(HUGO) server --renderToMemory --disableFastRender
 
-create_post:
-	@echo "Creating a new post..."
+build: check-env
+	@echo "🏗️  Building site with Hugo..."
+	@$(HUGO_BIN) --minify --gc
+	@rm -rf resources
+	@rm -rf .hugo_build.lock
+	@echo "✅ Build complete. Check the 'public' directory for output."
+
+
+create-post: check-env
+	@echo "📝 Creating a new post..."
 	@read -p "Enter the title of the post: " title; \
 	if [ -z "$$title" ]; then \
-		echo "Title cannot be empty. Post creation aborted."; \
+		echo "❌ Title cannot be empty. Post creation aborted."; \
 		exit 1; \
 	fi; \
 	read -p "Enter the language of the post *default is 'portuguese': " lang; \
 	if [ -z "$$lang" ]; then \
 		lang="portuguese"; \
 	fi; \
-	$(HUGO) new "$$lang"/blog/"$$title".md; \
-	echo "Post created at content/markdown/$$lang/blog/$$title.md"
+	$(HUGO_BIN) new "$$lang"/blog/"$$title".md; \
+	echo "✅ Post created at content/markdown/$$lang/blog/$$title.md"
 
-build: check
-	@$(HUGO) --minify --gc
-	@rm -rf resources
-	@rm -rf .hugo_build.lock
-	@echo "Build complete. Check the 'public' directory for the output."
+
+#------------------------------------------------------------------------------
+# End of Makefile
+#------------------------------------------------------------------------------
