@@ -265,6 +265,7 @@
     color: var(--color-accent);
     text-decoration: none;
     transition: color 0.2s ease;
+    padding: 0;
 
     &:hover {
       color: var(--color-accent-hover);
@@ -325,6 +326,20 @@
     @media (min-width: $breakpoint-md) {
       margin-block: $space-8;
     }
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: $space-8 0;
+
+    @media (min-width: $breakpoint-md) {
+      margin: $space-10 0;
+    }
+  }
+
+  p {
+    margin-bottom: $space-4;
   }
 }
 

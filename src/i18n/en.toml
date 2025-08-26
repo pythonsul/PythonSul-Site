@@ -74,3 +74,6 @@ other = "Light"
 
 [color_mode_dark]
 other = "Dark"
+
+[read_more]
+other = "Read more"

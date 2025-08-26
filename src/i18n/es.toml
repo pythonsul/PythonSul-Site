@@ -74,3 +74,6 @@ other = "Modo oscuro"
 
 [color_mode_light]
 other = "Modo claro"
+
+[read_more]
+other = "Seguir leyendo"
