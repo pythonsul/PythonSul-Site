@@ -1,6 +1,6 @@
 +++
 title = "Código de Conduta"
-image = "images/pages/cdc.png"
+image = "images/pages/cdc.jpg"
 date = 2025-08-05T03:00:00Z
 +++
 

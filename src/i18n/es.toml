@@ -62,3 +62,15 @@ other = "Redes Sociales"
 
 [cfp]
 other = "Llamado a Propuestas"
+
+[header_cta]
+other = "Regístrate Ahora"
+
+[color_mode_system]
+other = "Sistema"
+
+[color_mode_dark]
+other = "Modo oscuro"
+
+[color_mode_light]
+other = "Modo claro"

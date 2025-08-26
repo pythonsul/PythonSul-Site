@@ -1,5 +1,6 @@
 {{/* Initialize current page variable */}}
 {{ $currentPage := . }}
+{{ $currentLang := .Site.Language.Lang }}
 
 <header class="main-header">
   <div class="main-header__nav-container">
@@ -36,14 +37,15 @@
       </div>
       <div class="desktop-menu--cta-options">
         {{/* Call to action button for subscription */}}
-        <a variant="button" class="btn" href="#cfp">
-          {{ T "cfp" | safeHTML }}
+        {{ $ctaString := site.Data.event.cta.string }}
+        {{ $ctaLink := site.Data.event.cta.link }}
+        <a variant="button" class="btn" href="{{ $ctaLink }}?lang={{ $currentLang }}" target="_blank" rel="noopener">
+          {{ T $ctaString | safeHTML }}
         </a>
         <div class="main-header__options">
           <div class="language-switcher dropdown" data-event-listener="dropdown">
             {{/* Language switcher dropdown */}}
             <button class="language-switcher__toggle dropdown-toggle ghost" id="language-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Select Language">
-              {{ $currentLang := .Site.Language.Lang }}
               {{ $flag := printf "svg/flags/%s.svg" $currentLang }}
               {{ partial $flag }}
             </button>
@@ -67,15 +69,15 @@
             <div class="dropdown-menu color-mode__menu" role="menu" aria-labelledby="color-mode-toggle">
               <button class="color-mode__item ghost system" data-event-listener="color-mode" data-mode="system" role="menuitem">
                 <div class="icon-box"></div>
-                <span>System</span>
+                <span>{{ T "color_mode_system" }}</span>
               </button>
               <button class="color-mode__item ghost dark" data-event-listener="color-mode" data-mode="dark" role="menuitem">
                 <div class="icon-box"></div>
-                <span>Dark</span>
+                <span>{{ T "color_mode_dark" }}</span>
               </button>
               <button class="color-mode__item ghost light" data-event-listener="color-mode" data-mode="light" role="menuitem">
                 <div class="icon-box"></div>
-                <span>Light</span>
+                <span>{{ T "color_mode_light" }}</span>
               </button>
             </div>
           </div>
@@ -89,9 +91,12 @@
         {{ .Name }}
       </a>
       {{ end }}
-      <!--a variant="button" class="btn" href="/subscribe">
-        Inscrever-se
-      </a-->
+      {{/* Call to action button for subscription */}}
+      {{ $ctaString := site.Data.event.cta.string }}
+      {{ $ctaLink := site.Data.event.cta.link }}
+      <a variant="button" class="btn" href="{{ $ctaLink }}" target="_blank" rel="noopener">
+        {{ T $ctaString | safeHTML }}
+      </a>
     </nav>
   </div>
 </header>

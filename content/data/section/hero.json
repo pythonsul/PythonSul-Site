@@ -7,15 +7,15 @@
     "cta": [
       {
         "type": "accent",
-        "text": "Submeter palestra",
-        "link": "#cfp",
-        "minBreakpoint": "desktop"
+        "text": "Inscreva-se Agora",
+        "link": "https://www.sympla.com.br/evento/python-sul-2025-porto-alegre/3092007?lang=pt",
+        "minBreakpoint": "small"
       },
       {
         "type": "outline",
-        "text": "Saiba mais",
-        "link": "#about",
-        "minBreakpoint": "small"
+        "text": "Submeter palestra",
+        "link": "#cfp",
+        "minBreakpoint": "desktop"
       }
     ]
   },
@@ -27,13 +27,13 @@
     "cta": [
       {
         "type": "accent",
-        "text": "Submit a talk",
-        "link": "#cfp"
+        "text": "Register Now",
+        "link": "https://www.sympla.com.br/evento/python-sul-2025-porto-alegre/3092007?lang=en"
       },
       {
         "type": "outline",
-        "text": "Learn more",
-        "link": "#about"
+        "text": "Submit a talk",
+        "link": "#cfp"
       }
     ]
   },
@@ -45,13 +45,13 @@
     "cta": [
       {
         "type": "accent",
-        "text": "Enviar una charla",
-        "link": "#cfp"
+        "text": "Regístrate ahora",
+        "link": "https://www.sympla.com.br/evento/python-sul-2025-porto-alegre/3092007?lang=es"
       },
       {
         "type": "outline",
-        "text": "Saber más",
-        "link": "#about"
+        "text": "Enviar una charla",
+        "link": "#cfp"
       }
     ]
   }
