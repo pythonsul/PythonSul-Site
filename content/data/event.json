@@ -1,9 +1,14 @@
 {
-  "name": "Python Sul Porto Alegre",
+  "name": "Python Sul 2025 - Porto Alegre",
   "description": {
     "pt-br": "Python Sul (ou PySul) é um evento comunitário que conecta pessoas apaixonadas por Python e tecnologia.<br> Desde 2017, percorre os estados da região Sul do Brasil com edições anuais itinerantes.",
     "es": "Python Sul (o PySul) es un evento comunitario que conecta a personas apasionadas por Python y la tecnología.<br> Desde 2017, recorre las provincias de la región sur de Brasil con ediciones anuales itinerantes, promoviendo el intercambio de conocimientos y el fortalecimiento de la comunidad.",
     "en": "Python Sul (or PySul) is a community-driven event that brings together people passionate about Python and technology.<br> Since 2017, it has been touring the states in the southern region of Brazil with annual traveling editions, fostering knowledge exchange and community strengthening."
+  },
+  "keywords": {
+    "pt-br": "Python, AI, Aprendizado de Máquina, Python Sul, PySul, Evento, Comunidade, Tecnologia, Desenvolvimento, Programação, Porto Alegre, RS",
+    "es": "Python, IA, Python Sul, PySul, Evento, Comunidad, Tecnología, Desarrollo, Programación, Porto Alegre, RS",
+    "en": "Python, IA, Machine Learning, Python Sul, PySul, Event, Community, Technology, Development, Programming, Porto Alegre, RS"
   },
   "location": {
     "name": "Tecnopuc - Auditório 01",
@@ -11,11 +16,12 @@
     "address": "Av. Ipiranga, 6681 - Auditório 101,<br> Porto Alegre - RS, CEP 90619-900",
     "map": ""
   },
+  "author": "Python Sul",
   "social": {
     "instagram": "https://www.instagram.com/pythonsul",
     "linkedin": "https://www.linkedin.com/in/python-sul/",
     "youtube": "https://www.youtube.com/@PythonSul",
-    "github": "",
+    "github": "https://github.com/pythonsul/python-sul-site",
     "telegram": "https://t.me/PythonSulBR",
     "whatsapp": ""
   },
@@ -40,5 +46,9 @@
   "time": {
     "start": "09:00",
     "finish": "18:00"
+  },
+  "cta": {
+    "string": "header_cta",
+    "link": "https://www.sympla.com.br/evento/python-sul-2025-porto-alegre/3092007"
   }
 }

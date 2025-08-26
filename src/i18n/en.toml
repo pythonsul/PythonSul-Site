@@ -62,3 +62,15 @@ other = "Social Media"
 
 [cfp]
 other = "Call for Proposals"
+
+[header_cta]
+other = "Register Now"
+
+[color_mode_system]
+other = "System"
+
+[color_mode_light]
+other = "Light"
+
+[color_mode_dark]
+other = "Dark"

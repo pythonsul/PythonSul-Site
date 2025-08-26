@@ -62,3 +62,15 @@ other = "Redes Sociais"
 
 [cfp]
 other = "Submissão de Palestras"
+
+[header_cta]
+other = "Inscreva-se Agora"
+
+[color_mode_system]
+other = "Sistema"
+
+[color_mode_dark]
+other = "Modo escuro"
+
+[color_mode_light]
+other = "Modo claro"
