@@ -4,7 +4,7 @@ description = "Primeira keynote confirmada! É a incrível Bruna Ferreira, tamb�
 date = 2025-08-26T03:00:00Z
 author = "Regis Tomkiel"
 categories = ["keynote"]
-image = "images/posts/01.png"
+image = "images/posts/bugelseif/2024.jpg"
 draft = false
 url = "keynote-bruna-ferreira-bug-esleif-python-sul-2025"
 +++
