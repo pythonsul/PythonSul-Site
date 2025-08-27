@@ -10,11 +10,6 @@ env:
   PUBLISH_DIR: "./public"
   PUBLISH_BRANCH: "gh-pages"
 
-permissions:
-  contents: write
-  pages: write      
-  id-token: write  
-
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -43,7 +38,3 @@ jobs:
           publish_dir: ${{ env.PUBLISH_DIR }}
           publish_branch: ${{ env.PUBLISH_BRANCH }}
           commit_message: "Deploy site to GitHub Pages - ${{ github.sha }}"
-
-      - name: Trigger GitHub Pages deployment
-        if: github.ref == 'refs/heads/main'
-        uses: actions/deploy-pages@v4
