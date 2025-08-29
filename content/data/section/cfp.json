@@ -17,11 +17,11 @@
       "title": "Formatos Disponíveis",
       "items": [
         {
-          "title": "Palestra (40min)",
+          "title": "Palestra (20, 30, ou 40min)",
           "description": "Apresentações técnicas ou inspiracionais para o público geral."
         },
         {
-          "title": "Tutoriais (180min)",
+          "title": "Tutoriais (180min ou 360 min)",
           "description": "Sessões práticas e oficinas com atividades interativas."
         },
         {
@@ -36,12 +36,12 @@
         {
           "title": "Prazo para Submissão",
           "icon": "svg/icons/calendar.svg",
-          "date": "a definir"
+          "date": "05/Out/2025 23:59 (Brazil/East)"
         },
         {
           "title": "Resultados da Seleção",
           "icon": "svg/icons/calendar-check.svg",
-          "date": "a definir"
+          "date": "15/Out/2025 23:59 (Brazil/East)"
         },
         {
           "title": "Benefícios",
@@ -74,11 +74,11 @@
       "title": "Available Formats",
       "items": [
         {
-          "title": "Talk (40min)",
+          "title": "Talk (20, 30 or 40min)",
           "description": "Technical or inspirational presentations for the general audience."
         },
         {
-          "title": "Workshop (180min)",
+          "title": "Workshop (180min or 360min)",
           "description": "Hands-on sessions with interactive activities."
         },
         {
@@ -93,12 +93,12 @@
         {
           "title": "Submission Deadline",
           "icon": "svg/icons/calendar.svg",
-          "date": "to be defined"
+          "date": "October 5th, 2025 23:59 (Brazil/East)"
         },
         {
           "title": "Selection Results",
           "icon": "svg/icons/calendar-check.svg",
-          "date": "to be defined"
+          "date": "October 15th, 2025 23:59 (Brazil/East)"
         },
         {
           "title": "Benefits",
@@ -131,11 +131,11 @@
       "title": "Formatos Disponibles",
       "items": [
         {
-          "title": "Charla (40min)",
+          "title": "Charla (20, 30, o 40min)",
           "description": "Presentaciones técnicas o inspiradoras para el público general."
         },
         {
-          "title": "Taller (180min)",
+          "title": "Taller (180min o 360min)",
           "description": "Sesiones prácticas y hands-on con actividades interactivas."
         },
         {
@@ -150,12 +150,12 @@
         {
           "title": "Plazo para Envío",
           "icon": "svg/icons/calendar.svg",
-          "date": "a definir"
+          "date": "05/Oct/2025 23:59 (Brazil/East)"
         },
         {
           "title": "Resultados de Selección",
           "icon": "svg/icons/calendar-check.svg",
-          "date": "a definir"
+          "date": "15/Oct/2025 23:59 (Brazil/East)"
         },
         {
           "title": "Beneficios",
