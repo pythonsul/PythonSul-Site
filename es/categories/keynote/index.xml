@@ -5,28 +5,53 @@
  
  
  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  
  
- &lt;figure>
+ 
+ 
+
+ &lt;figure class="">
  &lt;picture>
- &lt;source srcset="https://sul.python.org.br/images/posts/bugelseif/2024_hu_8bf0abb31ae05348.webp" width="600"
- height="400" media="(max-width: 800px)" type="image/webp">
  
- &lt;source srcset="https://sul.python.org.br/images/posts/bugelseif/2024_hu_5642f3249e180fa5.webp" width="1000"
- height="667" media="(max-width: 1024px)" type="image/webp">
+ &lt;source srcset="https://sul.python.org.br/images/posts/bugelseif/2024_hu_51664be1941858af.jpg" type="image/jpeg" media="(min-width: 1024px)">
  
- &lt;source srcset="https://sul.python.org.br/images/posts/bugelseif/2024_hu_3173f641ae991d0b.webp" width="1400"
- height="934" media="(min-width: 1024px)" type="image/webp">
+ &lt;source srcset="https://sul.python.org.br/images/posts/bugelseif/2024_hu_120d4d611d198b15.webp" type="image/webp" media="(min-width: 1024px)">
+ &lt;source srcset="https://sul.python.org.br/images/posts/bugelseif/2024_hu_b13d6843f8f91950.webp" type="image/webp" media="(max-width: 1024px)">
+ &lt;source srcset="https://sul.python.org.br/images/posts/bugelseif/2024_hu_7a689f6137c0d933.webp" type="image/webp" media="(max-width: 800px)">
  
- &lt;source srcset="https://sul.python.org.br/images/posts/bugelseif/2024_hu_c3e74dd3718f2904.jpg" width="1400"
- height="934" media="(min-width: 1024px)" type="image/jpg">
- 
- &lt;img src="https://sul.python.org.br/images/posts/bugelseif/2024.jpg" alt='' loading=lazy>
- 
+ &lt;img
+ src="https://sul.python.org.br/images/posts/bugelseif/2024_hu_51664be1941858af.jpg"
+ alt="Bruna en la Edición 2024"
+ width="1400"
+ height="934"
+ loading="lazy"
+ decoding="async"
+ />
  &lt;/picture>
  
+ 
+ &lt;figcaption>CC: Bruna en la Edición 2024&lt;/figcaption>
+ 
  &lt;/figure>
+
+
 
 &lt;h2 id="quién-es-bruna-ferreira">Quién es Bruna Ferreira&lt;/h2>
 &lt;p>Bruna es desarrolladora de software y DevX en BotCity, y ya la conocemos por su trabajo como creadora de contenido y voz activa en la comunidad Python. Por todo esto, es la elección perfecta para ser nuestra keynote.&lt;/p></description></item></channel></rss>
